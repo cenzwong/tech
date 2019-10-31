@@ -8,4 +8,4 @@
 + STM32
 +
 ## Tools
-+ [GitHub on steroids](https://www.octotree.io/)
++ [Octotree: GitHub on steroids](https://www.octotree.io/)
