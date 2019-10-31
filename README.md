@@ -3,6 +3,8 @@
 ## Javascript
 + [P5.js: JavaScript library for creative coding](https://p5js.org/)
 + [ML5.js: Friendly Machine Learning for the Web](https://ml5js.org/)
++ [Brain.js: GPU accelerated Neural networks in JavaScript](https://brain.js.org/#/)
+
 ## Web Framework
 + [Hexo.io: A fast, simple & powerful blog framework](https://hexo.io/zh-tw/)
 + [Flutter: Beautiful native apps in record time by Google](https://flutter.dev/)
@@ -11,6 +13,8 @@
 + [Cordova: Mobile apps with HTML, CSS & JS](https://cordova.apache.org/)
 + [Reveal.js: The HTML Presentation Framework](https://revealjs.com/#/fragments)
 + [Webslide: HTML presentation](https://webslides.tv/#slide=1)
++ [Vue.js: The Progressive JavaScript Framework](https://vuejs.org/)
++ [Express.js: Fast, unopinionated, minimalist web framework for Node.js](https://expressjs.com/)
 ## Web API
 + [Rapid API: One SDK. One API key. One dashboard](https://rapidapi.com/)
 ## Hardware
