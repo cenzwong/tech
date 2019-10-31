@@ -32,3 +32,6 @@
 ## Web Platform
 + [Agorize](https://www.agorize.com/en/challenges/smartone-hackathon-2019-hack-days)
 + [Hackster.io: The community dedicated to learning hardware](https://www.hackster.io/)
++ [Github: The world's leading software development platform](https://github.com/)
++ [Gitlab: The first single application for the entire DevOps lifecycle](https://about.gitlab.com/)
++ [Gitee/碼雲: Collaboration platform for software development](https://gitee.com/)
