@@ -31,3 +31,4 @@
 + [Ngrok: Public URLs for testing on mobile devices.](https://ngrok.com/)
 ## Web Platform
 + [Agorize](https://www.agorize.com/en/challenges/smartone-hackathon-2019-hack-days)
++ [Hackster.io: The community dedicated to learning hardware](https://www.hackster.io/)
