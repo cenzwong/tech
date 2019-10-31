@@ -1,5 +1,5 @@
 # Technology-Note
-//+ []()
+[]()
 ## Javascript
 + [P5.js: JavaScript library for creative coding](https://p5js.org/)
 + [ML5.js: Friendly Machine Learning for the Web](https://ml5js.org/)
