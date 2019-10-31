@@ -17,4 +17,4 @@
 ## Tools
 + [Octotree: GitHub on steroids](https://www.octotree.io/)
 ## Web Platform
-+ [Agorize] (https://www.agorize.com/en/challenges/smartone-hackathon-2019-hack-days)
++ [Agorize](https://www.agorize.com/en/challenges/smartone-hackathon-2019-hack-days)
