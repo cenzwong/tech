@@ -7,6 +7,8 @@
 + [Weex: Framework for building performant mobile apps with modern web technology by Alibaba](https://weex.apache.org/)
 + [React native: A framework for building native apps using React by Facebook](https://facebook.github.io/react-native/)
 + [Cordova: Mobile apps with HTML, CSS & JS](https://cordova.apache.org/)
+## Web API
++ [Rapid API: One SDK. One API key. One dashboard](https://rapidapi.com/)
 ## Hardware
 + Jetson Nano
 + Arduino
