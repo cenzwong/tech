@@ -1,10 +1,24 @@
 # Technology-Note
 []()
+## CLI program
+## Python
++ numpy
++ scipy
++ sympy
++ ipython
 ## Javascript
 + [P5.js: JavaScript library for creative coding](https://p5js.org/)
 + [ML5.js: Friendly Machine Learning for the Web](https://ml5js.org/)
 + [Brain.js: GPU accelerated Neural networks in JavaScript](https://brain.js.org/#/)
 + [Tensorflow.js: library for machine learning in JavaScript](https://www.tensorflow.org/js)
++ babylon.js
++ matter.js
++ email.js
++ smtp.js
++ tangible.js
++ johnny-five
++ involt
++ nw.js
 ## Web Framework
 + [Hexo.io: A fast, simple & powerful blog framework](https://hexo.io/zh-tw/)
 + [Flutter: Beautiful native apps in record time by Google](https://flutter.dev/)
@@ -18,11 +32,13 @@
 + [Express.js: Fast, unopinionated, minimalist web framework for Node.js](https://expressjs.com/)
 ## Web API
 + [Rapid API: One SDK. One API key. One dashboard](https://rapidapi.com/)
++ udpapi
++ elastic email
 ## Hardware
 + Jetson Nano
 + Arduino
 + STM32
-+
++ alchitry
 ## Web Tools
 + [Glitch: Online web editor](https://glitch.com/create)
 + 
@@ -30,11 +46,24 @@
 + [Octotree: GitHub on steroids](https://www.octotree.io/)
 + [Localtunnel: Expose yourself to the world](https://localtunnel.github.io/www/)
 + [Ngrok: Public URLs for testing on mobile devices.](https://ngrok.com/)
-## Web Platform
++ RPA uipath
++ mouth recorder
+### Maths Tools
++ octave
++ online octave
++ matlab
++ geogebra
++ colab
+### Web Platform
 + [Agorize](https://www.agorize.com/en/challenges/smartone-hackathon-2019-hack-days)
 + [Hackster.io: The community dedicated to learning hardware](https://www.hackster.io/)
 + [Github: The world's leading software development platform](https://github.com/)
 + [Gitlab: The first single application for the entire DevOps lifecycle](https://about.gitlab.com/)
 + [Gitee/碼雲: Collaboration platform for software development](https://gitee.com/)
+#### Blog
++ EEVlog
+
 ## Archive
 + [Google Presentation](http://bit.ly/cenz-webinfo)
+## Data science
++ [Github]()
