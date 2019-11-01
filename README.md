@@ -1,6 +1,8 @@
 # Technology-Note
 []()
 ## CLI program
++ curl
++ httpie
 ## Python
 + numpy
 + scipy
@@ -39,6 +41,14 @@
 + Arduino
 + STM32
 + alchitry
+### PCB Tools
++ fritzing
++ KiCad
++ Eagle
++ EasyEDA
++ upverter
++ PADS
++ Altium
 ## Web Tools
 + [Glitch: Online web editor](https://glitch.com/create)
 + 
@@ -46,14 +56,30 @@
 + [Octotree: GitHub on steroids](https://www.octotree.io/)
 + [Localtunnel: Expose yourself to the world](https://localtunnel.github.io/www/)
 + [Ngrok: Public URLs for testing on mobile devices.](https://ngrok.com/)
++ etcher
++ Deskpin
+### Development Tools
++ hterm
 + RPA uipath
-+ mouth recorder
++ mouse recorder
++ wireshark
++ PuTTY
++ AutoHotKey
++ Temper monkey
++ 
 ### Maths Tools
 + octave
 + online octave
 + matlab
 + geogebra
 + colab
++ Maxima
+### creative content
++ Adobe
++ Sony Vegas
++ GIMP
++ INKSCAPE
++ Blender
 ### Web Platform
 + [Agorize](https://www.agorize.com/en/challenges/smartone-hackathon-2019-hack-days)
 + [Hackster.io: The community dedicated to learning hardware](https://www.hackster.io/)
@@ -66,4 +92,4 @@
 ## Archive
 + [Google Presentation](http://bit.ly/cenz-webinfo)
 ## Data science
-+ [Github]()
++ [Github Link]()
