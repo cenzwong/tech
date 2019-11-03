@@ -13,9 +13,9 @@
 + [ML5.js: Friendly Machine Learning for the Web](https://ml5js.org/)
 + [Brain.js: GPU accelerated Neural networks in JavaScript](https://brain.js.org/#/)
 + [Tensorflow.js: library for machine learning in JavaScript](https://www.tensorflow.org/js)
-+ babylon.js
-+ matter.js
-+ email.js
++ [Babylon.js: Powerful, Beautiful, Simple, OpenWeb-Based 3D At Its Best](https://www.babylonjs.com/)
++ [Matter.js: a 2D physics engine for the web](https://brm.io/matter-js/)
++ [Email.js: Send Email Directly From JavaScript](https://www.emailjs.com/)
 + smtp.js
 + tangible.js
 + johnny-five
