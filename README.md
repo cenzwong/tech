@@ -56,6 +56,10 @@
 + [ThingsBoard: Open-source IoT Platform](https://thingsboard.io/)
 + [IFTTT: Every thing works better together](https://ifttt.com/)
 + [ThingSpeak: the open IoT platform with MATLAB analytics.](https://thingspeak.com/)
+### Operator
++ [Thingsmobile: Things Mobile: The best IOT and M2M SIM Card in the world](https://www.thingsmobile.com/business)
++ [Thinxtra: OPERATING THE FIRST NATIONWIDE INTERNET OF THINGS NETWORK, BASED ON SIGFOX TECHNOLOGY](https://www.thinxtra.com/)
++ [Pixel Networks](https://www.pixel-networks.com/)
 ### LoRa/LoRaWAN
 + [The Things Network: Building a global open LoRaWAN™ network](https://www.thethingsnetwork.org/)
 + 
