@@ -27,7 +27,7 @@
 + [Hexo.io: A fast, simple & powerful blog framework](https://hexo.io/zh-tw/)
 + [Flutter: Beautiful native apps in record time by Google](https://flutter.dev/)
 + [Weex: Framework for building performant mobile apps with modern web technology by Alibaba](https://weex.apache.org/)
-+ [ant design](https://ant.design)
++ [Ant Design: The world's second most popular React UI framework](https://ant.design)
 + [React native: A framework for building native apps using React by Facebook](https://facebook.github.io/react-native/)
 + [Cordova: Mobile apps with HTML, CSS & JS](https://cordova.apache.org/)
 + [Reveal.js: The HTML Presentation Framework](https://revealjs.com/#/fragments)
