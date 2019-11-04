@@ -4,9 +4,15 @@
 + curl
 + httpie
 ## Python
-+ numpy
-+ scipy
-+ sympy
++ NumPy
++ SciPy
++ SymPy
++ matplotlib
++ Pandas
++ Traits & TraitsUI
++ TVTK & Mayavi
++ OpenCV
++ Cython
 + ipython
 ## Web Tech
 ### Javascript
