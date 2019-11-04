@@ -136,21 +136,21 @@
 + UBS - https://www.ubs.com/microsites/blockc...
 + ZF - http://www.econotimes.com/UBS-bank-in...
 ### Online Data Storage
-Storj - https://storj.io/
-IPFS - https://ipfs.io/
-BitGive Foundation - https://bitgivefoundation.org/
-Democracy Earth - http://democracy.earth/
-Follow My Vote - https://followmyvote.com/
-GovCoin - http://www.businesswire.com/news/home...
-Dubai Blockchain Strategy - http://www.smartdubai.ae/dubai_blockc...
-Circles - aboutcircles.com
-Gem - https://gem.co/
-Tierion - https://tierion.com/
-TransactiveGrid - http://transactivegrid.net/
-Mycelia - http://myceliaformusic.org/
-Ujo Music - https://ujomusic.com/
-OpenBazaar - https://www.openbazaar.org/
-OB1 - https://ob1.io/
-Ubitquity - https://www.ubitquity.io/
-Consensys - https://consensys.net/about/
-Ethereum - https://www.ethereum.org
++ Storj - https://storj.io/
++ IPFS - https://ipfs.io/
++ BitGive Foundation - https://bitgivefoundation.org/
++ Democracy Earth - http://democracy.earth/
++ Follow My Vote - https://followmyvote.com/
++ GovCoin - http://www.businesswire.com/news/home...
++ Dubai Blockchain Strategy - http://www.smartdubai.ae/dubai_blockc...
++ Circles - aboutcircles.com
++ Gem - https://gem.co/
++ Tierion - https://tierion.com/
++ TransactiveGrid - http://transactivegrid.net/
++ Mycelia - http://myceliaformusic.org/
++ Ujo Music - https://ujomusic.com/
++ OpenBazaar - https://www.openbazaar.org/
++ OB1 - https://ob1.io/
++ Ubitquity - https://www.ubitquity.io/
++ Consensys - https://consensys.net/about/
++ Ethereum - https://www.ethereum.org
