@@ -60,9 +60,12 @@
 + [Thingsmobile: Things Mobile: The best IOT and M2M SIM Card in the world](https://www.thingsmobile.com/business)
 + [Thinxtra: OPERATING THE FIRST NATIONWIDE INTERNET OF THINGS NETWORK, BASED ON SIGFOX TECHNOLOGY](https://www.thinxtra.com/)
 + [Pixel Networks](https://www.pixel-networks.com/)
-### LoRa/LoRaWAN
 + [The Things Network: Building a global open LoRaWAN™ network](https://www.thethingsnetwork.org/)
 + 
+### Hardware enabler
++ [EByte](http://www.ebyte.com/)
++ [SIMCOM](http://www.simcom.com/)
++ [Sipeed: AIoT enabler](https://www.sipeed.com/)
 ## Program/Service
 + [Octotree: GitHub on steroids](https://www.octotree.io/)
 + [Localtunnel: Expose yourself to the world](https://localtunnel.github.io/www/)
