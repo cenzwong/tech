@@ -8,7 +8,8 @@
 + scipy
 + sympy
 + ipython
-## Javascript
+## Web Tech
+### Javascript
 + [P5.js: JavaScript library for creative coding](https://p5js.org/)
 + [ML5.js: Friendly Machine Learning for the Web](https://ml5js.org/)
 + [Brain.js: GPU accelerated Neural networks in JavaScript](https://brain.js.org/#/)
@@ -22,7 +23,7 @@
 + involt
 + nw.js
 + [Google Chart](https://developers.google.com/chart)
-## Web Framework
+### Web Framework
 + [Hexo.io: A fast, simple & powerful blog framework](https://hexo.io/zh-tw/)
 + [Flutter: Beautiful native apps in record time by Google](https://flutter.dev/)
 + [Weex: Framework for building performant mobile apps with modern web technology by Alibaba](https://weex.apache.org/)
@@ -33,10 +34,13 @@
 + [Webslide: HTML presentation](https://webslides.tv/#slide=1)
 + [Vue.js: The Progressive JavaScript Framework](https://vuejs.org/)
 + [Express.js: Fast, unopinionated, minimalist web framework for Node.js](https://expressjs.com/)
-## Web API
+### Web API
 + [Rapid API: One SDK. One API key. One dashboard](https://rapidapi.com/)
 + udpapi
 + elastic email
+### Web Tools
++ [Glitch: Online web editor](https://glitch.com/create)
++ 
 ## Hardware
 + Jetson Nano
 + Arduino
@@ -52,9 +56,7 @@
 + [Upverter: Electronics Design for Anyone and Everyone](https://upverter.com/)
 + [PADS](https://www.pads.com/)[]()
 + Altium
-## Web Tools
-+ [Glitch: Online web editor](https://glitch.com/create)
-+ 
+
 ## IoT
 + [ThingsBoard: Open-source IoT Platform](https://thingsboard.io/)
 + [IFTTT: Every thing works better together](https://ifttt.com/)
