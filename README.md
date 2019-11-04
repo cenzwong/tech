@@ -23,6 +23,7 @@
 + involt
 + nw.js
 + [Google Chart](https://developers.google.com/chart)
++ [Rollup.js: The JS module bundler](https://rollupjs.org/guide/en/)
 ### Web Framework
 + [Hexo.io: A fast, simple & powerful blog framework](https://hexo.io/zh-tw/)
 + [Flutter: Beautiful native apps in record time by Google](https://flutter.dev/)
@@ -45,7 +46,8 @@
 + Jetson Nano
 + Arduino
 + STM32
-+ alchitry
++ [Alchitry:Introduction to Digital Electronics and FPGAs](https://alchitry.com/)
++ [Sipeed: AIoT enabler](https://www.sipeed.com/)
 ### PCB Tools
 + [Fritzing: Makes electronics accessible as a creative material for anyone](https://fritzing.org/home/)
 + [KiCad: A Cross Platform and Open Source Electronics Design Automation Suite](http://www.kicad-pcb.org/)
@@ -70,7 +72,6 @@
 ### Hardware enabler
 + [EByte](http://www.ebyte.com/)
 + [SIMCOM](http://www.simcom.com/)
-+ [Sipeed: AIoT enabler](https://www.sipeed.com/)
 ## Program/Service
 + [Octotree: GitHub on steroids](https://www.octotree.io/)
 + [Localtunnel: Expose yourself to the world](https://localtunnel.github.io/www/)
@@ -105,6 +106,9 @@
 + [Github: The world's leading software development platform](https://github.com/)
 + [Gitlab: The first single application for the entire DevOps lifecycle](https://about.gitlab.com/)
 + [Gitee/碼雲: Collaboration platform for software development](https://gitee.com/)
++ [Kickstarter](https://www.kickstarter.com/)
++ [Indiegogo: Crowdfund Innovations & Support Entrepreneurs](https://www.indiegogo.com)
++ [Crowdsupply: For the Greater Goods](https://www.crowdsupply.com/)
 #### Blog
 + EEVlog
 + [吴川斌的博客](https://www.mr-wu.cn/)
@@ -114,3 +118,39 @@
 + Library Genesi[s](http://gen.lib.rus.ec/)
 ## Data science
 + [Github Link]()
+## Blockchain & new Tech
++ [ZeroNet: Decentralized websites using Bitcoin crytography and the BitTorrent network](https://zeronet.io/)
++ Bitcoin - https://bitcoin.org/
++ Abra - https://www.goabra.com/
++ Provenance - https://www.provenance.org/
++ Fluent (Rebranded to Hijro) - https://hijro.com/
++ SKUChain - https://skuchain.com/
++ Blockverify - http://www.blockverify.io/
++ Augur - https://augur.net/
+### Networking and IoT
++ Adept - http://www.coindesk.com/ibm-reveals-p...
++ Aeternity - https://www.aeternity.com/
++ Arcade City - https://arcade.city/
++ La'Zooz - http://www.shareable.net/blog/lazooz-...
++ Innogy - https://bitcoinmagazine.com/articles/...
++ UBS - https://www.ubs.com/microsites/blockc...
++ ZF - http://www.econotimes.com/UBS-bank-in...
+### Online Data Storage
+Storj - https://storj.io/
+IPFS - https://ipfs.io/
+BitGive Foundation - https://bitgivefoundation.org/
+Democracy Earth - http://democracy.earth/
+Follow My Vote - https://followmyvote.com/
+GovCoin - http://www.businesswire.com/news/home...
+Dubai Blockchain Strategy - http://www.smartdubai.ae/dubai_blockc...
+Circles - aboutcircles.com
+Gem - https://gem.co/
+Tierion - https://tierion.com/
+TransactiveGrid - http://transactivegrid.net/
+Mycelia - http://myceliaformusic.org/
+Ujo Music - https://ujomusic.com/
+OpenBazaar - https://www.openbazaar.org/
+OB1 - https://ob1.io/
+Ubitquity - https://www.ubitquity.io/
+Consensys - https://consensys.net/about/
+Ethereum - https://www.ethereum.org
