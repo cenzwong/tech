@@ -154,3 +154,5 @@
 + Ubitquity - https://www.ubitquity.io/
 + Consensys - https://consensys.net/about/
 + Ethereum - https://www.ethereum.org
++++
++ [WING: Wireless Mesh Network for Next-Generation Internet](http://www.wing-project.org/)
