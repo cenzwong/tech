@@ -42,12 +42,14 @@
 + STM32
 + alchitry
 ### PCB Tools
-+ fritzing
-+ KiCad
-+ Eagle
-+ EasyEDA
-+ upverter
-+ PADS
++ [Fritzing: Makes electronics accessible as a creative material for anyone](https://fritzing.org/home/)
++ [KiCad: A Cross Platform and Open Source Electronics Design Automation Suite](http://www.kicad-pcb.org/)
++ [Eagle](https://www.autodesk.com/products/eagle/overview)
++ [EasyEDA: Online PCB design & circuit simulator](https://easyeda.com/)
++ [EveryCircuit: Circuits are better animated](http://everycircuit.com/)
++ [Circuit Simulator Applet](https://www.falstad.com/circuit/)
++ [Upverter: Electronics Design for Anyone and Everyone](https://upverter.com/)
++ [PADS](https://www.pads.com/)[]()
 + Altium
 ## Web Tools
 + [Glitch: Online web editor](https://glitch.com/create)
@@ -102,6 +104,7 @@
 + [Gitee/碼雲: Collaboration platform for software development](https://gitee.com/)
 #### Blog
 + EEVlog
++ [吴川斌的博客](https://www.mr-wu.cn/)
 
 ## Archive
 + [Google Presentation](http://bit.ly/cenz-webinfo)
