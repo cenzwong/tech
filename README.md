@@ -34,6 +34,8 @@
 + Pandas
 + Scikit-Learn
 + TVTK & Mayavi : Visualization Toolkit.
+## Markdown
++ [Notes](./MarkdownNote.md)
 ## Web Tech
 ### Javascript
 + [P5.js: JavaScript library for creative coding](https://p5js.org/)
@@ -51,6 +53,7 @@
 + [Google Chart](https://developers.google.com/chart)
 + [Rollup.js: The JS module bundler](https://rollupjs.org/guide/en/)
 + [Protocol buffers: language-neutral, platform-neutral extensible mechanism for serializing structured data.](https://developers.google.com/protocol-buffers)
+
 ### Web Framework
 + [Hexo.io: A fast, simple & powerful blog framework](https://hexo.io/zh-tw/)
 + [Flutter: Beautiful native apps in record time by Google](https://flutter.dev/)
@@ -152,7 +155,7 @@
 + PuTTY
 + AutoHotKey
 + Temper monkey
-+ 
++ VMware
 ### Maths Tools
 + octave
 + online octave
