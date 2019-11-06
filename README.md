@@ -8,7 +8,9 @@
 + Traits & TraitsUI
 + Cython
 + ipython
++ JupyterLab
 + uPython (MicroPython/ CircuitPython)
++ Pyserial
 ### Media
 + OpenCV
 + PIL
@@ -95,6 +97,7 @@
 + Nokia IMPACT
 + MS Azure
 + AWS IoT platform
++ IBM Waston IoT
 + Google Cloud
 + [IFTTT: Every thing works better together](https://ifttt.com/)
 + [ThingSpeak: the open IoT platform with MATLAB analytics.](https://thingspeak.com/)
@@ -113,6 +116,7 @@
 + MQTT
 + Websocket
 + CoAP
++ XMPP: Extensible Messageing and Presence Protocol
 + LoRa
 + NB-IoT
 + Sigfox
