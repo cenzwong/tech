@@ -14,6 +14,7 @@
 + OpenCV
 + Cython
 + ipython
++ uPython (MicroPython/ CircuitPython)
 ## Web Tech
 ### Javascript
 + [P5.js: JavaScript library for creative coding](https://p5js.org/)
@@ -48,13 +49,16 @@
 + elastic email
 ### Web Tools
 + [Glitch: Online web editor](https://glitch.com/create)
-+ 
+
 ## Hardware
 + Jetson Nano
 + Arduino
 + STM32
 + [Alchitry:Introduction to Digital Electronics and FPGAs](https://alchitry.com/)
 + [Sipeed: AIoT enabler](https://www.sipeed.com/)
++ ARM
++ NXP
++ TI
 ### PCB Tools
 + [Fritzing: Makes electronics accessible as a creative material for anyone](https://fritzing.org/home/)
 + [KiCad: A Cross Platform and Open Source Electronics Design Automation Suite](http://www.kicad-pcb.org/)
@@ -66,7 +70,7 @@
 + [PADS](https://www.pads.com/)[]()
 + Altium
 
-## IoT
+## IoT/Embedded
 + [ThingsBoard: Open-source IoT Platform](https://thingsboard.io/)
 + [IFTTT: Every thing works better together](https://ifttt.com/)
 + [ThingSpeak: the open IoT platform with MATLAB analytics.](https://thingspeak.com/)
@@ -74,17 +78,45 @@
 + [Thingsmobile: Things Mobile: The best IOT and M2M SIM Card in the world](https://www.thingsmobile.com/business)
 + [Thinxtra: OPERATING THE FIRST NATIONWIDE INTERNET OF THINGS NETWORK, BASED ON SIGFOX TECHNOLOGY](https://www.thinxtra.com/)
 + [Pixel Networks](https://www.pixel-networks.com/)
++ [OrbiWAN](https://www.orbiwise.com/home)
 + [The Things Network: Building a global open LoRaWAN™ network](https://www.thethingsnetwork.org/)
-+ 
++ OneNet (by CMHK) 
++ [Chirp Stack: open-source LoRaWAN® Network Server stack](https://www.chirpstack.io/)
 ### Hardware enabler
 + [EByte](http://www.ebyte.com/)
 + [SIMCOM](http://www.simcom.com/)
+### Communication Protocol
++ HTTPS
++ MQTT
++ Websocket
++ CoAP
++ LoRa
++ NB-IoT
++ Sigfox
++ GSM
++ IP-Network
++ Zigbee
++ Bluetooth
++ Wi-Fi
+### Mirco OS
++ ARM mbed OS
++ Contiki OS
++ Zephyr
++ Huawei LiteOS
++ Ostro
++ [Android Things](https://developer.android.com/things)
++ [uC/OS](https://www.micrium.com/rtos/kernels/)
++ [FreeRTOS](https://www.freertos.org/)
++ OpenWRT
++ Embedded Linux
+
 ## Program/Service
 + [Octotree: GitHub on steroids](https://www.octotree.io/)
 + [Localtunnel: Expose yourself to the world](https://localtunnel.github.io/www/)
 + [Ngrok: Public URLs for testing on mobile devices.](https://ngrok.com/)
 + etcher
 + Deskpin
++ [Advanced REST client](https://chrome.google.com/webstore/detail/advanced-rest-client/hgmloofddffdnphfgcellkdfbfbjeloo)
 ### Development Tools
 + hterm
 + RPA uipath
