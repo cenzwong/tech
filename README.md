@@ -167,3 +167,10 @@
 
 + Sketchy
 + tindercad
+
++ TensorFlow
++ Thank
++ CMTK
++ Kaldi
++ PyTorch
+
