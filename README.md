@@ -15,6 +15,14 @@
 + Cython
 + ipython
 + uPython (MicroPython/ CircuitPython)
++ PIL
++ Piddle: A Python Graphics API
++ ReportLab: An Open Source Python library for generating PDFs and graphics.
++ Tornado: a Python web framework and asynchronous networking library
++ Twisted: An event-driven networking engine
++ Django: The Web framework for perfectionists with deadlines
++ [Pyramid: The Start Small, Finish Big Stay Finished Framework](https://trypyramid.com/)
++ [Flask: a lightweight WSGI web application framework](https://palletsprojects.com/p/flask/)
 ## Web Tech
 ### Javascript
 + [P5.js: JavaScript library for creative coding](https://p5js.org/)
@@ -72,6 +80,13 @@
 
 ## IoT/Embedded
 + [ThingsBoard: Open-source IoT Platform](https://thingsboard.io/)
++ OneNet (by CMHK) 
++ QQ IoT
++ Huaiwai OceanConnect
++ Nokia IMPACT
++ MS Azure
++ AWS IoT platform
++ Google Cloud
 + [IFTTT: Every thing works better together](https://ifttt.com/)
 + [ThingSpeak: the open IoT platform with MATLAB analytics.](https://thingspeak.com/)
 ### Operator
@@ -80,7 +95,6 @@
 + [Pixel Networks](https://www.pixel-networks.com/)
 + [OrbiWAN](https://www.orbiwise.com/home)
 + [The Things Network: Building a global open LoRaWAN™ network](https://www.thethingsnetwork.org/)
-+ OneNet (by CMHK) 
 + [Chirp Stack: open-source LoRaWAN® Network Server stack](https://www.chirpstack.io/)
 ### Hardware enabler
 + [EByte](http://www.ebyte.com/)
@@ -206,3 +220,4 @@
 + Kaldi
 + PyTorch
 
++ Map Reduce
