@@ -1,5 +1,6 @@
+[Test](./test.md)
+***
 # Technology-Note
-[next Page](./test.md)
 ## CLI program
 + curl
 + httpie
@@ -179,6 +180,8 @@
 + Library Genesi[s](http://gen.lib.rus.ec/)
 ## Data science
 + [Github Link]()
+
+***
 ## Blockchain & new Tech
 + [ZeroNet: Decentralized websites using Bitcoin crytography and the BitTorrent network](https://zeronet.io/)
 + Bitcoin - https://bitcoin.org/
