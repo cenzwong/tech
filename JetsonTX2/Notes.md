@@ -7,3 +7,4 @@
   mv file to ~
   tar zxvf jetson-lab.tgz
 ```
+model.add(BatchNormalization()) --> will speedup the training
