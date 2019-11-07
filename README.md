@@ -74,6 +74,7 @@
 
 ## Hardware
 + Jetson Nano
++ [Jetson TX2](./JetsonTX2Note.md)
 + Arduino
 + STM32
 + [Alchitry:Introduction to Digital Electronics and FPGAs](https://alchitry.com/)
