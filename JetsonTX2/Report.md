@@ -9,10 +9,10 @@
         <td>Foo</td><td>Foo</td>
     </tr>
     <tr>
-        <td>![2](./black_bear.jpg)</td><td>![1](./BlackBear_Result.png)</td>
+        <td></td><td></td>
     </tr>
       <tr>
-        <td>![4](./brown_bear.jpg)</td><td>![3](./BroswenBear_result.png)</td>
+        <td></td><td></td>
     </tr>
       <tr>
         <td>Foo</td><td>Foo</td>
@@ -22,11 +22,9 @@
     </tr>
 </table>
 
---------
-|abc|cba|
-|asd|dffg|
--------
-
+| ![2](./black_bear.jpg) |![1](./BlackBear_Result.png)   |
+|----|---|
+|![4](./brown_bear.jpg)    | ![3](./BroswenBear_result.png)  |
 
 
 ![5](./PolarBearResult.png)
