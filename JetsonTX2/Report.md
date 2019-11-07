@@ -1,4 +1,4 @@
-# Cenz, Wong Tsz Ho (15070475d)
+https://docs.google.com/document/d/13ldUHVh16FJUYsJtkg1Y4teAakwGhDQdXL6ylWHxP5Y/edit?usp=sharing
 ## Step 8
 ### webcam.py
 ## Step 9
