@@ -4,16 +4,33 @@
 ## Step 9
 ### CannyDetection.py
 ## Step 10
-![BlackBear_Result](./BlackBear_Result.png)
-![BlackBear_Result](./black_bear.jpg)
-![BlackBear_Result](./BroswenBear_result.png)
-![BlackBear_Result](./brown_bear.jpg)
-![BlackBear_Result](./PolarBearResult.png)
-![BlackBear_Result](./polar_bear.jpg)
-![BlackBear_Result](./cat.png)
-![BlackBear_Result](./cat.jpg)
-![BlackBear_Result](./dog.png)
-![BlackBear_Result](./dog.jpg)
+<table>
+    <tr>
+        <td>Foo</td><td>Foo</td>
+    </tr>
+    <tr>
+        <td>![2](./black_bear.jpg)</td><td>![1](./BlackBear_Result.png)</td>
+    </tr>
+      <tr>
+        <td>![4](./brown_bear.jpg)</td><td>![3](./BroswenBear_result.png)</td>
+    </tr>
+      <tr>
+        <td>Foo</td><td>Foo</td>
+    </tr>
+      <tr>
+        <td>Foo</td><td>Foo</td>
+    </tr>
+</table>
+
+
+
+
+![5](./PolarBearResult.png)
+![6](./polar_bear.jpg)
+![7](./cat.png)
+![8](./cat.jpg)
+![9](./dog.png)
+![10](./dog.jpg)
 
 
 ## Step 8
