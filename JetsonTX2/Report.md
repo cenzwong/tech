@@ -4,35 +4,19 @@
 ## Step 9
 ### CannyDetection.py
 ## Step 10
-<table>
-    <tr>
-        <td>Foo</td><td>Foo</td>
-    </tr>
-    <tr>
-        <td></td><td></td>
-    </tr>
-      <tr>
-        <td></td><td></td>
-    </tr>
-      <tr>
-        <td>Foo</td><td>Foo</td>
-    </tr>
-      <tr>
-        <td>Foo</td><td>Foo</td>
-    </tr>
-</table>
-
 | ![2](./black_bear.jpg) |![1](./BlackBear_Result.png)   |
 |----|---|
 |![4](./brown_bear.jpg)    | ![3](./BroswenBear_result.png)  |
+|----|---|
+| ![6](./polar_bear.jpg)  |  ![5](./PolarBearResult.png)  |
+|----|---|
+| ![8](./cat.jpg)  |  ![7](./cat.png)  |
+|----|---|
+|  ![10](./dog.jpg)  |   ![9](./dog.png)  |
 
 
-![5](./PolarBearResult.png)
-![6](./polar_bear.jpg)
-![7](./cat.png)
-![8](./cat.jpg)
-![9](./dog.png)
-![10](./dog.jpg)
+
+
 
 
 ## Step 8
