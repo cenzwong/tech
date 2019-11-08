@@ -135,6 +135,7 @@
 + Zephyr
 + Huawei LiteOS
 + Ostro
++ RT-Thread
 + [Android Things](https://developer.android.com/things)
 + [uC/OS](https://www.micrium.com/rtos/kernels/)
 + [FreeRTOS](https://www.freertos.org/)
