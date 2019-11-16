@@ -53,6 +53,7 @@
 + [Google Chart](https://developers.google.com/chart)
 + [Rollup.js: The JS module bundler](https://rollupjs.org/guide/en/)
 + [Protocol buffers: language-neutral, platform-neutral extensible mechanism for serializing structured data.](https://developers.google.com/protocol-buffers)
++ [D3.js: JavaScript library for manipulating documents based on data](https://d3js.org/)
 
 ### Web Framework
 + [Hexo.io: A fast, simple & powerful blog framework](https://hexo.io/zh-tw/)
@@ -71,6 +72,7 @@
 + elastic email
 ### Web Tools
 + [Glitch: Online web editor](https://glitch.com/create)
++ [Observable: magic notebook for exploring data and thinking with code](https://observablehq.com/)
 
 ## Hardware
 + Jetson Nano
