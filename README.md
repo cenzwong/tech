@@ -54,6 +54,8 @@
 + [Rollup.js: The JS module bundler](https://rollupjs.org/guide/en/)
 + [Protocol buffers: language-neutral, platform-neutral extensible mechanism for serializing structured data.](https://developers.google.com/protocol-buffers)
 + [D3.js: JavaScript library for manipulating documents based on data](https://d3js.org/)
++ [JerryScript: A JavaScript engine for Internet of Things](https://github.com/jerryscript-project/jerryscript)
++ [IoT.js: A framework for Internet of Things](https://iotjs.net/)
 
 ### Web Framework
 + [Hexo.io: A fast, simple & powerful blog framework](https://hexo.io/zh-tw/)
