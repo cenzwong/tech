@@ -164,6 +164,7 @@
 + AutoHotKey
 + Temper monkey
 + VMware
++ Cypress.io
 ### Maths Tools
 + octave
 + online octave
