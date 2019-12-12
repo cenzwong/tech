@@ -11,6 +11,7 @@
 + JupyterLab
 + uPython (MicroPython/ CircuitPython)
 + Pyserial
++ [yfinance: Yahoo! Finance market data downloader](https://pypi.org/project/yfinance/)
 ### Media
 + OpenCV
 + PIL
