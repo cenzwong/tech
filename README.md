@@ -173,6 +173,7 @@
 + geogebra
 + colab
 + Maxima
++ [Kaggle: Your Machine Learning and Data Science Community](https://www.kaggle.com/)
 ### Creative content
 + Adobe
 + Sony Vegas
