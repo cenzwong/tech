@@ -5,36 +5,72 @@
 + curl
 + httpie
 ## Python
-+ Traits & TraitsUI
+### Hardware related
++ uPython (MicroPython/ CircuitPython)
++ Pyserial
++ [smbus2](https://pypi.org/project/smbus2/): I2C framework
+
+### Network
++ paho-mqtt: Eclipse Paho MQTT Python client library
+### Developtools
+
 + Cython
 + ipython
 + JupyterLab
-+ uPython (MicroPython/ CircuitPython)
-+ Pyserial
+
+### Finance
 + [yfinance: Yahoo! Finance market data downloader](https://pypi.org/project/yfinance/)
++ InvestPy
++ [TA-Lib](https://ta-lib.org/) # download from [whl](https://www.lfd.uci.edu/~gohlke/pythonlibs/#ta-lib)
+
 ### Media
-+ OpenCV
++ OpenCV :  [insall](./Note/opencv/)
 + PIL
 + Piddle: A Python Graphics API
 + ReportLab: An Open Source Python library for generating PDFs and graphics.
-### Network
++ python-pptx: Python library for creating and updating PowerPoint (.pptx) files
++ Pydub: Manipulate audio with a simple and easy high level interface.
+
+### Web
 + Tornado: a Python web framework and asynchronous networking library
 + Twisted: An event-driven networking engine
 + Django: The Web framework for perfectionists with deadlines
 + [Pyramid: The Start Small, Finish Big Stay Finished Framework](https://trypyramid.com/)
 + [Flask: a lightweight WSGI web application framework](https://palletsprojects.com/p/flask/)
++ Requests
++ urllib
+### Web scraping
++ Beautiful Soup
++ Selenium
++ [Scrapy](https://scrapy.org/): A Fast and Powerful Scraping and Web Crawling framework
 ### Gaming
 + Panda3D
 + Renpy
 + Bigworld
++ Traits & TraitsUI
 ### Machine Learning / Big Data / Scientific Calculation
+#### Basic Math
 + NumPy
 + SciPy
 + SymPy
-+ Matplotlib
 + Pandas
-+ Scikit-Learn
+#### Vis Tool
++ Matplotlib
 + TVTK & Mayavi : Visualization Toolkit.
++ [handcalcs](https://github.com/connorferster/handcalcs): Python calculations in Jupyter, as though you wrote them by hand
+#### ML Package
++ Scikit-Learn
++ [AutoSklearn](https://automl.github.io/auto-sklearn/master/): is an automated machine learning toolkit and a drop-in replacement for a scikit-learn estimator.
++ [statsmodel](https://www.statsmodels.org/stable/index.html)
++ [sktime](https://github.com/alan-turing-institute/sktime): a Unified Python Library for Time Series Machine Learning
++ [pmdarima](https://alkaline-ml.com/pmdarima): similarly to R’s well-known auto.arima as possible
+#### NN Package
++ Tensorflow
++ Keras
++ PyTorch
++ PySpark
++ [AutoKeras](https://autokeras.com/): An AutoML system based on Keras
+
 ## Markdown
 + [Notes](./MarkdownNote.md)
 ## Web Tech
