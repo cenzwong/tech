@@ -1,4 +1,9 @@
 # Everything about terminal
+# How to sudo install without ask me question
+```bash
+sudo DEBIAN_FRONTEND=noninteractive apt-get -yq install [packagename]
+```
+
 # Bash Scripting Note
 
 Bash is the subclass of shell
