@@ -221,7 +221,26 @@
 ### Multi-Model
 + FaunaDB
 ### newer db
++ [Realtime database](https://rethinkdb.com/)
++ [MongoDB](https://www.mongodb.com/)
++ [influxdata](https://www.influxdata.com/): Real-time visibility into stacks sensors and system. Open source time series database
++ [JuliaDB](https://juliadb.org/)
 
+
+TimescaleDB is the leading open-source relational database for time-series data. Fully managed or self‑hosted.
+https://www.timescale.com/
+
+Apache Cassandra: Manage massive amounts of data, fast, without losing sleep
+https://cassandra.apache.org/
+
+PostgreSQL: The World's Most Advanced Open Source Relational Database
+https://www.postgresql.org/
+https://towardsdatascience.com/python-and-postgresql-how-to-access-a-postgresql-database-like-a-data-scientist-b5a9c5a0ea43
+
+NoSQL
+
+ScyllaDB: The Real-Time Big Data Database
+https://www.scylladb.com/
 ## Hardware
 ### Board
 + Arduino: Uno, Nano, Micro, Due, Yun, MKR, Nano 33, Leonardo | AVR, ARM Cortex-M
