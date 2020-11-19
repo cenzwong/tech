@@ -191,16 +191,114 @@
 + mp4, H.264, H.265
 + HEIF: High Efficiency Image File Format
 + WebP: https://developers.google.com/speed/webp
+## Database
+### Key-value (Fast No Queries)
++ Reddis
++ memcached
++ etcd
+### Wide Column (Schema-less, Without joins)
++ Apache HBase
++ cassandra
+### Document (Schema-less, Relational-ish queries, without joins)
++ MongoDB
++ Firestore
++ DynamoDB
++ Apache CouchDB
+### Relational
++ MySQL
++ PostgreSQL
++ SQL server
++ CockroachDB
+### Graph
++ neo4j
++ dgraph
+### Search
++ Alpache Lucene
++ Elastic Search
++ Solr
++ Algolia
++ Meili Search
+### Multi-Model
++ FaunaDB
 ## Hardware
-+ Jetson Nano
-+ [Jetson TX2](./JetsonTX2Note.md)
-+ Arduino
-+ STM32
-+ [Alchitry:Introduction to Digital Electronics and FPGAs](https://alchitry.com/)
-+ [Sipeed: AIoT enabler](https://www.sipeed.com/)
-+ ARM
-+ NXP
-+ TI
+### Board
++ Arduino: Uno, Nano, Micro, Due, Yun, MKR, Nano 33, Leonardo | AVR, ARM Cortex-M
++ Espressif: ESP32, ESP8266, ESP01 | Tensilica Xtensa by Cadence
++ BBC micro:bit | ARM Cortex-M
++ Raspberry Pi: 4/3/Zero W/CM | ARM Cortex-A
++ Orange Pi: Chinese SBC | ARM Cortex-A
++ Banana Pi: Chinese SBC | ARM Cortex-A
++ Sony spresense
++ Teensy USB Development Board
++ T-FireFly: Server, Computer, Accelerator | GPU
++ iEiworld: ODM | GPU
+### Chip/ Manufacturer
++ ARM: Cortex-A/R/M
++ STMicroelectronics: STM32/STM8/SPC5 - W/L/F/G/H/MP (CubeMX)| ARM Cortex-M/A
++ Microchip Atmel: ATMega, ATTiny, PIC24, SAMD| PIC/AVR/MIPS32/ARM Cortex-M/A
++ Nordic Semiconductor: nRF BT, Zigbee | ARM Cortex-M
++ NXP: i.MX | ARM
++ Texas Instruments: MSP430 CC2541 | ARM
++ Digi: Xbee, IoT | ARM
++ Rockchip: China MPU company | Cortex-A
++ Allwinner: China MPU company | Cortex-A
++ Broadcom: BCM2711 | Cortex-A
++ Nuvoton Technology: Taiwan Chip, M23, M0, M4, IoT | Cortex-A/M
++ Cypress: A lot
++ Future Technology Devices International: FTDI, USB related stuff
++ Bridgetek: BRT FT Series
+### FPGA
++ Alchitry:Introduction to Digital Electronics and FPGAs
++ xilinx: Industrial FPGA
++ Intel FPGA (Altera): Stratix、Arria, Cyclone
+### AI-Specific
++ 2018 全球 AI 晶⽚廠商產品[⽐較表](https://makerpro.cc/wp-content/uploads/2018/05/%E5%85%A8%E7%90%83AI%E6%99%B6%E7%89%87%E5%BB%A0%E5%95%86%E7%94%A2%E5%93%81%E6%AF%94%E8%BC%83%E8%A1%A8.pdf)
++ Sipeed: AIoT enabler, k210 module | RISC-V, KPU
++ Canaan Kendryte k210 | RISC-V, KPU
++ Jetson: Nano, TX2, Xavier, AGX | Nvidia CUDA® cores, GPU
++ Google Coral: Edge TPU, USB Accelerator | TPU
++ Qualcomm: Snapdragon, smartphone SOC, Wearable | Cortex-A
++ MediaTek: MTK, Smartphone, cellular | Cortex-A
++ Micron: Memory, Storage
++ Intel Movidius: Myriad™ X, USB Accelerator | VPU
++ Gyrfalcon tech: Lightspeeur 5801 NEURAL ACCELERATOR | VPU
++ Graphcore : Intelligence Processing Unit | IPU
++ Cambricon : Chinese companies and startups working on AI chips
++ kneron : ON-DEVICE EDGE AI
++ NovuMind, vimicro, eyemore, westwell-lab, nationalchip, unisound, chipintelli, hxgpt: Chinese
++ 阿里平頭哥半導體有限公司 (T-Head), 小米 南京大魚半導體, Huami Huangshan
++ ARM project trillium: Arm ML processor and Arm OD processor
+### AI-CAM
++ https://github.com/tinyvision-ai-inc/Vision-FPGA-SoM
++ Open CV AI kit
++ open MV
++ Sipeed
++ Arduino Pro
+### IoT-Specific
++ Onion – Compute Platform for IoT special WEBOS
++ Pycom - Next Generation Internet of Things Platform
++ Particle.io: Build powerful edge solutions
++ u-blox: IIoT module
++ SIMCOM: 5G/NBIOT/IIoT module
++ EByte: Chinese LPWAN module
++ Ai-thinker: LPWAN module
+### STEAM
++ SparkFun: Sensor, IoT, Apollo3 Blue
++ SeeedStudio: Sensor, IoT, Grove
++ Adafruit: Unique & fun DIY electronics and kits
++ Stemtera: SMART BREADBOARD
++ Scrappy Circuits: scrappy way to learn about electrical circuits
++ XinaBox.cc
++ Coxana: Snap IoT
++ Makeblock: Hardware Programming
++ Sphero/littlebits: Programmable Toy/Snap Hardware
++ Codejumper: Teaches students who are blind or visually impaired computer coding
++ Kano: DIY PC for kids
+### Conductive Ink
++ Bare Conductive
++ AgIC Inc.
++ Circuit Scribe: Draw Circuits Instantly
++ Paper Circuit
 ### PCB Tools
 + [Fritzing: Makes electronics accessible as a creative material for anyone](https://fritzing.org/home/)
 + [KiCad: A Cross Platform and Open Source Electronics Design Automation Suite](http://www.kicad-pcb.org/)
@@ -211,57 +309,84 @@
 + [Upverter: Electronics Design for Anyone and Everyone](https://upverter.com/)
 + [PADS](https://www.pads.com/)[]()
 + Altium
-
-## IoT/Embedded
-+ [ThingsBoard: Open-source IoT Platform](https://thingsboard.io/)
-+ OneNet (by CMHK) 
+### IoT Platform
++ ThingsBoard: Open-source IoT Platform
++ ResIoT.io
++ The Things Network: LoRaWAN
++ Zerynth: Platform designed to simplify and accelerate the development of IoT applications
++ ThingSpeak: Open IoT platform with MATLAB analytics.
++ OneNet (by CMHK)
 + QQ IoT
 + Huaiwai OceanConnect
 + Nokia IMPACT
 + MS Azure
 + AWS IoT platform
 + IBM Waston IoT
-+ Google Cloud
-+ [IFTTT: Every thing works better together](https://ifttt.com/)
-+ [ThingSpeak: the open IoT platform with MATLAB analytics.](https://thingspeak.com/)
-### Operator
-+ [Thingsmobile: Things Mobile: The best IOT and M2M SIM Card in the world](https://www.thingsmobile.com/business)
-+ [Thinxtra: OPERATING THE FIRST NATIONWIDE INTERNET OF THINGS NETWORK, BASED ON SIGFOX TECHNOLOGY](https://www.thinxtra.com/)
-+ [Pixel Networks](https://www.pixel-networks.com/)
-+ [OrbiWAN](https://www.orbiwise.com/home)
-+ [The Things Network: Building a global open LoRaWAN™ network](https://www.thethingsnetwork.org/)
-+ [Chirp Stack: open-source LoRaWAN® Network Server stack](https://www.chirpstack.io/)
-### Hardware enabler
-+ [EByte](http://www.ebyte.com/)
-+ [SIMCOM](http://www.simcom.com/)
-### Communication Protocol
-+ HTTPS
-+ MQTT
-+ Websocket
-+ CoAP
-+ XMPP: Extensible Messageing and Presence Protocol
-+ LoRa
-+ NB-IoT
-+ Sigfox
-+ GSM
-+ IP-Network
-+ Zigbee
-+ Bluetooth
-+ Wi-Fi
-+ [lwIP](https://www.nongnu.org/lwip/2_1_x/index.html)
-### Mirco OS
++ Google Cloud IoT
++ IFTTT: Every thing works better together
++ iotivity
++ KMC controls
+### Edge Computing
++ KubeEdge
++ OpenFog
++ EdgeX Foundry
++ IIC: Industrial Internet Consortium
++ FogHorn Edge analytics platform
+### IoT Operator
++ Thingsmobile: Things Mobile: The best IOT and M2M SIM Card in the world
++ Thinxtra: OPERATING THE FIRST NATIONWIDE INTERNET OF THINGS NETWORK, BASED ON SIGFOX TECHNOLOGY
++ Pixel Networks
++ OrbiWAN
++ The Things Network: Building a global open LoRaWAN™ network
++ Chirp Stack: open-source LoRaWAN® Network Server stack
+### Micro OS
 + ARM mbed OS
 + Contiki OS
 + Zephyr
-+ Huawei LiteOS
-+ Ostro
-+ RT-Thread
-+ [Android Things](https://developer.android.com/things)
-+ [uC/OS](https://www.micrium.com/rtos/kernels/)
-+ [FreeRTOS](https://www.freertos.org/)
-+ OpenWRT
-+ Embedded Linux
 + Zerynth
++ Embedded Linux
++ OpenWRT
++ FreeRTOS
++ uC/OS
++ Android Things
++ RT-Thread
++ Ostro
++ Huawei LiteOS
++ Mongoose-os
++ uPython
+### Communication Channel
+#### LoWPAN
++ Bluetooth Low Energy
++ ZigBee
++ 6LoWPAN
++ WirelessHART
+#### LoWLAN
++ Wi-Fi HaLow
+#### WLAN
++ Wi-Fi
+#### LPWAN: Low Power WAN
++ LTE-M (Long-term evolution for machine type communications)
++ NB-IoT (Narrowband IoT)
++ EC-GSM-IoT (extended coverage GSM IoT)
++ LoRa
++ SIGFOX
+#### WWAN: Wireless Wide Area Network
++ GSM-based mobile networks (2G)
++ UMTS-based mobile networks (3G)
++ LTE-advanced based mobile networks (4G)
+#### EH-based Network
++ EnOcean
++ ZigBee PRO with Green Power
++ Bluetooth LE
+#### IIoT
++ CAN bus
++ EtherCAT
++ PROFINET
++ Ethernet/IP
++ Modbus
++ POWERLINK
++ Modbus
++ BACnet: Youtube |BACnet Stack |bacnet |bacnet International
 ## Program/Service
 + [Octotree: GitHub on steroids](https://www.octotree.io/)
 + [Localtunnel: Expose yourself to the world](https://localtunnel.github.io/www/)
@@ -280,6 +405,25 @@
 + Temper monkey
 + VMware
 + Cypress.io
+#### Desktop Tools / plugins
++ Octotree: GitHub on steroids
++ etcher
++ Deskpin
++ mouse recorder
++ AutoHotKey
++ Temper monkey
+#### Online Editor/Editor
++ Glitch: Online web editor
++ Observable: magic notebook for exploring data and thinking with code
++ Tutorialspoint: Coding Platform For Your Website
++ Kaggle: Your Machine Learning and Data Science Community
++ Google Colab
++ OctaveOnline: Create and share scripts for scientific computing with GNU Octave
++ Project Jupyter
++ GeoGebra: Free online math tools for graphing, geometry, 3D.
++ Notepad++
++ VSCode / VSCode server
++ Gitpod
 ### Maths Tools
 + octave
 + online octave
@@ -289,10 +433,23 @@
 + Maxima
 + [Kaggle: Your Machine Learning and Data Science Community](https://www.kaggle.com/)
 ### Creative content
-+ Adobe
+#### Video Editor
++ Adobe Premium, After effect
 + Sony Vegas
++ ACDSee
++ imovie
++ FFMpeg
+#### Photo Editor
++ Photoshop
 + GIMP
 + INKSCAPE
+#### 3D Builder
++ Blender
++ [Shapr3D](https://www.shapr3d.com/): a professional CAD tool built for the mobility and precision of the iPad and Apple Pencil
++ SketchUp: 3D Design Software | 3D Modeling on the Web
++ SolidWorks
++ AutoDesk: AutoCAD
++ Tinkercad: easy-to-use 3D CAD design tool
 + Blender
 ### Web Platform
 + [Agorize](https://www.agorize.com/en/challenges/smartone-hackathon-2019-hack-days)
