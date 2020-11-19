@@ -2,6 +2,7 @@
 # How to sudo install without ask me question
 ```bash
 sudo DEBIAN_FRONTEND=noninteractive apt-get -yq install [packagename]
+-qq No output except for errors
 ```
 
 # Bash Scripting Note
