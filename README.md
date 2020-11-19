@@ -220,6 +220,8 @@
 + Meili Search
 ### Multi-Model
 + FaunaDB
+### newer db
+
 ## Hardware
 ### Board
 + Arduino: Uno, Nano, Micro, Due, Yun, MKR, Nano 33, Leonardo | AVR, ARM Cortex-M
@@ -467,8 +469,7 @@
 ## Archive
 + [Google Presentation](http://bit.ly/cenz-webinfo)
 + Library Genesi[s](http://gen.lib.rus.ec/)
-## Data science
-+ [Github Link]()
+
 
 ***
 ## Blockchain & new Tech
@@ -508,16 +509,23 @@
 + Consensys - https://consensys.net/about/
 + Ethereum - https://www.ethereum.org
 +++
+## Other
 + [WING: Wireless Mesh Network for Next-Generation Internet](http://www.wing-project.org/)
 
-
++++
+## Data science/AI/ML/framework
++ Tensorflow
++ Apache Spark: Batch programming
++ Apache Flink: Stateful Computations over Data Streams
++ OpenMP: multi-platform shared-memory parallel programming in C/C++ and Fortran
++ [Github Link]()
 + Sketchy
 + tindercad
 
 + TensorFlow
 + Thank
 + CMTK
-+ Kaldi
++ Kaldi: Speech Recognition Toolkit
 + PyTorch
 
 + Map Reduce
