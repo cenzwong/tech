@@ -192,6 +192,7 @@
 + HEIF: High Efficiency Image File Format
 + WebP: https://developers.google.com/speed/webp
 ## Database
++ [Database of Database](https://dbdb.io/)
 ### Key-value (Fast No Queries)
 + Reddis
 + memcached
@@ -228,7 +229,7 @@
 + [MongoDB](https://www.mongodb.com/)
 + [influxdata](https://www.influxdata.com/): Real-time visibility into stacks sensors and system. Open source time series database
 + [JuliaDB](https://juliadb.org/)
-
++ [nedb](https://github.com/louischatriot/nedb): Embedded persistent or in memory database for JS
 
 TimescaleDB is the leading open-source relational database for time-series data. Fully managed or self‑hosted.
 https://www.timescale.com/
