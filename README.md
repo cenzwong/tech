@@ -209,9 +209,12 @@
 + PostgreSQL
 + SQL server
 + CockroachDB
-### Graph
+### Graph 
++ Graph DB [Benefit](https://www.infoworld.com/article/3263764/what-is-a-graph-database-a-better-way-to-store-connected-data.html)
 + neo4j
 + dgraph
++ Microsoft Azure Cosmos DB
++ JanusGraph
 ### Search
 + Alpache Lucene
 + Elastic Search
