@@ -85,6 +85,7 @@
 + [sktime](https://github.com/alan-turing-institute/sktime): a Unified Python Library for Time Series Machine Learning
 + [pmdarima](https://alkaline-ml.com/pmdarima): similarly to R’s well-known auto.arima as possible
 + [arch](https://arch.readthedocs.io/en/latest/univariate/introduction.html): ARCH, GARCH model - [Github](https://github.com/bashtage/arch/)
++ [PyFlux](https://pyflux.readthedocs.io/en/latest/getting_started.html)
 #### NN Package
 + Tensorflow
 + Keras
