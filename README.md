@@ -96,6 +96,7 @@
 + NLTK: Natural language toolkit
 + Gensim: python natural library processing library
 + TextBlob: most simplified Python NLP libraries – for textual data processing
++ [XGBoost](https://xgboost.readthedocs.io/en/latest/)
 ### Other
 + Cirq: noisy intermediate-scale quantum (NISQ) circuits
 + NetworkX:  immense solutions for studying and diagnosing graphs of all levels
