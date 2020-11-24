@@ -551,7 +551,7 @@ https://www.scylladb.com/
 + Kubeflow
 + ML Flow
 + Apache Cassendra
-+ Kafka
++ [Apache Kafka](https://kafka.apache.org/): open-source stream-processing software platform
 + KubeEdge
 + HBase
 + Hadoop
