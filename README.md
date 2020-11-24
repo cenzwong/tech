@@ -562,7 +562,7 @@ https://www.scylladb.com/
 + [XGBoost](https://xgboost.readthedocs.io/en/latest/): optimized distributed gradient boosting library designed to be highly efficient, flexible and portable
 + [Dask](https://dask.org/): Dask provides advanced parallelism for analytics, enabling performance at scale for the tools you love
 + [Apache Hive](https://hive.apache.org/): data warehouse software facilitates reading, writing, and managing large datasets residing in distributed storage using SQL
-
++ [Apache Zeppelin](https://zeppelin.apache.org/): Web-based notebook that enables data-driven, interactive data analytics and collaborative documents with SQL, Scala and more.
 
 + [Github Link]()
 + Sketchy
