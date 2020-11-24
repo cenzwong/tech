@@ -32,6 +32,7 @@
 #### Image and Video
 + OpenCV :  [insall](./Note/opencv/)
 + PIL
++ [SciKit-Image](https://scikit-image.org/)
 + Piddle: A Python Graphics API
 + Luminoth: dedicated for computer vision
 + Mahotas: Python image processing library
@@ -557,7 +558,10 @@ https://www.scylladb.com/
 + [BlazingSQL](https://blazingsql.com/): BlazingSQL provides a high-performance distributed SQL engine in Python
 + [Apache ORC](https://orc.apache.org/): High-Performance Columnar Storage for Hadoop
 + [Apache Parquet](https://parquet.apache.org/):a columnar storage format available to any project in the Hadoop ecosystem, regardless of the choice of data processing framework, data model or programming language.
-
++ [RAPIDS](https://rapids.ai/): Open GPU Data Science
++ [XGBoost](https://xgboost.readthedocs.io/en/latest/): optimized distributed gradient boosting library designed to be highly efficient, flexible and portable
++ [Dask](https://dask.org/): Dask provides advanced parallelism for analytics, enabling performance at scale for the tools you love
++ [Apache Hive](https://hive.apache.org/): data warehouse software facilitates reading, writing, and managing large datasets residing in distributed storage using SQL
 
 
 + [Github Link]()
