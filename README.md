@@ -564,6 +564,9 @@ https://www.scylladb.com/
 + [Apache Hive](https://hive.apache.org/): data warehouse software facilitates reading, writing, and managing large datasets residing in distributed storage using SQL
 + [Apache Zeppelin](https://zeppelin.apache.org/): Web-based notebook that enables data-driven, interactive data analytics and collaborative documents with SQL, Scala and more.
 
+## Custom AI Docker
++ [AI-Lab](https://github.com/amineHY/AI-LAB)
+
 + [Github Link]()
 + Sketchy
 + tindercad
