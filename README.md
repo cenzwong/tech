@@ -72,6 +72,7 @@
 + SymPy
 + Pandas
 + Theano
++ [GeoPandas](https://geopandas.org/index.html): GDF, extends the datatypes used by pandas to allow spatial operations on geometric types
 #### Vis Tool
 + Matplotlib
 + TVTK & Mayavi : Visualization Toolkit.
@@ -545,9 +546,24 @@ https://www.scylladb.com/
 + Apache Spark: Batch programming
 + Apache Flink: Stateful Computations over Data Streams
 + OpenMP: multi-platform shared-memory parallel programming in C/C++ and Fortran
++ Apache Airflow
++ Kubeflow
++ ML Flow
++ Apache Cassendra
++ Kafka
++ KubeEdge
++ HBase
++ Hadoop
++ [BlazingSQL](https://blazingsql.com/): BlazingSQL provides a high-performance distributed SQL engine in Python
++ [Apache ORC](https://orc.apache.org/): High-Performance Columnar Storage for Hadoop
++ [Apache Parquet](https://parquet.apache.org/):a columnar storage format available to any project in the Hadoop ecosystem, regardless of the choice of data processing framework, data model or programming language.
+
+
+
 + [Github Link]()
 + Sketchy
 + tindercad
+
 
 + TensorFlow
 + Thank
