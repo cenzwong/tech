@@ -236,6 +236,8 @@
 + [influxdata](https://www.influxdata.com/): Real-time visibility into stacks sensors and system. Open source time series database
 + [JuliaDB](https://juliadb.org/)
 + [nedb](https://github.com/louischatriot/nedb): Embedded persistent or in memory database for JS
++ Aerospike DB
++ RocksDB
 
 TimescaleDB is the leading open-source relational database for time-series data. Fully managed or self‑hosted.
 https://www.timescale.com/
@@ -545,7 +547,9 @@ https://www.scylladb.com/
 +++
 ## Other
 + [WING: Wireless Mesh Network for Next-Generation Internet](http://www.wing-project.org/)
-
+## No Code/ Low Code tech
++ Airtable
++ [Framer](https://www.framer.com/): A free prototyping tool for teams.
 +++
 ## Data science/AI/ML/framework
 + Tensorflow
@@ -581,6 +585,8 @@ https://www.scylladb.com/
 + [Apache Mahout](http://mahout.apache.org/): Apache Mahout(TM) is a distributed linear algebra framework and mathematically expressive Scala DSL designed to let mathematicians, statisticians, and data scientists quickly implement their own algorithms.
 + [Apache Flume](https://flume.apache.org/): Flume is a distributed, reliable, and available service for efficiently collecting, aggregating, and moving large amounts of log data
 + [Apache Beam](https://beam.apache.org/): Implement batch and streaming data processing jobs that run on any execution engine
+
+
 
 ## Custom AI Docker
 + [AI-Lab](https://github.com/amineHY/AI-LAB)
