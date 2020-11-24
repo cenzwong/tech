@@ -548,8 +548,19 @@ https://www.scylladb.com/
 ## Other
 + [WING: Wireless Mesh Network for Next-Generation Internet](http://www.wing-project.org/)
 ## No Code/ Low Code tech
++ [NoCodeList](https://nocodelist.co/stacks/): a place for all the no code web app
++ [NoCodeStack](https://www.nocodestacks.co/): a place for all the no code web app
++ [SideProjectStack](https://sideprojectstack.com/): another place for all the no code web app
 + Airtable
 + [Framer](https://www.framer.com/): A free prototyping tool for teams.
++ Bravo
++ Editor X
++ Webflow
++ anima
++ supernova
++ [Lobe](https://lobe.ai): No code Object recoginition
++ Miro
++ 
 +++
 ## Data science/AI/ML/framework
 + Tensorflow
