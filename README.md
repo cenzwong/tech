@@ -363,6 +363,11 @@ https://www.scylladb.com/
 + EdgeX Foundry
 + IIC: Industrial Internet Consortium
 + FogHorn Edge analytics platform
+#### Big Company
++ FogHorn
++ Losant
++ Litmus automation
++ PTC
 ### IoT Operator
 + Thingsmobile: Things Mobile: The best IOT and M2M SIM Card in the world
 + Thinxtra: OPERATING THE FIRST NATIONWIDE INTERNET OF THINGS NETWORK, BASED ON SIGFOX TECHNOLOGY
@@ -551,7 +556,10 @@ https://www.scylladb.com/
 + Kubeflow
 + ML Flow
 + Apache Cassendra
++ Spark Streaming
 + [Apache Kafka](https://kafka.apache.org/): open-source stream-processing software platform
++ [Akka](https://akka.io/): toolkit for building highly concurrent, distributed, and resilient message-driven applications for Java and Scala
++ [Apache Storm](https://storm.apache.org/): free and open source distributed realtime computation system
 + KubeEdge
 + HBase
 + Hadoop
@@ -563,6 +571,16 @@ https://www.scylladb.com/
 + [Dask](https://dask.org/): Dask provides advanced parallelism for analytics, enabling performance at scale for the tools you love
 + [Apache Hive](https://hive.apache.org/): data warehouse software facilitates reading, writing, and managing large datasets residing in distributed storage using SQL
 + [Apache Zeppelin](https://zeppelin.apache.org/): Web-based notebook that enables data-driven, interactive data analytics and collaborative documents with SQL, Scala and more.
++ [Weka.io](https://www.weka.io/): Weka uses a modern storage architecture to solve today’s biggest data-intensive problems that hold back innovation.
++ [Apache Samza](https://samza.apache.org): Samza allows you to build stateful applications that process data in real-time from multiple sources including Apache Kafka. Battle-tested at scale
++ [Apache Impala](https://impala.apache.org/): is a modern, open source, distributed SQL query engine for Apache Hadoop.
++ [Apache Nifi](https://nifi.apache.org/): manage data in the edge. Apache NiFi supports powerful and scalable directed graphs of data routing, transformation, and system mediation logic
++ [Apache Drill](https://drill.apache.org/): Schema-free SQL Query Engine for Hadoop, NoSQL and Cloud Storage
++ [Apache Sqoop](https://sqoop.apache.org/): tool designed for efficiently transferring bulk data between Apache Hadoop and structured datastores such as relational databases.
++ Apache Oozie: Workflow Scheduler for Hadoop
++ [Apache Mahout](http://mahout.apache.org/): Apache Mahout(TM) is a distributed linear algebra framework and mathematically expressive Scala DSL designed to let mathematicians, statisticians, and data scientists quickly implement their own algorithms.
++ [Apache Flume](https://flume.apache.org/): Flume is a distributed, reliable, and available service for efficiently collecting, aggregating, and moving large amounts of log data
++ [Apache Beam](https://beam.apache.org/): Implement batch and streaming data processing jobs that run on any execution engine
 
 ## Custom AI Docker
 + [AI-Lab](https://github.com/amineHY/AI-LAB)
