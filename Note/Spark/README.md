@@ -8,6 +8,22 @@ Key terminology:
 - Key: K
 - Value: V
 
+# Getting Started
+## Installation
+
+### on Colab
+```bash
+# Run this on bash with "!"
+apt-get -y install openjdk-8-jre-headless
+pip install pyspark
+```
+```py
+# initiate Spark Context
+from pyspark.sql import SparkSession
+from pyspark import SparkContext, SparkConf
+spark = SparkSession.builder.master("local").getOrCreate()
+sc = SparkContext.getOrCreate()
+```
 
 # RDD Transformation (RDD --> RDD)
 ## rdd.map()
@@ -43,8 +59,33 @@ rdd.reduce(lambda tuple_a,tuple_b: tuple_a if len(a[1]) > len(b[1]) else tuple_b
 
 
 # RDD Stream
+```py
+from pyspark.streaming import StreamingContext
+```
+```py
+# Create a queue of RDDs
+rdd = sc.textFile('./adj_noun_pairs.txt', 8)
+# split the rdd into 5 equal-size parts
+rddQueue = rdd.randomSplit([1,1,1,1,1], 123)
+# Create a StreamingContext with batch interval of 5 seconds
+ssc = StreamingContext(sc, 5)
+# Feed the rdd queue to a DStream
+lines = ssc.queueStream(rddQueue)
+```
+```py
+# YOUR code in one batch
+lines.pprint()
+```
+```py
+ssc.start()
+ssc.awaitTermination(60)
+ssc.stop(False)
+```
 ## ssc.updateStateByKey()
 ```py
+# Provide a checkpointing directory. Required for stateful transformations
+ssc.checkpoint("checkpoint")
+# ...
 ssc.updateStateByKey(lambda list_of_batch_values, state_value: any_value)
 ```
 - This function will execute within two streamming batch.
