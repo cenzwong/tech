@@ -32,12 +32,14 @@ rdd.map(lambda tuple_l: tuple_l[0]).take(5)
 ```
 - map function will take in each LINE of the RDD and do a transformation. 
 - You can access each element from the line level
+- One to one mapping
 
 ## rdd.filter()
 ```py
 rdd.filter(lambda tuple_l: True).take(5)
 ```
-- filter function will take in each LINE and filter out according to the decision made by the return of lambda function
+- Take in each LINE of RDD (Tuple) 
+- Filter according to the decision made by the return of lambda function (You must return True or False statement)
 
 ## rdd.reduceByKey()
 ```py
@@ -58,7 +60,34 @@ rdd.reduce(lambda tuple_a,tuple_b: tuple_a if len(a[1]) > len(b[1]) else tuple_b
 - The input of reduce() will be one line of rdd. rdd_a and rdd_b is two lines of the same rdd
 
 
-# RDD Stream
+# Graphframe
+## Preparation
+You have two way to use graphframe
+1. Import it when starting the shell
+```bash
+./bin/pyspark --packages graphframes:graphframes:0.x.x-sparkx.x-s_x.xx
+```
+2. Import it on-the-go (suitable for using Colab)
+```bash
+# COLAB
+# the pyaddfile only look into the jars file, so we need to put the file inside the jars file, both in pyspark and in full spark
+# Note: I don't know why I need two file in these two place LOL
+# Location is the key for importing this files
+!curl -L -o "/usr/local/lib/python3.6/dist-packages/pyspark/jars/graphframes-0.8.1-spark3.0-s_2.12.jar" \
+http://dl.bintray.com/spark-packages/maven/graphframes/graphframes/0.8.1-spark3.0-s_2.12/graphframes-0.8.1-spark3.0-s_2.12.jar
+!wget http://dl.bintray.com/spark-packages/maven/graphframes/graphframes/0.8.1-spark3.0-s_2.12/graphframes-0.8.1-spark3.0-s_2.12.jar
+```
+```py
+# Python3
+# import library of graphframe
+sc.addPyFile('./graphframes-0.8.1-spark3.0-s_2.12.jar')
+
+from graphframes import *
+from pyspark.sql.functions import *
+```
+
+# Spark Streamming (DStream)
+## Preparation
 ```py
 from pyspark.streaming import StreamingContext
 ```
@@ -70,7 +99,7 @@ rddQueue = rdd.randomSplit([1,1,1,1,1], 123)
 # Create a StreamingContext with batch interval of 5 seconds
 ssc = StreamingContext(sc, 5)
 # Feed the rdd queue to a DStream
-lines = ssc.queueStream(rddQueue)
+dstrm = ssc.queueStream(rddQueue)
 ```
 ```py
 # YOUR code in one batch
@@ -81,13 +110,22 @@ ssc.start()
 ssc.awaitTermination(60)
 ssc.stop(False)
 ```
-## ssc.updateStateByKey()
+## dstrm.updateStateByKey()
 ```py
 # Provide a checkpointing directory. Required for stateful transformations
 ssc.checkpoint("checkpoint")
 # ...
-ssc.updateStateByKey(lambda list_of_batch_values, state_value: any_value)
+dstrm.updateStateByKey(lambda list_of_batch_values, state_value: any_value)
 ```
 - This function will execute within two streamming batch.
 - It take in a LIST of values of SAME key and state_value.
 - You return any kind of value, and updateStateByKey will help you stick back key and back to ssc
+
+## dstrm.transform()
+```py
+# Provide a checkpointing directory. Required for stateful transformations
+ssc.checkpoint("checkpoint")
+# ...
+ssc.transform(lambda rdd: rdd.sortBy(lambda tuple_l: tuple_l[1], False))
+```
+- Use transform() to access any rdd transformations not directly available in SparkStreaming
