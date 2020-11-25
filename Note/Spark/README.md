@@ -3,10 +3,10 @@
 ### This show show the usage of the Spark API in Human language
 
 Key terminology:
-RDD: [(),(),(),()]
-Lines of RDD: (K,V)
-Key: K
-Value: V
+- RDD: [(),(),(),()]
+- Lines of RDD: (K,V)
+- Key: K
+- Value: V
 
 
 # RDD Transformation (RDD --> RDD)
