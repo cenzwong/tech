@@ -77,7 +77,7 @@ You have two way to use graphframe
 http://dl.bintray.com/spark-packages/maven/graphframes/graphframes/0.8.1-spark3.0-s_2.12/graphframes-0.8.1-spark3.0-s_2.12.jar
 !wget http://dl.bintray.com/spark-packages/maven/graphframes/graphframes/0.8.1-spark3.0-s_2.12/graphframes-0.8.1-spark3.0-s_2.12.jar
 ```
-
+3. After activating Spark Context (sc), import graphframe file
 ```py
 # import library of graphframe
 sc.addPyFile('./graphframes-0.8.1-spark3.0-s_2.12.jar')
