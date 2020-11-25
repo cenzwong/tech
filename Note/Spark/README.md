@@ -123,9 +123,15 @@ dstrm.updateStateByKey(lambda list_of_batch_values, state_value: any_value)
 
 ## dstrm.transform()
 ```py
-# Provide a checkpointing directory. Required for stateful transformations
-ssc.checkpoint("checkpoint")
-# ...
-ssc.transform(lambda rdd: rdd.sortBy(lambda tuple_l: tuple_l[1], False))
+dstrm.transform(lambda rdd: rdd.sortBy(lambda tuple_l: tuple_l[1], False))
 ```
 - Use transform() to access any rdd transformations not directly available in SparkStreaming
+- one batch as one RDD
+- return dstrm
+
+## dstrm.foreachRDD()
+```py
+dstrm.foreachRDD(lambda rdd: rdd.dosomething())
+```
+- Use transform() to access any rdd transformations not directly available in SparkStreaming
+- one batch as one RDD
