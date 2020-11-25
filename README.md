@@ -100,6 +100,10 @@
 + TextBlob: most simplified Python NLP libraries – for textual data processing
 + [XGBoost](https://xgboost.readthedocs.io/en/latest/)
 + [LightGBM](https://lightgbm.readthedocs.io/en/latest/Parameters.html)
+#### Graph
++ Deep Graph
++ PyGraph Geometry
++ Spark GrapheFrame
 ### Other
 + Cirq: noisy intermediate-scale quantum (NISQ) circuits
 + NetworkX:  immense solutions for studying and diagnosing graphs of all levels
