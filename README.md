@@ -600,8 +600,10 @@ https://www.scylladb.com/
 + [Apache Mahout](http://mahout.apache.org/): Apache Mahout(TM) is a distributed linear algebra framework and mathematically expressive Scala DSL designed to let mathematicians, statisticians, and data scientists quickly implement their own algorithms.
 + [Apache Flume](https://flume.apache.org/): Flume is a distributed, reliable, and available service for efficiently collecting, aggregating, and moving large amounts of log data
 + [Apache Beam](https://beam.apache.org/): Implement batch and streaming data processing jobs that run on any execution engine
-
-
++ Apache Zookeeper: Coordinates other services; Starts before other services
++ [YARN](https://yarnpkg.com/): "Yet Another Resource Negotiator"; allows other applications to run on Hadoop
++ Apache Oozie: Schedules workflows, manages multiple jobs
++ Apache Pig: Transform and analyze large dataset with Pig Latin
 
 ## Custom AI Docker
 + [AI-Lab](https://github.com/amineHY/AI-LAB)
