@@ -196,6 +196,7 @@
 + Assembly language
 + AHK: AutoHotkey, Free keyboard macro program
 + .Net
++ Chapel: Parallel Programming Language
 ### Encode/Decode Format
 + mp3, aac
 + mp4, H.264, H.265
