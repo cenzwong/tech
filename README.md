@@ -262,6 +262,7 @@ https://www.scylladb.com/
 ### Board
 + Arduino: Uno, Nano, Micro, Due, Yun, MKR, Nano 33, Leonardo | AVR, ARM Cortex-M
 + Espressif: ESP32, ESP8266, ESP01 | Tensilica Xtensa by Cadence
++ Espressif: ESP32-C3 | RISC-V
 + BBC micro:bit | ARM Cortex-M
 + Raspberry Pi: 4/3/Zero W/CM | ARM Cortex-A
 + Orange Pi: Chinese SBC | ARM Cortex-A
@@ -397,6 +398,7 @@ https://www.scylladb.com/
 + Huawei LiteOS
 + Mongoose-os
 + uPython
++ microROS
 ### Communication Channel
 #### LoWPAN
 + Bluetooth Low Energy
