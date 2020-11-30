@@ -197,6 +197,7 @@
 + AHK: AutoHotkey, Free keyboard macro program
 + .Net
 + Chapel: Parallel Programming Language
++ OpenACC
 ### Encode/Decode Format
 + mp3, aac
 + mp4, H.264, H.265
@@ -574,6 +575,8 @@ https://www.scylladb.com/
 + Apache Spark: Batch programming
 + Apache Flink: Stateful Computations over Data Streams
 + OpenMP: multi-platform shared-memory parallel programming in C/C++ and Fortran
++ [OpenACC](https://www.openacc.org/): help the research and developer community advance science by expanding their accelerated and parallel computing skills
++ [Chapel](https://chapel-lang.org/): programming language designed for productive parallel computing at scale
 + Apache Airflow
 + Kubeflow
 + ML Flow
