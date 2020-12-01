@@ -124,6 +124,7 @@
 + [Babylon.js: Powerful, Beautiful, Simple, OpenWeb-Based 3D At Its Best](https://www.babylonjs.com/)
 + [Matter.js: a 2D physics engine for the web](https://brm.io/matter-js/)
 + [D3.js: JavaScript library for manipulating documents based on data](https://d3js.org/)
++ vis.js: A dynamic, browser based visualization library
 #### IoT Hardware related
 + smtp.js
 + tangible.js
@@ -145,6 +146,7 @@
 + [Vue.js: The Progressive JavaScript Framework](https://vuejs.org/)
 + Angular: a platform for building mobile and desktop web applications
 + AngularJS: Superheroic JavaScript MVW Framework
++ Material-UI: React components for faster and easier web development. Build your own design system, or start with Material Design.
 + EmberJS: A framework for ambitious web developers
 + Ionic - Cross-Platform Mobile App Development
 + JQuery: changed the way that millions of people write JavaScript
