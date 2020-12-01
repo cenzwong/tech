@@ -100,6 +100,11 @@
 + TextBlob: most simplified Python NLP libraries – for textual data processing
 + [XGBoost](https://xgboost.readthedocs.io/en/latest/)
 + [LightGBM](https://lightgbm.readthedocs.io/en/latest/Parameters.html)
+#### Parallel/Efficient Computing
++ [pandarallel](https://github.com/nalepae/pandarallel): A simple and efficient tool to parallelize your pandas computation on all your CPUs [blog](https://towardsdatascience.com/pandaral-lel-a-simple-and-efficient-tool-to-parallelize-your-pandas-operations-on-all-your-cpus-bb5ff2a409ae)
++ [threading](https://docs.python.org/3/library/threading.html): Thread-based parallelism
++ [multiprocessing](https://docs.python.org/3/library/multiprocessing.html) — Process-based parallelism
++ Python Build-in [package](https://docs.python.org/3/library/concurrency.html)
 #### Graph
 + Deep Graph
 + PyGraph Geometry
