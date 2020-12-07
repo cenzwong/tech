@@ -125,6 +125,8 @@
 + [Matter.js: a 2D physics engine for the web](https://brm.io/matter-js/)
 + [D3.js: JavaScript library for manipulating documents based on data](https://d3js.org/)
 + vis.js: A dynamic, browser based visualization library
++ [cannon.js](https://github.com/schteppe/cannon.js/wiki/Hello-Cannon.js!)
++ [threejs](https://threejs.org/)
 #### IoT Hardware related
 + smtp.js
 + tangible.js
