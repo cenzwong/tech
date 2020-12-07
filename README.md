@@ -617,6 +617,7 @@ https://www.scylladb.com/
 + [YARN](https://yarnpkg.com/): "Yet Another Resource Negotiator"; allows other applications to run on Hadoop
 + Apache Oozie: Schedules workflows, manages multiple jobs
 + Apache Pig: Transform and analyze large dataset with Pig Latin
++ Hangfire: An easy way to perform background processing in .NET and .NET Core applications.
 
 ## Custom AI Docker
 + [AI-Lab](https://github.com/amineHY/AI-LAB)
