@@ -638,3 +638,6 @@ https://www.scylladb.com/
 + PyTorch
 
 + Map Reduce
+
+## Stack
++ ![](https://media-exp1.licdn.com/dms/image/C4D22AQFxffyEixm0aA/feedshare-shrink_1280-alternative/0/1607484605442?e=1610582400&v=beta&t=nI0NoXssQ8rL0yeZoJJOTffFMXY5W4UCURk6nkwGOlc)
