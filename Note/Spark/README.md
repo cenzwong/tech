@@ -81,7 +81,7 @@ df.printSchema()
 df.show() # only show top 20 result
 df.show(5) # show top 5 result
 df.show(truncate = False) # Don't hide some word, show all word
-df.withColumnRenamed("OldColumnName", "NewColumnName")
+df.withColumnRenamed("OldColumnName", "NewColumnName") # rename
 ```
 ## Data Aggregation
 ### Select
