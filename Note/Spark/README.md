@@ -83,9 +83,15 @@ df.show(5) # show top 5 result
 df.show(truncate = False) # Don't hide some word, show all word
 ```
 ## Data Aggregation
+### Select
+```py
+df.select(df['name'], df['age'] + 1).show()
+
+```
 ### Group By
 ```py
 df.groupby("ColumnName").sum("AnotherColumnName").na.fill(0)
+df.groupBy("age").count().show()
 ```
 ### Order
 ```py
