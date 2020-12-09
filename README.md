@@ -381,6 +381,8 @@ https://www.scylladb.com/
 + EdgeX Foundry
 + IIC: Industrial Internet Consortium
 + FogHorn Edge analytics platform
++ OpenRAN
++ vRAN
 #### Big Company
 + FogHorn
 + Losant
