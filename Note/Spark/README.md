@@ -147,9 +147,12 @@ g = GraphFrame(v, e)
 ```
 ## GraphFrame exploration
 ```py
+g.triplets.show()
 g.vertices.show()
 g.edges.show()
+g.degrees.show()
 g.inDegrees.show()
+g.outDegrees.show()
 ```
 # Spark Streamming (DStream)
 ## Preparation
