@@ -128,10 +128,28 @@ sc.addPyFile('./graphframes-0.8.1-spark3.0-s_2.12.jar')
 from graphframes import *
 from pyspark.sql.functions import *
 ```
+## Prepare GraphFrame
+```py
+v = spark.createDataFrame([
+ ("a", "Alice", 34),
+ ("b", "Bob", 36),
+ ("c", "Charlie", 37)
+], ["id", "name", "age"])
+
+# Edges DataFrame
+e = spark.createDataFrame([
+ ("a", "b", "follow"),
+ ("a", "c", "follow"),
+ ("b", "c", "friend")
+], ["src", "dst", "relationship"])
+# Create a GraphFrame
+g = GraphFrame(v, e)
+```
 ## GraphFrame exploration
 ```py
 g.vertices.show()
 g.edges.show()
+g.inDegrees.show()
 ```
 # Spark Streamming (DStream)
 ## Preparation
