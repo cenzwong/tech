@@ -102,6 +102,7 @@ df.orderBy("ColumnName", ascending = False) # Desending order (Default = True)
 ## SQL Running
 
 # Graphframe
+- [GraphFrames Quick-Start Guide](https://graphframes.github.io/graphframes/docs/_site/user-guide.html)
 ## Preparation
 You have two way to use graphframe
 1. Import it when starting the shell
@@ -127,7 +128,11 @@ sc.addPyFile('./graphframes-0.8.1-spark3.0-s_2.12.jar')
 from graphframes import *
 from pyspark.sql.functions import *
 ```
-
+## GraphFrame exploration
+```py
+g.vertices.show()
+g.edges.show()
+```
 # Spark Streamming (DStream)
 ## Preparation
 ```py
