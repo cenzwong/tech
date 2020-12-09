@@ -1,5 +1,16 @@
 # PySpark
 
+## Basic information
+- Spark Session
+- Spark Core
+- Data Sources: Local FS, HDFS, MapR XD, Hive, HBase or MapR Database, JDBC databases, Cloud storage
+- Data formats: Text, JSON, CSV, Parquet, Sequence File, Protocol Buffer, Object
+- Datasets vs DataFrames
+  - DataFrame: Unknown Schema (DF)
+  - df.as[T] --> turn from df to ds
+  - Dataset: Known Schema (DS)
+  - RDD: Resilient Distributed Datasets
+
 ### This show show the usage of the Spark API in Human language
 
 Key terminology:
