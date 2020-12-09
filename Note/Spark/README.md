@@ -81,12 +81,14 @@ df.printSchema()
 df.show() # only show top 20 result
 df.show(5) # show top 5 result
 df.show(truncate = False) # Don't hide some word, show all word
+df.withColumnRenamed("OldColumnName", "NewColumnName")
 ```
 ## Data Aggregation
 ### Select
 ```py
 df.select(df['name'], df['age'] + 1).show()
-
+df.select('*',
+        (df.column1*df.column2).alias("rename"))
 ```
 ### Group By
 ```py
