@@ -70,6 +70,18 @@ rdd.reduce(lambda tuple_a,tuple_b: tuple_a if len(a[1]) > len(b[1]) else tuple_b
 - If you return one row of rdd, it will cast to a tuple. Also you can return a value.
 - The input of reduce() will be one line of rdd. rdd_a and rdd_b is two lines of the same rdd
 
+# SQL, DataFrame (DF), Datasets (DS)
+## Import CSV
+```py
+df = spark.read.csv('file.csv', header=True, inferSchema=True)
+```
+## Data exploration
+```py
+df.printSchema()
+df.show() # only show top 20 result
+df.show(5) # show top 5 result
+```
+## SQL Running
 
 # Graphframe
 ## Preparation
