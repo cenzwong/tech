@@ -331,6 +331,11 @@ https://www.scylladb.com/
 + SIMCOM: 5G/NBIOT/IIoT module
 + EByte: Chinese LPWAN module
 + Ai-thinker: LPWAN module
+### Intel
++ CPU: Xeon, Core ix, Atom
++ GPU: Xe
++ FPGA: Stratix 10
++ Dedicated: Movidius, Habana(Goya, Gaudi)
 ### STEAM
 + SparkFun: Sensor, IoT, Apollo3 Blue
 + SeeedStudio: Sensor, IoT, Grove
