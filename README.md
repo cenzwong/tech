@@ -336,6 +336,9 @@ https://www.scylladb.com/
 + GPU: Xe
 + FPGA: Stratix 10
 + Dedicated: Movidius, Habana(Goya, Gaudi)
++ Kernel: DL Boost, DAAL, MKL-DNN, MKL
++ Graph: Plaid ML, nGraph
++ Developer Tools: OpenVINO
 ### STEAM
 + SparkFun: Sensor, IoT, Apollo3 Blue
 + SeeedStudio: Sensor, IoT, Grove
