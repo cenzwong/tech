@@ -37,9 +37,12 @@ sc = SparkContext.getOrCreate()
 ```
 
 # RDD Transformation (RDD --> RDD)
+## rdd
+
 ## rdd.map()
 ```py
 rdd.map(lambda tuple_l: tuple_l[0]).take(5)
+wordsReversed = words.map(lambda word: word[::-1])
 ```
 - map function will take in each LINE of the RDD and do a transformation. 
 - You can access each element from the line level
@@ -62,6 +65,7 @@ rdd.reduceByKey(lambda a,b: a if len(a) > len(b) else b).collect()
 - Multiple Same Key, will be combined into one value.
 
 # RDD Action (RDD --> Value)
+## rdd.foreach(lambda tuple_l: tuple_l[0])
 ## rdd.reduce()
 ```py
 rdd.reduce(lambda tuple_a, tuple_b: tuple_a)
