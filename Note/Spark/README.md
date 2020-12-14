@@ -3,9 +3,9 @@
 - [Spark API](https://spark.apache.org/docs/latest/index.html)
 ## Basic information
 - Spark Components
-    - (edge node)Driver program: Spark Session
+    - (edge node)Driver program: Spark Session; {run normal python program?}
     - Cluster manager
-    - (Cluster/Local)Workers: Executor and tasks
+    - (Cluster/Local)Workers: Executor and tasks  {run pyspark program?}
 - Spark Session
     - Tell Spark how and where to access cluster
 - Spark Core
@@ -29,6 +29,13 @@ Key terminology:
 - Key: K
 - Value: V
 
+```py
+# If you know the input of the lambda function, you can unpackage it on define
+
+rdd.map(lambda x: (x[0]+x[1]))
+rdd.map(lambda (x,y): x+y)
+```
+
 # Getting Started
 ## Installation
 
@@ -47,8 +54,6 @@ sc = SparkContext.getOrCreate()
 ```
 
 # RDD Transformation (RDD --> RDD)
-## rdd
-
 ## rdd.map()
 ```py
 rdd.map(lambda tuple_l: tuple_l[0]).take(5)
@@ -123,6 +128,15 @@ rdd.reduceByKey(lambda a,b: a if len(a) > len(b) else b).collect()
 - Spark will help you to do the operation Key by Key
 - Pass in will be the VAL of the corresponding KEY (K,V): You V can be a list of any datatype
 - Multiple Same Key, will be combined into one value.
+
+## rdd.zip()
+```py
+rdd1 = sc.parallelize([5,0,0,3])
+rdd2 = sc.parallelize([3,4,6,2])
+rdd1.zip(rdd2).take(5)
+# [(5, 3), (0, 4), (0, 6), (3, 2)]
+```
+- make it horizontal zipping
 
 # RDD Action (RDD --> Value)
 ## rdd.foreach(lambda tuple_l: tuple_l[0])
@@ -268,3 +282,55 @@ dstrm.foreachRDD(lambda rdd: rdd.dosomething())
 ```
 - Use transform() to access any rdd transformations not directly available in SparkStreaming
 - one batch as one RDD
+
+# Exam Sample Code Solution
+## Q: 
+In social networks, "zombies" are users that follow many other users, but are not followed by anybody. Given the following graph representing a social network, find the name of the largest zombie, i.e., the user who follows the most other users but is not followed by anybody. 
+```py
+from graphframes import *
+
+# Vertices DataFrame
+v = spark.createDataFrame([
+ ("a", "Alice", 34),
+ ("b", "Bob", 36),
+ ("c", "Charlie", 37),
+ ("d", "David", 29),
+ ("e", "Esther", 32),
+ ("f", "Fanny", 38),
+ ("g", "Gabby", 60)
+], ["id", "name", "age"])
+
+# Edges DataFrame
+e = spark.createDataFrame([
+ ("a", "b", "follow"),
+ ("c", "a", "friend"),
+ ("b", "c", "follow"),
+ ("d", "a", "follow"),
+ ("f", "c", "follow"),
+ ("f", "d", "follow"),
+ ("f", "b", "follow"),
+ ("c", "d", "follow"),
+ ("g", "a", "friend"),
+ ("g", "d", "friend"),
+ ("g", "c", "friend"),
+ ("e", "a", "follow"),
+ ("e", "d", "follow")
+], ["src", "dst", "relationship"])
+# Create a GraphFrame
+g = GraphFrame(v, e)
+
+# FILL IN YOUR CODE HERE
+e1 = g.edges.filter("relationship = 'follow'")
+v1 = e1.groupBy('dst').count().select('dst')
+v2 = e1.groupBy('src').count().orderBy('count', ascending=False)
+v3 = v2.select('src').subtract(v1.select('dst'))
+v4 = v3.join(v2,'src').first()
+e.filter(e['src']==v4.src).select('dst').show()
+# +---+
+# |dst|
+# +---+
+# |  c|
+# |  d|
+# |  b|
+# +---+
+```
