@@ -48,12 +48,44 @@ wordsReversed = words.map(lambda word: word[::-1])
 - You can access each element from the line level
 - One to one mapping
 
+## rdd.mapPartitions()
+```py
+def f(iterator):
+  result = 0
+  for tuple_l in iterator:
+    yield tuple_l # this return every element
+
+rdd.mapPartitions(f).take(20)
+
+def f(iterator):
+  result = 0
+  for tuple_l in iterator:
+    pass
+  yield tuple_l # this return last element of each partition
+
+rdd.mapPartitions(f).take(20)
+```
+- input para is iterator
+- access each line of tuple via for interator
+- interator is storing one Partitions of data!
+- yield is used, you will receive a rdd at the end
+
+
+
 ## rdd.filter()
 ```py
 rdd.filter(lambda tuple_l: True).take(5)
 ```
 - Take in each LINE of RDD (Tuple) 
 - Filter according to the decision made by the return of lambda function (You must return True or False statement)
+
+## rdd.sortBy()
+```py
+rdd.sortBy(lambda tuple_l: tuple_l[1], True).take(5)
+```
+- Sort according to tuple_l[1] result 
+- True: Asscending, False: Desending
+
 
 ## rdd.reduceByKey()
 ```py
