@@ -70,7 +70,25 @@ rdd.mapPartitions(f).take(20)
 - interator is storing one Partitions of data!
 - yield is used, you will receive a rdd at the end
 
+## rdd.mapPartitionsWithIndex()
+```py
+def f(index,iterator):
+  index # is just a number
+  for tuple_l in iterator:
+    pass
+  yield tuple_l # this return last element of each partition
 
+rdd.mapPartitionsWithIndex(f).take(20)
+```
+- nearly the same as mapPartitions()
+
+## rdd.flatMap()
+```py
+rdd.flatMap(lambda x: (x[0], x[1]+1)).take(5)
+```
+- Take in each LINE of RDD (Tuple) 
+- it turn all your output, flatten it to numbers of elements
+- the output will be one big rdd without tuple
 
 ## rdd.filter()
 ```py
