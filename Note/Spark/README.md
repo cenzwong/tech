@@ -158,6 +158,7 @@ g.degrees.show()
 g.inDegrees.show()
 g.outDegrees.show()
 ```
+## GraphFrame 
 # Spark Streamming (DStream)
 ## Preparation
 ```py
