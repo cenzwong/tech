@@ -1,8 +1,18 @@
 # PySpark
-
+- [pySpark API](https://spark.apache.org/docs/latest/api/python/pyspark.html)
+- [Spark API](https://spark.apache.org/docs/latest/index.html)
 ## Basic information
+- Spark Components
+    - (edge node)Driver program: Spark Session
+    - Cluster manager
+    - (Cluster/Local)Workers: Executor and tasks
 - Spark Session
+    - Tell Spark how and where to access cluster
 - Spark Core
+    - Task Scheduling
+    - Memory Management
+    - Fault recovery
+    - interacting within storage system
 - Data Sources: Local FS, HDFS, MapR XD, Hive, HBase or MapR Database, JDBC databases, Cloud storage
 - Data formats: Text, JSON, CSV, Parquet, Sequence File, Protocol Buffer, Object
 - Datasets vs DataFrames
