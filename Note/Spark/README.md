@@ -269,6 +269,7 @@ df.printSchema()
 df.show() # only show top 20 result
 df.show(5) # show top 5 result
 df.show(truncate = False) # Don't hide some word, show all word
+df.count() # return number of data
 df.withColumnRenamed("OldColumnName", "NewColumnName") # rename
 ```
 ## Data Aggregation
@@ -277,16 +278,22 @@ df.withColumnRenamed("OldColumnName", "NewColumnName") # rename
 df.select(df['name'], df['age'] + 1).show()
 df.select('*',
         (df.column1*df.column2).alias("rename"))
+df.select(df['Country']).distinct().show()
 ```
 ### Group By
 ```py
-df.groupby("ColumnName").sum("AnotherColumnName").na.fill(0)
+df.groupBy("ColumnName").sum("AnotherColumnName").na.fill(0)
 df.groupBy("age").count().show()
 ```
 ### Order
 ```py
 df.orderBy("ColumnName", ascending = False) # Desending order (Default = True)
 ```
+### Filter
+```py
+df.filter("ColumnName = 'Value'")
+```
+
 ## SQL Running
 
 ---
