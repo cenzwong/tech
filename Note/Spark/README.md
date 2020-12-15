@@ -20,6 +20,17 @@
   - df.as[T] --> turn from df to ds
   - Dataset: Known Schema (DS)
   - RDD: Resilient Distributed Datasets
+- Closure
+    ``` python
+    # sum = 0 # this won't work, because it do not send to worker
+    sum = sc.accumulator(0) # spark object that will send to worker
+    rdd = sc.parallelize(range(20),2) 
+    def update_sum(x):
+        global sum
+        sum += x
+    rdd.foreach(update_sum)
+    print(sum) # 190
+    ```
 
 ### This show show the usage of the Spark API in Human language
 
@@ -97,6 +108,16 @@ rdd.mapPartitionsWithIndex(f).take(20)
 ```
 - nearly the same as mapPartitions()
 
+## rdd.glom()
+```py
+rdd = sc.parallelize(range(8),2) 
+print(rdd.collect())
+# [0, 1, 2, 3, 4, 5, 6, 7]
+print(rdd.glom().collect())
+# [[0, 1, 2, 3], [4, 5, 6, 7]]
+```
+- Wraping partitions into single line (list)
+
 ## rdd.flatMap()
 ```py
 rdd.flatMap(lambda x: (x[0], x[1]+1)).take(5)
@@ -126,11 +147,54 @@ rdd.sortBy(lambda tuple_l: tuple_l[1], True).take(5)
 ```py
 rdd.reduceByKey(lambda val_a, val_b: val_a+val_a).take(5)
 rdd.reduceByKey(lambda a,b: a if len(a) > len(b) else b).collect()
+
+from operator import add
+rdd.reduceByKey(add).take(5)
 ```
 - Spark will help you to do the operation Key by Key
 - Pass in will be the VAL of the corresponding KEY (K,V): You V can be a list of any datatype
 - Multiple Same Key, will be combined into one value.
 
+## rdd.join(rdd2)/rdd.fullOuterJoin(rdd2)/rdd.leftOuterJoin(rdd2)/rdd.rightOuterJoin(rdd2)
+```py
+rdd = sc.parallelize([("K1", "v1"),("K2", "v1"),("K3", "v1"),("K4", "v1")]) 
+rdd2 = sc.parallelize([("K1", ("V11","V22")),("K2", ("V21","V32")),("K1", ("V13","V24")),("K4", ("V11","V22")), ("K5", ("V11","V22"))]) 
+rdd.join(rdd2).collect()
+"""
+[('K1', ('v1', ('V11', 'V22'))),
+ ('K1', ('v1', ('V13', 'V24'))),
+ ('K2', ('v1', ('V21', 'V32'))),
+ ('K4', ('v1', ('V11', 'V22')))]
+"""
+rdd.fullOuterJoin(rdd2).collect()
+"""
+[('K1', ('v1', ('V11', 'V22'))),
+ ('K1', ('v1', ('V13', 'V24'))),
+ ('K2', ('v1', ('V21', 'V32'))),
+ ('K3', ('v1', None)),
+ ('K4', ('v1', ('V11', 'V22'))),
+ ('K5', (None, ('V11', 'V22')))]
+"""
+rdd.leftOuterJoin(rdd2).collect()
+"""
+[('K1', ('v1', ('V11', 'V22'))),
+ ('K1', ('v1', ('V13', 'V24'))),
+ ('K2', ('v1', ('V21', 'V32'))),
+ ('K3', ('v1', None)),
+ ('K4', ('v1', ('V11', 'V22')))]
+"""
+rdd.rightOuterJoin(rdd2).collect()
+"""
+[('K1', ('v1', ('V11', 'V22'))),
+ ('K1', ('v1', ('V13', 'V24'))),
+ ('K2', ('v1', ('V21', 'V32'))),
+ ('K4', ('v1', ('V11', 'V22'))),
+ ('K5', (None, ('V11', 'V22')))]
+"""
+```
+- Join By Key.
+-  (K, V) and (K, W), returns a dataset of (K, (V, W))
+
 ## rdd.zip()
 ```py
 rdd1 = sc.parallelize([5,0,0,3])
@@ -148,8 +212,37 @@ rdd1.zip(rdd2).take(5)
 # [(5, 3), (0, 4), (0, 6), (3, 2)]
 ```
 - make it horizontal zipping
+
+## rdd.union()
+```py
+rdd1 = sc.parallelize(["apple","cat","duck"])
+rdd2 = sc.parallelize(["apple","boy","cat"])
+rdd1.union(rdd2).take(10)
+# >> ['apple', 'cat', 'duck', 'apple', 'boy', 'cat']
+```
+- This union is just append two rdd togather
+
+## rdd.intersection()
+```py
+rdd1 = sc.parallelize(["apple","cat","duck"])
+rdd2 = sc.parallelize(["apple","boy","cat"])
+rdd1.intersection(rdd2).take(10)
+# >> ['cat', 'apple']
+```
+- return only element they share
+
+## rdd.distinct()
+```py
+rdd2 = sc.parallelize(["apple","boy","cat", "apple"])
+rdd2.distinct().take(10)
+# >> ['apple', 'boy', 'cat']
+```
+- return distinct element
 
 # RDD Action (RDD --> Value)
+## rdd.take(_int)/collect()
+- RDD to Python list
+
 ## rdd.foreach(lambda tuple_l: tuple_l[0])
 ## rdd.reduce()
 ```py
