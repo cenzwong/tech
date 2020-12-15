@@ -206,6 +206,7 @@
 + AHK: AutoHotkey, Free keyboard macro program
 + .Net
 + Chapel: Parallel Programming Language
++ [NESL](https://www.cs.cmu.edu/~scandal/nesl.html): A Parallel Programming Language
 + OpenACC
 ### Encode/Decode Format
 + mp3, aac
@@ -587,7 +588,7 @@ https://www.scylladb.com/
 + supernova
 + [Lobe](https://lobe.ai): No code Object recoginition
 + Miro
-+ 
++
 +++
 ## Data science/AI/ML/framework
 + Tensorflow
@@ -648,4 +649,8 @@ https://www.scylladb.com/
 + Map Reduce
 
 ## Stack
-+ ![](https://media-exp1.licdn.com/dms/image/C4D22AQFxffyEixm0aA/feedshare-shrink_1280-alternative/0/1607484605442?e=1610582400&v=beta&t=nI0NoXssQ8rL0yeZoJJOTffFMXY5W4UCURk6nkwGOlc)
++ ![stack](https://media-exp1.licdn.com/dms/image/C4D22AQFxffyEixm0aA/feedshare-shrink_1280-alternative/0/1607484605442?e=1610582400&v=beta&t=nI0NoXssQ8rL0yeZoJJOTffFMXY5W4UCURk6nkwGOlc)
+
+## Vendor/SaaS
++ [Algolia](https://www.algolia.com/): Site Search & Discovery powered by AI
++ [Onfido](https://onfido.com/):  Document ID & Facial Biometrics Verification SaaS

@@ -263,6 +263,29 @@ rdd.reduce(lambda tuple_a,tuple_b: tuple_a if len(a[1]) > len(b[1]) else tuple_b
 ```py
 df = spark.read.csv('file.csv', header=True, inferSchema=True)
 ```
+## Under DataFrame
+```py
+# rdd --> Dataframe
+rdd = sc.parallelize([('Michael', 29), ('Andy', 30), ('Justin', 19)])
+df = spark.createDataFrame(rdd)
+df = spark.createDataFrame(rdd, ['_1', '_2'])
+"""
++-------+---+
+|     _1| _2|
++-------+---+
+|Michael| 29|
+|   Andy| 30|
+| Justin| 19|
++-------+---+
+"""
+df.rdd.take(3)
+"""
+[Row(_1='Michael', _2=29),
+ Row(_1='Andy', _2=30),
+ Row(_1='Justin', _2=19)]
+"""
+
+```
 ## Data exploration
 ```py
 df.printSchema()
@@ -271,6 +294,7 @@ df.show(5) # show top 5 result
 df.show(truncate = False) # Don't hide some word, show all word
 df.count() # return number of data
 df.withColumnRenamed("OldColumnName", "NewColumnName") # rename
+df.explain()
 ```
 ## Data Aggregation
 ### Select
