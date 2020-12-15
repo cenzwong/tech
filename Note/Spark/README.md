@@ -322,13 +322,14 @@ df.filter(df.ColumnName == 'Value')
 ```
 
 ### Join
-
+- dummy
 
 ## SQL Running
 - [Ref](https://spark.apache.org/docs/latest/sql-getting-started.html#running-sql-queries-programmatically)
 
 ## Create Datasets
 - [Ref](https://spark.apache.org/docs/latest/sql-getting-started.html#creating-datasets)
+
 ---
 # Graphframe
 - [GraphFrames Quick-Start Guide](https://graphframes.github.io/graphframes/docs/_site/user-guide.html)
@@ -374,6 +375,7 @@ e = spark.createDataFrame([
 # Create a GraphFrame
 g = GraphFrame(v, e)
 ```
+- vertex and edge
 ## GraphFrame exploration
 ```py
 g.triplets.show()
@@ -383,7 +385,8 @@ g.degrees.show()
 g.inDegrees.show()
 g.outDegrees.show()
 ```
-## GraphFrame 
+- GraphFrame is based on Dataframe
+- g.edges, g.vertices are two Dataframe
 
 ---
 # Spark Streamming (DStream)
