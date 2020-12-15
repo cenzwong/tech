@@ -295,7 +295,10 @@ df.filter("ColumnName = 'Value'")
 ```
 
 ## SQL Running
+- [Ref](https://spark.apache.org/docs/latest/sql-getting-started.html#running-sql-queries-programmatically)
 
+## Create Datasets
+- [Ref](https://spark.apache.org/docs/latest/sql-getting-started.html#creating-datasets)
 ---
 # Graphframe
 - [GraphFrames Quick-Start Guide](https://graphframes.github.io/graphframes/docs/_site/user-guide.html)
