@@ -316,10 +316,12 @@ df.orderBy("ColumnName", ascending = False) # Desending order (Default = True)
 ```
 ### Filter
 ```py
-# where() is an alias for filter().
+# where() is an alias for filter()
+df.filter("ColumnName < 'Value'")
 df.filter("ColumnName = 'Value'")
 df.filter(df.ColumnName == 'Value')
 ```
+- Check the number of equal sign!!
 
 ### Join
 - dummy
@@ -378,15 +380,32 @@ g = GraphFrame(v, e)
 - vertex and edge
 ## GraphFrame exploration
 ```py
-g.triplets.show()
-g.vertices.show()
-g.edges.show()
+g.triplets.show() # display all
+g.vertices.show() # display vertices
+g.edges.show()    # display edges
 g.degrees.show()
 g.inDegrees.show()
 g.outDegrees.show()
 ```
 - GraphFrame is based on Dataframe
 - g.edges, g.vertices are two Dataframe
+
+## Motif finding "(a)-[e]->(b)"
+```py
+g.find("(a)-[]->(b);(b)-[]->(a)").filter("a.id < b.id") # find the mutual friend connection
+g.find("(a)-[]->(b); !(b)-[]->(a)").filter("a.id < b.id") # I follow you, you not follow me
+g.find("!()-[]->(a)") # find vertices without incoming edges
+g.find("(a)-[e]->(b)").filter("e.relationship = 'follow'")
+```
+### Filter
+```py
+g.filterVerices("columnName > 30")
+g.filterEdges("columnName = 30")
+g.dropIsolatedVertices()
+```
+- the filter equal sign is one  "=" not double equal sign
+
+
 
 ---
 # Spark Streamming (DStream)
