@@ -633,7 +633,7 @@ https://www.scylladb.com/
 
 ## Custom AI Docker
 + [AI-Lab](https://github.com/amineHY/AI-LAB)
-
++ [awesome-parallel-computing](https://github.com/taskflow/awesome-parallel-computing#learning-resources)
 + [Github Link]()
 + Sketchy
 + tindercad
