@@ -108,6 +108,8 @@ rdd.flatMap(lambda x: (x[0], x[1]+1)).take(5)
 ## rdd.filter()
 ```py
 rdd.filter(lambda tuple_l: True).take(5)
+rdd.filter(lambda x: x * x > t ).take(5)
+rdd.filter(lambda x: len(x) <> 5).take(5)
 ```
 - Take in each LINE of RDD (Tuple) 
 - Filter according to the decision made by the return of lambda function (You must return True or False statement)
@@ -138,6 +140,15 @@ rdd1.zip(rdd2).take(5)
 ```
 - make it horizontal zipping
 
+## rdd.zip()
+```py
+rdd1 = sc.parallelize([5,0,0,3])
+rdd2 = sc.parallelize([3,4,6,2])
+rdd1.zip(rdd2).take(5)
+# [(5, 3), (0, 4), (0, 6), (3, 2)]
+```
+- make it horizontal zipping
+
 # RDD Action (RDD --> Value)
 ## rdd.foreach(lambda tuple_l: tuple_l[0])
 ## rdd.reduce()
@@ -148,6 +159,12 @@ rdd.reduce(lambda tuple_a,tuple_b: tuple_a if len(a[1]) > len(b[1]) else tuple_b
 - If you return one row of rdd, it will cast to a tuple. Also you can return a value.
 - The input of reduce() will be one line of rdd. rdd_a and rdd_b is two lines of the same rdd
 
+## rdd.cache()/persist()
+- [Spark](https://spark.apache.org/docs/latest/rdd-programming-guide.html#rdd-persistence)
+- [pySpark](https://spark.apache.org/docs/latest/api/python/pyspark.html#pyspark.RDD.persist)
+- Cache is just the shorthand of persist
+
+---
 # SQL, DataFrame (DF), Datasets (DS)
 ## Import CSV
 ```py
@@ -179,6 +196,7 @@ df.orderBy("ColumnName", ascending = False) # Desending order (Default = True)
 ```
 ## SQL Running
 
+---
 # Graphframe
 - [GraphFrames Quick-Start Guide](https://graphframes.github.io/graphframes/docs/_site/user-guide.html)
 ## Preparation
@@ -233,6 +251,8 @@ g.inDegrees.show()
 g.outDegrees.show()
 ```
 ## GraphFrame 
+
+---
 # Spark Streamming (DStream)
 ## Preparation
 ```py
