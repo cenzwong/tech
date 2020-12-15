@@ -279,6 +279,7 @@ df.select(df['name'], df['age'] + 1).show()
 df.select('*',
         (df.column1*df.column2).alias("rename"))
 df.select(df['Country']).distinct().show()
+df.select(df['Product'], lit('OK')).show() # Literal:constant OK on that column
 ```
 ### Group By
 ```py
@@ -291,8 +292,13 @@ df.orderBy("ColumnName", ascending = False) # Desending order (Default = True)
 ```
 ### Filter
 ```py
+# where() is an alias for filter().
 df.filter("ColumnName = 'Value'")
+df.filter(df.ColumnName == 'Value')
 ```
+
+### Join
+
 
 ## SQL Running
 - [Ref](https://spark.apache.org/docs/latest/sql-getting-started.html#running-sql-queries-programmatically)
