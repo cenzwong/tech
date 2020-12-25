@@ -5,4 +5,8 @@ snap install ipfs
 ipfs
 ```
 
-GUI will be in localhost:5001
+GUI will be in localhost:5001/webui
+```shell
+ipfs daemon
+
+```
