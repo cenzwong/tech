@@ -31,6 +31,7 @@
     rdd.foreach(update_sum)
     print(sum) # 190
     ```
+- Run Python Script: bin/spark-submit myscript/helloworld.py
 
 ### This show show the usage of the Spark API in Human language
 
