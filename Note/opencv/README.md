@@ -30,3 +30,5 @@ development files for opencv
 ```bash
 sudo apt install libopencv-dev
 ```
+## Method Four
+https://www.pyimagesearch.com/2018/09/19/pip-install-opencv/
