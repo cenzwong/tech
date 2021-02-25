@@ -66,6 +66,13 @@ sc = SparkContext.getOrCreate()
 ```
 
 # RDD Transformation (RDD --> RDD)
+## Data preparation
+```py
+txt = sc.textFile("./myText.txt",4)
+hdfs = sc.textFile("hdfs://[url]:[port]/path/to/file.txt",8)
+numbers = sc.parallelize(range(1,100),8)
+```
+
 ## rdd.map()
 ```py
 rdd.map(lambda tuple_l: tuple_l[0]).take(5)
