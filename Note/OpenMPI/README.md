@@ -26,6 +26,7 @@ echo "alias mpiexec='mpiexec -mca btl_base_warn_component_unused 0'" >> ~/.bashr
 ```
 ## Hello World case
 - Cenz Framework
+\
 ```c++
 // mpic++ -std=c++11 playground.cpp -o playground
 // mpiexec -n 4 ./playground
