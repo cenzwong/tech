@@ -1,5 +1,10 @@
 # Getting Started in OpenMPI
 ## Must-know note
+### INstallation
+```bash
+sudo apt-get install openmpi-bin openmpi-doc libopenmpi-dev
+```
+
 ### Compilation
 ```bash
 # C
