@@ -2,6 +2,8 @@
 ## Must-know note
 ### INstallation
 ```bash
+# first install C++ compiler
+sudo apt install build-essential
 sudo apt-get install openmpi-bin openmpi-doc libopenmpi-dev
 ```
 
