@@ -230,10 +230,10 @@ int MPI_Send(const void *buf, int count, MPI_Datatype datatype, int dest,
 
 //
 // sending string
-MPI_Send(str_addr, strlen(str_addr)+1, MPI_CHAR, 0, 0, MPI_COMM_WORLD);
+MPI_Send(str_addr, strlen(str_addr)+1, MPI_CHAR, q, 0, MPI_COMM_WORLD);
 MPI_Recv(recv_greeting, 100, MPI_CHAR, q, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
 
-MPI_Send(&my_rank, 1, MPI_INT, 0, 0, MPI_COMM_WORLD); 
+MPI_Send(&my_rank, 1, MPI_INT, q, 0, MPI_COMM_WORLD); 
 MPI_Recv(&my_recv, 1, MPI_INT, q, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
 ```
 ### MPI_Datatype
