@@ -332,6 +332,7 @@ https://www.scylladb.com/
 + SIMCOM: 5G/NBIOT/IIoT module
 + EByte: Chinese LPWAN module
 + Ai-thinker: LPWAN module
++ quectel: 
 ### Intel
 + CPU: Xeon, Core ix, Atom
 + GPU: Xe
