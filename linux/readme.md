@@ -30,3 +30,9 @@ unmount
 ```
 scp text.txt admin@192.168.0.10:~
 ```
+
+##adding pathh
+```
+sudoedit /etc/environment
+source /etc/environment
+```
