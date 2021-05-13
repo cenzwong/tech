@@ -1,7 +1,18 @@
 # Linux
 
-## Check Process
+## apt
+```
+# change the repo from hk to global
+sudo sed -i -e 's,http://hk.archive.ubuntu.com/ubuntu,http://archive.ubuntu.com/ubuntu,g' /etc/apt/sources.list
+sudo apt update && sudo apt upgrade -y
+```
 
+## Check Process
+```
+nvidia-smi
+top
+htop
+```
 
 ## Disk 
 ```
