@@ -12,6 +12,7 @@ sudo apt update && sudo apt upgrade -y
 nvidia-smi
 top
 htop
+jps # java process
 ```
 
 ## Disk 
