@@ -370,3 +370,50 @@ int MPI_Allgather(
 );
 ```
 ![image](https://user-images.githubusercontent.com/44856918/118971022-7fcdd080-b9a1-11eb-963a-c45077dc82ce.png)
+## Datatype
+```c
+/*
+ This piece of code allow you to create your own datatype in MPI
+*/
+MPI_Datatype mpi_dt_GraphMetaInfo;
+MPI_Type_contiguous(2, MPI_INT, &mpi_dt_GraphMetaInfo);
+MPI_Type_commit(&mpi_dt_GraphMetaInfo);
+
+int MPI_Type_create_struct(
+   int count /* in */, int ary_blocklengths[] /* in */,
+   MPI_Aint ary_displacements[] /* in */, MPI_Datatype ary_types[] /* in */, MPI_Datatype* new_type_p /* out */
+);
+
+int MPI_Get_address(void* location_p /* in */, MPI_Aint* address_p /* out */);
+int MPI_Type_commit(MPI_Datatype* new_mpi_t_p /* in/out */);
+int MPI_Type_free(MPI_Datatype* old_mpi_t_p /* in/out */);
+
+//example
+void build_mpi_type(
+   double* a_p  /* in */, double* b_p  /* in */, double* n_p  /* in */,
+   MPI_Datatype* input_mpi_t_p /* out */
+   ){
+   int ary_blocklengths[3] = {1,1,1};
+   MPI_Datatype ary_types[3] = {MPI_DOUBLE, MPI_DOUBLE, MPI_INT};
+   MPI_Aint a_addr, b_addr, c_addr;
+   MPI_Aint ary_displacements[3] = {0};
+   MPI_Get_address(a_p, &a_addr); MPI_Get_address(b_p, &b_addr); MPI_Get_address(n_p, &n_addr);
+   ary_displacements[1] = b_addr - a_addr; ary_displacements[2] = n_addr - a_addr;
+   MPI_Type_create_struct(3, ary_blocklengths, ary_displacements, ary_types, input_mpi_t_p);
+   MPI_Type_commit(input_mpi_t_p);
+}
+
+```
+
+## Time measurement
+```c
+double MPI_Wtime(void);
+//example
+double start, finish;
+start = MPI_Wtime();
+finish = MPI_Wtime();
+```
+## Program Flow
+```c
+int MPI_Barrier(MPI_Comm comm /* in */);
+```
