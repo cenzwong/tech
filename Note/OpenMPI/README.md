@@ -322,12 +322,6 @@ int MPI_Get_count(
    MPI_Status* status_p /* in */, MPI_Datatype type /* in */, int* count_p /* out */
 );
 
-int MPI_Bcast(
-   void* data_p /* in/out */, int count /* in */, MPI_Datatype datatype /* in */, 
-   int src_proc /* in */, 
-   MPI_Comm comm /* in */
-);
-
 MPI_Status status;
 status.MPI_SOURCE;
 status.MPI_TAG;
@@ -348,5 +342,19 @@ int MPI_Allreduce(
    MPI_Datatype datatype /* in */,  MPI_Op operator /* in */,
    MPI_Comm comm /* in */
 );
+
+int MPI_Bcast(
+   void* data_p /* in/out */, int count /* in */, MPI_Datatype datatype /* in */, 
+   int src_proc /* in */, 
+   MPI_Comm comm /* in */
+);
+
+int MPI_Scatter(
+   void* send_buf_p /* in */, int send_count /* in */, MPI_Datatype send_type /* in */,
+   void* recv_buf_p /* out */, int recv_count /* in */, MPI_Datatype recv_type /* in */,
+   int src_proc /* in */, 
+   MPI_Comm comm /* in */
+);
+
 ```
 ![image](https://user-images.githubusercontent.com/44856918/118971022-7fcdd080-b9a1-11eb-963a-c45077dc82ce.png)
