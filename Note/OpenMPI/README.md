@@ -278,4 +278,43 @@ std::cout << my_rank << ":" << recv_data[0] << std::endl;
 // 3:44
 // 1:22
 ```
+# API
+## Init & Finalize
+```c
+int MPI_Init(int* argc_p /* in/out */, char*** argv_p /* in/out */);
+int MPI_Finalize(void);
+//example
+#include <mpi.h>
+int main(int argc, char* argv[]){
+   MPI_Init(&argc, &argv);
+   
+   MPI_Finalize();
+}
+```
+## Env Variable
+```c
+MPI_COMM_WORLD
+int MPI_Comm_size(MPI_Comm comm /* in */ , int* comm_sz_p /* out */);
+int MPI_Comm_rank(MPI_Comm comm /* in */ , int* my_rank_p /* out */);
+//example
+int comm_sz; /* Number of processes */
+int my_rank; /* My process rank */
+MPI_Comm_size(MPI_COMM_WORLD , &comm_sz);
+MPI_Comm_rank(MPI_COMM_WORLD , &my_rank);
+```
+### Datatype
+![image](https://user-images.githubusercontent.com/44856918/118968520-97f02080-b99e-11eb-8448-cc72f4d4ac07.png)
 
+## Communication
+```c
+int MPI_Send(
+   void* msg_buf_p /* in */,  int msg_size  /* in */,  MPI_Datatype msg_type /* in */,
+   int dest /* in */,         int tag /* in */,       MPI_Comm communicator /* in */
+);
+
+int MPI_Recv(
+   void* msg_buf_p /* out */,    int buf_size /* in */,  MPI_Datatype buf_type /* in */,
+   int src /* in */,             int tag /* in */,       MPI_Comm communicator /* in */,
+   MPI_Status* status_p /* out */
+);
+```
