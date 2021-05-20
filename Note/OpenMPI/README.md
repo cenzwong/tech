@@ -329,5 +329,10 @@ int MPI_Reduce(
    MPI_Datatype datatype /* in */,  MPI_Op operator /* in */,        int dest_process /* in */,
    MPI_Comm comm /* in */
 );
+int MPI_Allreduce(
+   void* input_data_p /* in */,     void* output_data_p /* out */,   int count /* in */,
+   MPI_Datatype datatype /* in */,  MPI_Op operator /* in */,
+   MPI_Comm comm /* in */
+);
 ```
 ![image](https://user-images.githubusercontent.com/44856918/118971022-7fcdd080-b9a1-11eb-963a-c45077dc82ce.png)
