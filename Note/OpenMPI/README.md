@@ -321,6 +321,12 @@ int MPI_Recv(
 int MPI_Get_count(
    MPI_Status* status_p /* in */, MPI_Datatype type /* in */, int* count_p /* out */
 );
+
+int MPI_Bcast(
+   void* data_p /* in/out */, int count /* in */, MPI_Datatype datatype /* in */, 
+   int src_proc /* in */, 
+   MPI_Comm comm /* in */
+);
 ```
 ## Collective Communication
 ```c
