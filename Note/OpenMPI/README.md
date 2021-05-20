@@ -328,6 +328,22 @@ status.MPI_TAG;
 
 MPI_ANY_SOURCE
 MPI_ANY_TAG
+
+// Synchronous
+int MPI_Ssend(
+   void* msg_buf_p /* in */,  int msg_size  /* in */,  MPI_Datatype msg_type /* in */,
+   int dest /* in */,         int tag /* in */,       MPI_Comm communicator /* in */
+);
+
+int MPI_Sendrecv(
+   void* send_buf_p /* in */,  int send_buf_size  /* in */,  MPI_Datatype send_buf_type /* in */,
+   int dest /* in */,         int send_tag /* in */,       
+   void* recv_buf_p /* out */,    int recv_buf_size /* in */,  MPI_Datatype recv_buf_type /* in */,
+   int src /* in */,             int recv_tag /* in */,       
+   MPI_Status* status_p /* out */,
+   MPI_Comm communicator /* in */
+);
+
 ```
 ## Collective Communication
 ```c
