@@ -327,6 +327,13 @@ int MPI_Bcast(
    int src_proc /* in */, 
    MPI_Comm comm /* in */
 );
+
+MPI_Status status;
+status.MPI_SOURCE;
+status.MPI_TAG;
+
+MPI_ANY_SOURCE
+MPI_ANY_TAG
 ```
 ## Collective Communication
 ```c
