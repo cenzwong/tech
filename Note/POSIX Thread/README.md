@@ -83,3 +83,22 @@ int sem_destroy(sem_t* semaphore_p /* in/out */);
 int sem_post(sem_t* semaphore_p /* in/out */);
 int sem_wait(sem_t* semaphore_p /* in/out */);
 ```
+## Read-Write Locks
+```c
+pthread_rwlock_rdlock(&rwlock);
+pthread_rwlock_wrlock(&rwlock);
+pthread_rwlock_unlock(&rwlock);
+```
+## notes
+There are some thread-unsafe function like strtok(), and has a replacemment of strtok_r()
+
+
+
+
+
+
+
+
+
+
+
