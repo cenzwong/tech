@@ -317,4 +317,8 @@ int MPI_Recv(
    int src /* in */,             int tag /* in */,       MPI_Comm communicator /* in */,
    MPI_Status* status_p /* out */
 );
+
+int MPI_Get_count(
+   MPI_Status* status_p /* in */, MPI_Datatype type /* in */, int* count_p /* out */
+);
 ```
