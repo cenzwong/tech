@@ -64,3 +64,22 @@ int pthread_create(
    void*       arg_p                      /* in */
 );
 ```
+## Mutex (Mutual exclusion)
+```c
+int pthread_mutex_init(
+   pthread_mutex_t*              mutex_p     /* out */,
+   const pthread_mutexattr_t*    attr_p      /* in */
+);
+int pthread_mutex_lock(pthread_mutex_t* mutex_p /* in/out */);
+int pthread_mutex_unlock(pthread_mutex_t* mutex_p /* in/out */);
+int pthread_mutex_destroy(pthread_mutex_t* mutex_p /* in/out */);
+```
+## Semaphore
+```c
+#include <semaphore.h>
+
+int sem_init(sem_t* semaphore_p /* out */, int shared /* in */, unsigned initial_val /* in */);
+int sem_destroy(sem_t* semaphore_p /* in/out */);
+int sem_post(sem_t* semaphore_p /* in/out */);
+int sem_wait(sem_t* semaphore_p /* in/out */);
+```
