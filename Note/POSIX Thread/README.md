@@ -54,3 +54,13 @@ void *Hello(void* rank) {
 }  /* Hello */
 
 ```
+
+# Notes
+```c
+int pthread_create(
+   pthread_t*  thread_p                   /* out */, 
+   const       pthread_attr_t* attr_p     /* in */,
+   void*       (*start_routine)(void*)    /* in */, 
+   void*       arg_p                      /* in */
+);
+```
