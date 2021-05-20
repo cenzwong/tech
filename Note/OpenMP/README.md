@@ -63,6 +63,43 @@ int thread_count = omp_get_num_threads();
 #endif
 
 ```
+## Mutex
+```c
+#pragma omp critical
+```
+## reduce
+```c
+#pragma omp reduction(<operatir>:<variable list)
+//example
+global_result = 0.0;
+#pragma omp parallel num_threads(thread_count) reduction(+: global_result)
+global_result +=Local_trap(double a, double b, int n);
+```                                       
+```c
+#pragma omp reduction(<operatir>:<variable list)
+//example
+#pragma omp parallel for num_threads(thread_count) reduction(+: global_result)
+for(){
+   ...
+}
+```
+![image](https://user-images.githubusercontent.com/44856918/119015564-9852e080-b9cb-11eb-8394-fb6ef6ed2af8.png)
+- the ```i``` can only be modify thread the increment expression.
 
+```c
+#pragma omp parallel default(none) //this clear all the scope
+#pragma omp parallel private(var_pri_scop) shared(n)
+```
+## The Schedule Clause
+```c
+#pragma omp parallel for schedule(type,chunksize)
+```
+![image](https://user-images.githubusercontent.com/44856918/119017034-29768700-b9cd-11eb-8132-004774c7cee4.png)
+
+type:
+- static
+- dynamic or guided
+- auto
+- runtime
 
 
