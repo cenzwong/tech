@@ -356,5 +356,12 @@ int MPI_Scatter(
    MPI_Comm comm /* in */
 );
 
+int MPI_Gather(
+   void* send_buf_p /* in */, int send_count /* in */, MPI_Datatype send_type /* in */,
+   void* recv_buf_p /* out */, int recv_count /* in */, MPI_Datatype recv_type /* in */,
+   int dest_proc /* in */, 
+   MPI_Comm comm /* in */
+);
+
 ```
 ![image](https://user-images.githubusercontent.com/44856918/118971022-7fcdd080-b9a1-11eb-963a-c45077dc82ce.png)
