@@ -329,6 +329,7 @@ int MPI_Reduce(
    MPI_Datatype datatype /* in */,  MPI_Op operator /* in */,        int dest_process /* in */,
    MPI_Comm comm /* in */
 );
+// reduce and then boardcast
 int MPI_Allreduce(
    void* input_data_p /* in */,     void* output_data_p /* out */,   int count /* in */,
    MPI_Datatype datatype /* in */,  MPI_Op operator /* in */,
