@@ -66,6 +66,12 @@ int thread_count = omp_get_num_threads();
 ## Mutex
 ```c
 #pragma omp critical
+#pragma omp critical(name)
+
+#pragma omp  atomic // only on C assignment
+
+omp_set_lock(&var->lock);
+omp_unset_lock(&var->lock);
 ```
 ## reduce
 ```c
@@ -93,7 +99,10 @@ for(){
 ## The Schedule Clause
 ```c
 #pragma omp parallel for schedule(type,chunksize)
+// OMP_SCHEDULE is a environment variable to set for the schedule
 ```
+
+
 ![image](https://user-images.githubusercontent.com/44856918/119017034-29768700-b9cd-11eb-8132-004774c7cee4.png)
 
 type:
@@ -102,4 +111,15 @@ type:
 - auto
 - runtime
 
+## Queues
+```c
+#pragma omp critical
+Enqueue(queue, dest, my_rank, mesg);
 
+#pragma omp critical
+Dequeue(queue, &src, &mesg);
+```
+## Barrier
+```c
+#pragma omp barrier
+```
