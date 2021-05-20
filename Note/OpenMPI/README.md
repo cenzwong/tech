@@ -322,3 +322,12 @@ int MPI_Get_count(
    MPI_Status* status_p /* in */, MPI_Datatype type /* in */, int* count_p /* out */
 );
 ```
+## Collective Communication
+```c
+int MPI_Reduce(
+   void* input_data_p /* in */,     void* output_data_p /* out */,   int count /* in */,
+   MPI_Datatype datatype /* in */,  MPI_Op operator /* in */,        int dest_process /* in */,
+   MPI_Comm comm /* in */
+);
+```
+![image](https://user-images.githubusercontent.com/44856918/118971022-7fcdd080-b9a1-11eb-963a-c45077dc82ce.png)
