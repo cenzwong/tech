@@ -18,8 +18,8 @@ A threads block contains threads organized in 1-3 dimensions ``` blockDim.x ```
 ```c
 kernelName<<<#block, #thread, shared_size, s>>>(param1, param2)
 ```
-block: number of thread blocks in the grid
-thread; number of threads per block
+block: number of thread blocks in the grid, up to 65535 blocks
+thread; number of threads per block, up to 1024 threads per block
 shared_size: size of shared memory per block, default 0
 s: the associated stream, default 0
 
@@ -30,5 +30,16 @@ cudaFree(devPtr)
 cudaMemcpy(dst, src, size, direction)
 // direction: cudaMemcpyHostToDevice, cudaMemcpyDeviceToHost
 ```
+Registers: only available within a thread
+Shared memory: accessed by threads in the same thread block
+Global memory: can be accessed by all threads
+### Coalesced Access
+```c
+t1 t2 t1 t2 t1 t2 t1 t2
+```
 
 ## Kernel programs and their invocation
+```c
+int tid = blockDim.x * blockIdx.x + threadIdx.x;
+int nthread = blockDim.x*gridDim.x;
+```
