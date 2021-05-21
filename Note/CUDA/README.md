@@ -42,4 +42,6 @@ t1 t2 t1 t2 t1 t2 t1 t2
 ```c
 int tid = blockDim.x * blockIdx.x + threadIdx.x;
 int nthread = blockDim.x*gridDim.x;
+
+__syncthreads();
 ```
