@@ -386,6 +386,9 @@ int MPI_Allgather(
 );
 ```
 ![image](https://user-images.githubusercontent.com/44856918/118971022-7fcdd080-b9a1-11eb-963a-c45077dc82ce.png)
+![image](https://user-images.githubusercontent.com/44856918/119147594-533bb680-ba7e-11eb-81a4-086259dc51ac.png)
+
+
 ## Datatype
 ```c
 /*
