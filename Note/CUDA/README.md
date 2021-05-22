@@ -33,6 +33,10 @@ cudaMemcpy(dst, src, size, direction)
 Registers: only available within a thread
 Shared memory: accessed by threads in the same thread block
 Global memory: can be accessed by all threads
+![image](https://user-images.githubusercontent.com/44856918/119212044-992d6480-bae8-11eb-82ab-9be8ddcdf036.png)
+![image](https://user-images.githubusercontent.com/44856918/119212050-9f234580-bae8-11eb-846d-4156b42b5e7d.png)
+
+
 ### Coalesced Access
 ```c
 t1 t2 t1 t2 t1 t2 t1 t2
