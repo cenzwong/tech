@@ -49,8 +49,24 @@ t1 t2 t1 t2 t1 t2 t1 t2
 ```c
 int tid = blockDim.x * blockIdx.x + threadIdx.x;
 int nthread = blockDim.x*gridDim.x;
-
-__syncthreads();
 ```
 ## Data aggregation
 ![image](https://user-images.githubusercontent.com/44856918/119212359-5a98a980-baea-11eb-96e9-1f797c7f4e17.png)
+
+## Memory Fence Functions
+```c
+//Barrier
+__syncthreads();
+//Fence: memory consistency & coherency
+void __threadfence_block();
+void __threadfence();
+void __threadfence_system;
+```
+
+## Warp Voting Function
+```c
+int __all_sync(unsigned mask, int predicate);
+int __any_sync(unsigned mask, int predicate);
+unsigned __ballot_sync(unsigned mask, int predicate);
+unsigned __activemask();
+```
