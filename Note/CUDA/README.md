@@ -35,7 +35,10 @@ Shared memory: accessed by threads in the same thread block
 Global memory: can be accessed by all threads
 ![image](https://user-images.githubusercontent.com/44856918/119212044-992d6480-bae8-11eb-82ab-9be8ddcdf036.png)
 ![image](https://user-images.githubusercontent.com/44856918/119212050-9f234580-bae8-11eb-846d-4156b42b5e7d.png)
-
+![image](https://user-images.githubusercontent.com/44856918/119212207-5cae3880-bae9-11eb-8d74-8c753a12aa1e.png)
+```c
+extern __shared__float d_s_array[]; //or allocated from global device function.
+```
 
 ### Coalesced Access
 ```c
@@ -49,3 +52,5 @@ int nthread = blockDim.x*gridDim.x;
 
 __syncthreads();
 ```
+## Data aggregation
+![image](https://user-images.githubusercontent.com/44856918/119212359-5a98a980-baea-11eb-96e9-1f797c7f4e17.png)
