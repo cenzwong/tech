@@ -53,6 +53,27 @@ int nthread = blockDim.x*gridDim.x;
 ## Data aggregation
 ![image](https://user-images.githubusercontent.com/44856918/119212359-5a98a980-baea-11eb-96e9-1f797c7f4e17.png)
 
+Reduction
+```c
+for (unsigned int stride = 1; stride <= blockDim.x; stride *= 2){
+  __syncthreads();
+  if(t % stride == 0){
+    partialSum[2*t] += partialSum[ 2*t + stride ];
+  }
+}
+
+//better reduction kernel
+for (unsigned int stride = blockDim.x; stride > 0; stride /= 2){
+  __syncthreads();
+  if(t > stride){
+    partialSum[t] += partialSum[ t + stride ];
+  }
+}
+```
+Parallel scan
+![image](https://user-images.githubusercontent.com/44856918/119213870-f3ccbd80-baf4-11eb-864f-393f0d3dbbdc.png)
+
+
 ## Memory Fence Functions
 ```c
 //Barrier
