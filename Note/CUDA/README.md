@@ -70,3 +70,7 @@ int __any_sync(unsigned mask, int predicate);
 unsigned __ballot_sync(unsigned mask, int predicate);
 unsigned __activemask();
 ```
+## Other
+```c
+#pragma unroll
+```
