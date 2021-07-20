@@ -3,6 +3,8 @@
 ```bash
 sudo DEBIAN_FRONTEND=noninteractive apt-get -yq install [packagename]
 -qq No output except for errors
+
+sudo DEBIAN_FRONTEND=noninteractive apt-get install -qq git htop < /dev/null > /dev/null
 ```
 
 # Bash Scripting Note
