@@ -11,6 +11,12 @@ pip install opencv-python
 ```
 This sometimes work on linux and when you run this on linux, immediately you can get the import cv2
 
+Sometime you got some error in jupyter environment
+try:
+```
+pip install opencv-python-headless
+```
+
 ## Method two (Python)
 Installing OpenCV-Python from Pre-built Binaries
 This method serves best when using just for programming and developing OpenCV applications.
