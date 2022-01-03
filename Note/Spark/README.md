@@ -271,6 +271,13 @@ rdd.reduce(lambda tuple_a,tuple_b: tuple_a if len(a[1]) > len(b[1]) else tuple_b
 ```py
 df = spark.read.csv('file.csv', header=True, inferSchema=True)
 ```
+
+### Options
+You can find the options directly using the source code
+- https://spark.apache.org/docs/3.2.0/api/python/reference/api/pyspark.sql.DataFrameReader.table.html 
+- https://spark.apache.org/docs/latest/sql-data-sources-json.html
+- https://spark.apache.org/docs/latest/api/python/_modules/pyspark/sql/readwriter.html#DataFrameWriter.csv
+
 ## Under DataFrame
 ```py
 # rdd --> Dataframe
