@@ -524,3 +524,8 @@ e.filter(e['src']==v4.src).select('dst').show()
 # |  b|
 # +---+
 ```
+
+# Library
+Register the spark-xml library - edit your cluster configuration and then from the Libraries tab, install the following library:
+Type: Maven
+Coordinates: com.databricks:spark-xml_2.12:0.10.0
