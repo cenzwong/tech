@@ -534,7 +534,7 @@ https://www.scylladb.com/
 ## Archive
 + [Google Presentation](http://bit.ly/cenz-webinfo)
 + Library Genesi[s](http://gen.lib.rus.ec/)
-
++ Z librar[y](https://z-lib.org/)
 
 ***
 ## Blockchain & new Tech
@@ -546,6 +546,7 @@ https://www.scylladb.com/
 + SKUChain - https://skuchain.com/
 + Blockverify - http://www.blockverify.io/
 + Augur - https://augur.net/
++ Fleek - https://fleek.co/
 ### Networking and IoT
 + Adept - http://www.coindesk.com/ibm-reveals-p...
 + Aeternity - https://www.aeternity.com/
