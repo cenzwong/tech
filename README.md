@@ -1,6 +1,9 @@
 [html](./html)
 ***
 # Technology-Note
+
+[Mind Map](https://whimsical.com/data-universe-KguAaUTohCikxCHMkofBxU)
+
 ## CLI program
 + curl
 + httpie
@@ -80,6 +83,7 @@
 + [handcalcs](https://github.com/connorferster/handcalcs): Python calculations in Jupyter, as though you wrote them by hand
 + Plotly
 + Bokeh
++ [mindmap](https://whimsical.com/data-universe-KguAaUTohCikxCHMkofBxU)
 #### ML Package
 + Scikit-Learn
 + [AutoSklearn](https://automl.github.io/auto-sklearn/master/): is an automated machine learning toolkit and a drop-in replacement for a scikit-learn estimator.
