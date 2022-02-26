@@ -1,0 +1,97 @@
+# Making S3 Public
+
+
+![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1645851138641/Z-45WygBK.png)
+
+Access Denial Error
+
+
+![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1645851241057/8UVM46rDT.png)
+
+Make public via ACL is greyed out.
+
+
+![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1645851461711/mYk_fiMwM.png)
+
+You have to set the Permission on Bucket level
+- Block public access (bucket settings)
+- Object Ownership --> change to ACL enabled
+
+
+```
+aws s3 ls
+aws s3 ls s3://reportbucket(NUMBER)
+aws s3 cp report-test1.txt s3://reportbucket(NUMBER)
+```
+
+
+![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1645852668373/gG7e8qgMq.png)
+
+
+```
+# This is the role that the EC2 instance uses to connect to Amazon S3.
+EC2InstanceProfileRole
+```
+Copy the ARN
+```
+ARN
+arn:partition:service:region:account-id:resource
+
+arn:aws:iam::135468258123:role/EC2InstanceProfileRole
+arn:aws:s3:::reportbucket1235
+```
+
+AWS policies use the JSON format and are used to configure granular permissions for AWS services. You can manually write the policy in JSON, or you can use the AWS Policy Generator to create the policy with a user-friendly web interface.
+
+
+
+## AWS Policy Generator
+
+https://awspolicygen.s3.amazonaws.com/policygen.html
+
+
+
+![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1645853804699/a6ZO8gJcG.png)
+```
+{
+  "Id": "Policy1645853719238",
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "Stmt1645853319712",
+      "Action": [
+        "s3:GetObject",
+        "s3:PutObject"
+      ],
+      "Effect": "Allow",
+      "Resource": "arn:aws:s3:::reportbucket1235/*",
+      "Principal": {
+        "AWS": [
+          "arn:aws:iam::135468258196:role/EC2InstanceProfileRole"
+        ]
+      }
+    },
+    {
+      "Sid": "Stmt1645853717233",
+      "Action": [
+        "s3:GetObject"
+      ],
+      "Effect": "Allow",
+      "Resource": "arn:aws:s3:::reportbucket1235/*",
+      "Principal": "*"
+    }
+  ]
+}
+```
+
+## Versioning
+
+Versioning is enabled for an entire bucket and all objects within the bucket. It cannot be enabled for individual objects.
+
+you need to update your bucket policy to include the s3:GetObjectVersion permission
+
+
+![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1645854504210/OVGHsjpW3.png)
+
+Removing the delete marker has effectively restored the object to its previous state.
+When deleting a specific version of an object, no delete marker is created. The object is permanently deleted. 
