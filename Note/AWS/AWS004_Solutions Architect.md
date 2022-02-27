@@ -32,5 +32,16 @@ Topics:
   
   
 # 3. Database types
+- Relational DB
+- Non-relational DB
+- Data Management and Data Migration
+  -  AWS Schema Conversion Tool
+-  Data Warehouses: a collection of corporate information and data derived from operational systems and external data sources.
+-  Data Lakes:  storage repository that holds a vast amount of raw data in its native format until it is needed. While a hierarchical data warehouse stores data in files or folders, a data lake uses a flat architecture to store data.
+
+![image](https://user-images.githubusercontent.com/44856918/155869311-7d77fde3-8de6-426d-8b5d-5369cd8b3796.png)
+![image](https://user-images.githubusercontent.com/44856918/155869326-953c3019-ba32-48f2-9ceb-827240ab8f39.png)
+
+
 # 4. Data management, migration, structures
 # 5. Network architecture, protocols, virtual private clouds, directory services
