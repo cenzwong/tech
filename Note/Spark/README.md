@@ -562,3 +562,50 @@ myDict[col] = [row[col] for row in data.collect()]
 describe_table = spark.sql(f"describe table `{database_name}`.`{table_name}`")
 display(describe_table)
 ```
+
+# Databricks
+## Filesystem
+2 Filesystem we are dealing with
+1. Spark system
+2. Python Runtime system
+
+```
+# this is refering to the first filesystem
+# the /mnt is in the spark system
+# You can use dbfs:/mnt/foldername
+describe_table.coalesce(1).write.format("com.databricks.spark.csv").option("header", "true").save("/mnt/foldername")
+```
+
+```
+# This is refering the PYthon local system
+# they are connected in the root /dbfs files
+!ls /
+```
+![image](https://user-images.githubusercontent.com/44856918/165670721-55f99fc7-2887-4f78-8b51-30b334f642f0.png)
+
+## Mounting Spark to Azure
+Ref: https://docs.microsoft.com/en-us/azure/databricks/data/data-sources/azure/azure-storage
+Ref: https://docs.databricks.com/data/data-sources/azure/adls-gen2/azure-datalake-gen2-sp-access.html
+
+```python
+source = "abfss://<container-name>@<storage-account-name>.dfs.core.windows.net/"
+source = "wasbs://<container-name>@<storage-account-name>.blob.core.windows.net",
+mount_point = "/mnt/<mount-name>"
+
+# directory-id : # Directory (tenant) ID (https://portal.azure.com/#blade/Microsoft_AAD_IAM/TenantPropertiesBlade)
+# Azure AD Connection
+configs = {"fs.azure.account.auth.type": "OAuth",
+          "fs.azure.account.oauth.provider.type": "org.apache.hadoop.fs.azurebfs.oauth2.ClientCredsTokenProvider",
+          "fs.azure.account.oauth2.client.id": "<application-id>",
+          "fs.azure.account.oauth2.client.secret": dbutils.secrets.get(scope="<scope-name>",key="<service-credential-key-name>"),
+          "fs.azure.account.oauth2.client.endpoint": "https://login.microsoftonline.com/<directory-id>/oauth2/token"}
+
+# Normal connection
+extra_configs = {"<conf-key>":dbutils.secrets.get(scope = "<scope-name>", key = "<key-name>")})
+
+dbutils.fs.mount(
+source = source,
+mount_point = mount_point,
+extra_configs = configs
+)
+```
