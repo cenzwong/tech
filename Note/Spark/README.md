@@ -275,6 +275,11 @@ rdd.reduce(lambda tuple_a,tuple_b: tuple_a if len(a[1]) > len(b[1]) else tuple_b
 df = spark.read.csv('file.csv', header=True, inferSchema=True)
 ```
 
+## Import Table
+```py
+table_df = spark.read.table(f"{database_name}.{table_name}")
+```
+
 ### Options
 You can find the options directly using the source code
 - https://spark.apache.org/docs/3.2.0/api/python/reference/api/pyspark.sql.DataFrameReader.table.html 
@@ -313,6 +318,11 @@ df.show(truncate = False) # Don't hide some word, show all word
 df.count() # return number of data
 df.withColumnRenamed("OldColumnName", "NewColumnName") # rename
 df.explain()
+
+# Databricks
+display(df)
+display(table_df.limit(3)) # Display only three row
+# limit will return spark object
 ```
 ## Data Aggregation
 ### Select
@@ -532,3 +542,23 @@ e.filter(e['src']==v4.src).select('dst').show()
 Register the spark-xml library - edit your cluster configuration and then from the Libraries tab, install the following library:
 Type: Maven
 Coordinates: com.databricks:spark-xml_2.12:0.10.0
+
+# Utility
+
+## Finding the Max/Min element of a column
+```
+table_df.select("my_col").rdd.min()[0]
+table_df.select("my_col").rdd.max()[0]
+```
+
+## Distinct Value from ROW to List
+```py
+data = table_df.select(col).distinct()
+myDict[col] = [row[col] for row in data.collect()]
+```
+
+# Print the Schema
+```
+describe_table = spark.sql(f"describe table `{database_name}`.`{table_name}`")
+display(describe_table)
+```
