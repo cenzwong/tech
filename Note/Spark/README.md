@@ -609,3 +609,26 @@ mount_point = mount_point,
 extra_configs = configs
 )
 ```
+
+## Reading Tables and Filter the Tables
+
+```
+table_name = 'dim_customer_mapping'
+cols_selections = ["master_id", "business_unit", "customer_source", "customer_key"]
+
+
+
+df = spark.read.table(f"curated.{table_name}").select(cols_selections).filter((col("customer_source") != "SFMC") & (col("business_unit") != ""))
+# or
+filters_logics = [(col("customer_source") != "SFMC"), (col("business_unit") != "")]
+df = spark.read.table(f"curated.{table_name}")
+                .select(cols_selections)
+                .filter(reduce(and_, (conditions for conditions in filters_logics)))
+# or
+filters_logics = ['customer_source <> "SFMC"', 'business_unit <> ""']
+df = spark.read.table(f"curated.{table_name}").select(cols_selections).filter(" and ".join(filters_logics))
+
+
+df.display()
+
+```
