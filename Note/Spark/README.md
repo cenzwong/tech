@@ -613,23 +613,30 @@ extra_configs = configs
 ## Reading Tables and Filter the Tables
 
 ```
-table_name = 'dim_customer_mapping'
-cols_selections = ["master_id", "business_unit", "customer_source", "customer_key"]
+table_name = 'my_table_name'
+cols_selections = ["mycol1", "mycol2", "mycol3", "mycol4"]
 
 
 
 df = spark.read.table(f"curated.{table_name}").select(cols_selections).filter((col("customer_source") != "SFMC") & (col("business_unit") != ""))
 # or
-filters_logics = [(col("customer_source") != "SFMC"), (col("business_unit") != "")]
+filters_logics = [(col("mycol1") != "abc"), (col("mycol2") != "")]
 df = spark.read.table(f"curated.{table_name}").select(cols_selections).filter(reduce(and_, filters_logics))
 df = spark.read.table(f"curated.{table_name}")
                 .select(cols_selections)
                 .filter(reduce(and_, (conditions for conditions in filters_logics)))
 # or
-filters_logics = ['customer_source <> "SFMC"', 'business_unit <> ""']
+filters_logics = ['mycol1 <> "abc"', 'mycol2 <> ""']
 df = spark.read.table(f"curated.{table_name}").select(cols_selections).filter(" and ".join(filters_logics))
 
 
 df.display()
 
+```
+
+```
+table_name = 'your_table_name'
+cols_selections = ["*"]
+filters_logics = []
+df = spark.read.table(f"curated.{table_name}").select(cols_selections).filter(reduce(and_, filters_logics, lit(True)))
 ```
