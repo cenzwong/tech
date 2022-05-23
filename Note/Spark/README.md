@@ -640,3 +640,33 @@ cols_selections = ["*"]
 filters_logics = []
 df = spark.read.table(f"curated.{table_name}").select(cols_selections).filter(reduce(and_, filters_logics, lit(True)))
 ```
+
+
+```
+def filter_row_from_list(dataframe, filters_logics):
+  return dataframe.filter(reduce(and_, filters_logics, lit(True)))
+
+def select_col_from_list(dataframe, cols_selections):
+  return dataframe.select(cols_selections)
+  
+def get_distinct_value_from_df_columns(df, columns_names, display=True):
+  # 
+  myDict = {}
+  for col in columns_names:
+    data = df.select(col).distinct()
+    myDict[col] = [row[col] for row in data.collect()]
+    
+    df.groupBy(col).count().show()
+  return myDict 
+  
+def get_daterange_df(start, end_exclude):
+  date_range_dtidx = pd.date_range(start=start, end=end_exclude, closed="left")
+  date_range_pddf = date_range_dtidx.to_frame()
+  date_range_df  =  spark.createDataFrame(  date_range_pddf   ).withColumnRenamed('0', 'date').select(col("date").cast("date"))
+  return date_range_df
+```
+
+```
+#https://docs.databricks.com/libraries/notebooks-python-libraries.html
+%pip install july
+```
