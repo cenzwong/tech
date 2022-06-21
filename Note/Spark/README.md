@@ -616,8 +616,6 @@ extra_configs = configs
 table_name = 'my_table_name'
 cols_selections = ["mycol1", "mycol2", "mycol3", "mycol4"]
 
-
-
 df = spark.read.table(f"curated.{table_name}").select(cols_selections).filter((col("customer_source") != "SFMC") & (col("business_unit") != ""))
 # or
 filters_logics = [(col("mycol1") != "abc"), (col("mycol2") != "")]
@@ -664,6 +662,16 @@ def get_daterange_df(start, end_exclude):
   date_range_pddf = date_range_dtidx.to_frame()
   date_range_df  =  spark.createDataFrame(  date_range_pddf   ).withColumnRenamed('0', 'date').select(col("date").cast("date"))
   return date_range_df
+
+def transaction_to_flat(df, col_name, col_value, join_key):
+  for i, ele in enumerate([row[col_name] for row in df.select(col_name).distinct().collect()]):
+    print(ele)
+    temp = df.filter(col(col_name) == ele).drop(*[col_name]).withColumnRenamed(col_value, f"{ele}_{col_value}")
+    if i == 0:
+      result = temp
+    else:
+      result = result.join(temp, join_key, "outer").fillna(0)
+  return result
 ```
 
 ```
