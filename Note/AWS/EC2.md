@@ -18,3 +18,14 @@ You launch the EC2 instance using a default 8 GiB disk volume. This is your root
 A security group acts as a virtual firewall that controls the traffic for one or more instances.
 
 Amazon EC2 sends metrics to Amazon CloudWatch for your EC2 instances.
+
+# instance type
+## General Purpose Instances
+## Compute Optimized Instances
+high-performance web servers, compute-intensive applications servers, and dedicated gaming servers.
+## Memory OPtimized Instances
+involves performing real-time processing of a large amount of unstructured data.
+## Accelerated Computing Instances
+use hardware accelerators, or coprocessors, to perform some functions more efficiently than is possible in software running on CPUs
+## Storage optimized instances
+distributed file systems, data warehousing applications, and high-frequency online transaction processing (OLTP) systems.
