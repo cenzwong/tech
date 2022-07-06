@@ -31,3 +31,10 @@ use hardware accelerators, or coprocessors, to perform some functions more effic
 distributed file systems, data warehousing applications, and high-frequency online transaction processing (OLTP) systems.
 
 ![image](https://user-images.githubusercontent.com/44856918/177559949-aa5dc0b4-271f-4a8d-9638-d165e25ef5ce.png)
+
+# Pricing
+## On-Demand
+## Savings Plans
+## Reserved Instances
+## Spot Instances
+## Dedicated Hosts
