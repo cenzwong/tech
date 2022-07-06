@@ -29,3 +29,5 @@ involves performing real-time processing of a large amount of unstructured data.
 use hardware accelerators, or coprocessors, to perform some functions more efficiently than is possible in software running on CPUs
 ## Storage optimized instances
 distributed file systems, data warehousing applications, and high-frequency online transaction processing (OLTP) systems.
+
+![image](https://user-images.githubusercontent.com/44856918/177559949-aa5dc0b4-271f-4a8d-9638-d165e25ef5ce.png)
