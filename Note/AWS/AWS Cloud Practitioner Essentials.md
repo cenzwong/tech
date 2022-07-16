@@ -303,6 +303,7 @@ collection of physical devices that help to physically transport up to exabytes 
     - Identify potentially fraudulent online activities with Amazon Fraud Detector.
     - Build voice and text chatbots with Amazon Lex.
     - Amazon Textract is a machine learning service that automatically extracts text and data from scanned documents.
+    - Amazon Augmented AI; enables you to build the workflows that are required for human review of machine learning predictions
 - ML
     - Amazon SageMaker
     - AWS DeepRacer 
