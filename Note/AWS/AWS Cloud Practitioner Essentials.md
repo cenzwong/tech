@@ -168,3 +168,162 @@ scalable file system used with AWS Cloud services and on-premises resources
     - It supports two types of data stores: Redis and Memcached.
 - DynamoDB DAX, the DynamoDB Accelerator
     - in-memory cache for DynamoDB.
+
+# Security
+- AWS shared responsibility model
+
+## AWS Identity and Access Management (IAM)
+least privilege principle
+
+- IAM Users, 
+    - by default, it has no permissions
+    - It represents the person or application that interacts with AWS services and resources.
+- IAM Groups
+    - a collection of IAM users
+- IAM Roles
+    - Roles have associated permissions that allow or deny specific actions. And these roles can be assumed for temporary amounts of time.
+- IAM Policies
+    - To associate an IAM policy (a JSON document) to an IAM user.
+- MFA
+
+## AWS Organizations
+- to consolidate and manage multiple AWS accounts within a central location.
+    - apply service control policies (SCPs) to the organization root, an individual member account, or an OU. An SCP affects all IAM users, groups, and roles within an account, including the AWS account root user.
+
+## AWS Artifact
+- a service that provides on-demand access to AWS security and compliance reports and select online agreements
+- Access AWS compliance reports on-demand.
+- Review, accept, and manage agreements with AWS.
+## AWS Shield
+- AWS Shield Standard
+    - free
+- AWS Shield Advanced
+    - paid
+
+## AWS Key Management Service (AWS KMS)
+- enables you to perform encryption operations through the use of cryptographic keys.
+- use AWS KMS to create, manage, and use cryptographic keys
+
+## AWS WAF
+- web application firewall that lets you monitor network requests that come into your web applications. 
+- Web access control lists (web ACLs)
+
+## Amazon Inspector
+- To perform automated security assessments
+
+## Amazon GuardDuty
+- provides intelligent threat detection for your AWS infrastructure and resources
+- monitoring your network and account activity
+
+# Monitoring And Analytics
+## Amazon CloudWatch
+- web service that enables you to monitor and manage various metrics and configure alarm actions based on data from those metrics.
+- Monitor your resources’ utilization and performance
+- Access metrics from a single dashboard
+## AWS CloudTrail
+- records API calls for your account
+- Filter logs to assist with operational analysis and troubleshooting
+- Track user activities and API requests throughout your AWS infrastructure
+## AWS Trusted Advisor
+- web service that inspects your AWS environment and provides real-time recommendations in accordance with AWS best practices.
+- to review the security of your Amazon S3 buckets by checking for open access permissions
+- Dashboard included Performance and Fault Tolerance
+# Pricing and Support
+## AWS Free Tier
+- Always Free
+    - AWS Lambda allows 1 million free requests and up to 3.2 million seconds of compute time per month. 
+    - Amazon DynamoDB allows 25 GB of free storage per month.
+- 12 Months Free
+    - free for 12 months following your initial sign-up date to AWS.
+- Trials
+
+## AWS Pricing Option
+- Pay for what you use
+- Pay less when you reserve
+- Pay less with volume-based discounts when you use more
+### AWS Pricing Calculator
+- [AWS Pricing Calculator](https://calculator.aws/#/)
+
+## AWS Budgets
+- Receive alerts when your service usage exceeds a threshold that you have defined
+## AWS Cost Explorer
+- to visualize, understand, and manage your AWS costs and usage over time
+## AWS Support
+- Basic 
+- Developer
+- Business
+    - includes all AWS Trusted Advisor checks at the lowest cost
+- Enterprise
+    - receive support from an AWS Technical Account Manager (TAM)
+
+## AWS Marketplace
+- digital catalog that includes thousands of software listings from independent software vendors
+
+# Migration and Innovation
+## AWS Cloud Adoption Framework (AWS CAF)
+- Business Perspective
+- People Perspective
+- Governance Perspective
+- Platform Perspective
+    - helps you design, implement, and optimize your AWS infrastructure based on your business goals and perspectives
+- Security Perspective
+    - helps you structure the selection and implementation of permissions
+- Operations Perspective
+## Migration strategies
+- Rehosting
+- Replatforming
+    - selectively optimizing aspects of an application to achieve benefits in the cloud without changing the core architecture of the application. It is also known as “lift, tinker, and shift.”
+- Refactoring/re-architecting
+    - changing how an application is architected and developed, typically by using cloud-native features
+- Repurchasing
+    - moving to a different product
+- Retaining
+- Retiring
+    - removing an application that is no longer used or that can be turned off.
+
+## AWS Snow Family
+collection of physical devices that help to physically transport up to exabytes of data into and out of AWS. 
+
+- AWS Snowcone 
+    - 2CPU, 4GB+8TB
+- AWS Snowball
+    - Snowball Edge Storage Optimized
+        - 80TB + 40vCPU
+    - Snowball Edge Compute Optimized
+        - 42TB + 52vCPU
+- AWS Snowmobile
+    - 100PB
+
+## Innovation with AWS
+- Serverless Applications
+    - AWS Lambda
+- AI
+    - Convert speech to text with Amazon Transcribe.
+    - Discover patterns in text with Amazon Comprehend.
+    - Identify potentially fraudulent online activities with Amazon Fraud Detector.
+    - Build voice and text chatbots with Amazon Lex.
+    - Amazon Textract is a machine learning service that automatically extracts text and data from scanned documents.
+- ML
+    - Amazon SageMaker
+    - AWS DeepRacer 
+        - an autonomous 1/18 scale race car that you can use to test reinforcement learning models.
+
+# The Cloud Journey
+## The AWS Well-Architected Framework
+- Operational excellence
+    - includes the ability to run workloads effectively and gain insights into their operations
+- Security
+    - protecting data, systems, and assets, and using cloud technologies to improve the security of your workloads
+- Reliability
+    - focuses on the ability of a workload to consistently and correctly perform its intended functions
+- Performance efficiency
+    - focuses on using computing resources efficiently to meet system requirements and to maintain that efficiency as demand changes and technologies evolve
+- Cost optimization
+    -  focuses on the ability to run systems to deliver business value at the lowest price point
+## Six advantages of cloud computing:
+- Trade upfront expense for variable expense.
+- Benefit from massive economies of scale.
+- Stop guessing capacity.
+- Increase speed and agility.
+- Stop spending money running and maintaining data centers.
+- Go global in minutes.
