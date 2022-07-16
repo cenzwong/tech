@@ -123,10 +123,13 @@ In object storage, each object consists of data, metadata, and a key.
 - S3 Standard-Infrequent Access or S3 Standard-IA
 - S3 One Zone-Infrequent Access or S3 One Zone-IA
 - S3 Intelligent-Tiering
+    - Amazon S3 moves objects between a frequent access tier and an infrequent access tier. (two standard)
 - S3 Glacier
 - S3 Glacier Deep Archive
 
 - Lifecycle policies
+
+
 ## Amazon Elastic File System (Amazon EFS)
 - Regional Service
 large number of services and resources need to access the same data at the same time
@@ -262,21 +265,27 @@ least privilege principle
 # Migration and Innovation
 ## AWS Cloud Adoption Framework (AWS CAF)
 - Business Perspective
+    - helps you to move from a model that separates business and IT strategies into a business model that integrates IT strategy
 - People Perspective
+    - helps Human Resources (HR) employees prepare their teams for cloud adoption by updating organizational processes and staff skills to include cloud-based competencies
 - Governance Perspective
+    - helps you understand how to update the staff skills and organizational processes that are necessary to ensure business governance in the cloud
 - Platform Perspective
     - helps you design, implement, and optimize your AWS infrastructure based on your business goals and perspectives
 - Security Perspective
     - helps you structure the selection and implementation of permissions
 - Operations Perspective
+    - focuses on recovering IT workloads to meet the requirements of your business stakeholders
 ## Migration strategies
 - Rehosting
+    - moving an application to the cloud with little to no modifications to the application itself. It is also known as “lift and shift.”
 - Replatforming
     - selectively optimizing aspects of an application to achieve benefits in the cloud without changing the core architecture of the application. It is also known as “lift, tinker, and shift.”
 - Refactoring/re-architecting
     - changing how an application is architected and developed, typically by using cloud-native features
 - Repurchasing
     - moving to a different product
+    - replacing an existing application with a cloud-based version, such as software found in AWS Marketplace
 - Retaining
 - Retiring
     - removing an application that is no longer used or that can be turned off.
