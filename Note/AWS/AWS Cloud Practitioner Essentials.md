@@ -32,7 +32,10 @@
 
 ![](https://assets.skillbuilder.aws/files/a/w/aws_prod1_docebosaas_com/1658142000/NQKnhOH1sIcPAvy-zF-XlA/tincan/31d9c0cca79c54bdceaf3e938fd424e97c98c7e8/assets/12wfvrLI1e79hjMb_f8VZ-ZFC2TOC7k5B.png)
 
-![](https://assets.skillbuilder.aws/files/a/w/aws_prod1_docebosaas_com/1657958400/C9khKeuFVAcm75zvzkQubw/tincan/31d9c0cca79c54bdceaf3e938fd424e97c98c7e8/assets/3OO8icoc4ZvQE-x1_q_fQ0lM9jrHOGE2v.png)
+![image](https://user-images.githubusercontent.com/44856918/179477043-b4adac83-0102-4524-a76e-f5cba5063c1e.png)
+
+
+![](https://assets.skillbuilder.aws/files/a/w/aws_prod1_docebosaas_com/1658142000/NQKnhOH1sIcPAvy-zF-XlA/tincan/31d9c0cca79c54bdceaf3e938fd424e97c98c7e8/assets/3OO8icoc4ZvQE-x1_q_fQ0lM9jrHOGE2v.png)
 
 ## Messaging and Queuing
 - Amazon Simple Notification Service (Amazon SNS)
@@ -54,7 +57,7 @@
 - Edge locations
     - a site that Amazon CloudFront uses to store cached copies of your content closer to your customers for faster delivery.
 
-![](https://assets.skillbuilder.aws/files/a/w/aws_prod1_docebosaas_com/1657958400/C9khKeuFVAcm75zvzkQubw/tincan/31d9c0cca79c54bdceaf3e938fd424e97c98c7e8/assets/old4pJtvN7HvddhL_zBL1ijNGsMMu3-4j.png)
+![](https://assets.skillbuilder.aws/files/a/w/aws_prod1_docebosaas_com/1658142000/NQKnhOH1sIcPAvy-zF-XlA/tincan/31d9c0cca79c54bdceaf3e938fd424e97c98c7e8/assets/old4pJtvN7HvddhL_zBL1ijNGsMMu3-4j.png)
 
 ## How to provision AWS resources
 - AWS Management Console
@@ -72,14 +75,14 @@
 - AWS Direct Connect
 
 
-![](https://assets.skillbuilder.aws/files/a/w/aws_prod1_docebosaas_com/1657958400/C9khKeuFVAcm75zvzkQubw/tincan/31d9c0cca79c54bdceaf3e938fd424e97c98c7e8/assets/Q_HnMl_BAEsDZGxf_NEblbQjD0vn0-pPU.png)
+![](https://assets.skillbuilder.aws/files/a/w/aws_prod1_docebosaas_com/1658142000/NQKnhOH1sIcPAvy-zF-XlA/tincan/31d9c0cca79c54bdceaf3e938fd424e97c98c7e8/assets/Q_HnMl_BAEsDZGxf_NEblbQjD0vn0-pPU.png)
 
-![](https://assets.skillbuilder.aws/files/a/w/aws_prod1_docebosaas_com/1657958400/C9khKeuFVAcm75zvzkQubw/tincan/31d9c0cca79c54bdceaf3e938fd424e97c98c7e8/assets/tthacSS-FyYNWwE3_s8U3lQzEONXm1FMX.png)
+![](https://assets.skillbuilder.aws/files/a/w/aws_prod1_docebosaas_com/1658142000/NQKnhOH1sIcPAvy-zF-XlA/tincan/31d9c0cca79c54bdceaf3e938fd424e97c98c7e8/assets/tthacSS-FyYNWwE3_s8U3lQzEONXm1FMX.png)
 
-![](https://assets.skillbuilder.aws/files/a/w/aws_prod1_docebosaas_com/1657958400/C9khKeuFVAcm75zvzkQubw/tincan/31d9c0cca79c54bdceaf3e938fd424e97c98c7e8/assets/p53HDtoqu2euSy0Y_YdzRvczPABE_j-yV.png)
+![](https://assets.skillbuilder.aws/files/a/w/aws_prod1_docebosaas_com/1658142000/NQKnhOH1sIcPAvy-zF-XlA/tincan/31d9c0cca79c54bdceaf3e938fd424e97c98c7e8/assets/p53HDtoqu2euSy0Y_YdzRvczPABE_j-yV.png)
 
 ## Subnets
-![](https://assets.skillbuilder.aws/files/a/w/aws_prod1_docebosaas_com/1657958400/C9khKeuFVAcm75zvzkQubw/tincan/31d9c0cca79c54bdceaf3e938fd424e97c98c7e8/assets/-HQN-9SqkWc5e-yv_pi4TpfvEYaalWuIu.png)
+![](https://assets.skillbuilder.aws/files/a/w/aws_prod1_docebosaas_com/1658142000/NQKnhOH1sIcPAvy-zF-XlA/tincan/31d9c0cca79c54bdceaf3e938fd424e97c98c7e8/assets/-HQN-9SqkWc5e-yv_pi4TpfvEYaalWuIu.png)
 
 In a VPC, subnets can communicate with each other. For example, you might have an application that involves Amazon EC2 instances in a public subnet communicating with databases that are located in a private subnet.
 
@@ -93,13 +96,13 @@ In a VPC, subnets can communicate with each other. For example, you might have a
 - By default, a security group denies all inbound traffic and allows all outbound traffic. You can add custom rules to configure which traffic to allow or deny.
 - Security groups perform stateful packet filtering. They remember previous decisions made for incoming packets.
 
-![](https://assets.skillbuilder.aws/files/a/w/aws_prod1_docebosaas_com/1657958400/C9khKeuFVAcm75zvzkQubw/tincan/31d9c0cca79c54bdceaf3e938fd424e97c98c7e8/assets/QkcDe-SJB4lQAuyB_ha8um-1InZb0jryB.png)
+![](https://assets.skillbuilder.aws/files/a/w/aws_prod1_docebosaas_com/1658142000/NQKnhOH1sIcPAvy-zF-XlA/tincan/31d9c0cca79c54bdceaf3e938fd424e97c98c7e8/assets/QkcDe-SJB4lQAuyB_ha8um-1InZb0jryB.png)
 
 ## Global Networking
 - Amazon Route 53
     - DNS web service
     - AWS Route 53 takes its name with reference to Port 53, which handles DNS for both the TCP and UDP traffic requests
-![](https://assets.skillbuilder.aws/files/a/w/aws_prod1_docebosaas_com/1657958400/C9khKeuFVAcm75zvzkQubw/tincan/31d9c0cca79c54bdceaf3e938fd424e97c98c7e8/assets/mR1nvYoC4OSUVg9a_WE71CA369xcdceJ2.png)
+![](https://assets.skillbuilder.aws/files/a/w/aws_prod1_docebosaas_com/1658142000/NQKnhOH1sIcPAvy-zF-XlA/tincan/31d9c0cca79c54bdceaf3e938fd424e97c98c7e8/assets/mR1nvYoC4OSUVg9a_WE71CA369xcdceJ2.png)
 
 # Storage and Databases
 ## Amazon Elastic Block Store (Amazon EBS)
@@ -113,8 +116,8 @@ In a VPC, subnets can communicate with each other. For example, you might have a
 - Amazon EBS snapshots
     - an incremental backup
 
-![](https://assets.skillbuilder.aws/files/a/w/aws_prod1_docebosaas_com/1657958400/C9khKeuFVAcm75zvzkQubw/tincan/31d9c0cca79c54bdceaf3e938fd424e97c98c7e8/assets/FsqE_uY1Kh44ZQYQ_ym_B26HbnRb-vq3N.png)
-- [](https://assets.skillbuilder.aws/files/a/w/aws_prod1_docebosaas_com/1657958400/C9khKeuFVAcm75zvzkQubw/tincan/31d9c0cca79c54bdceaf3e938fd424e97c98c7e8/assets/8PP53iK51gK7pU4Q_ruyKsXvVP8ZbeHC1.png)
+![](https://assets.skillbuilder.aws/files/a/w/aws_prod1_docebosaas_com/1658142000/NQKnhOH1sIcPAvy-zF-XlA/tincan/31d9c0cca79c54bdceaf3e938fd424e97c98c7e8/assets/FsqE_uY1Kh44ZQYQ_ym_B26HbnRb-vq3N.png)
+- [](https://assets.skillbuilder.aws/files/a/w/aws_prod1_docebosaas_com/1658142000/NQKnhOH1sIcPAvy-zF-XlA/tincan/31d9c0cca79c54bdceaf3e938fd424e97c98c7e8/assets/8PP53iK51gK7pU4Q_ruyKsXvVP8ZbeHC1.png)
 ## Amazon Simple Storage Service (Amazon S3)
 In object storage, each object consists of data, metadata, and a key.
 ### Amazon S3 storage classes
