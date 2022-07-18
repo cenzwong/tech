@@ -30,7 +30,7 @@
 
 ### Amazon EC2 Auto Scaling & Elastic Load Balancing
 
-![](https://assets.skillbuilder.aws/files/a/w/aws_prod1_docebosaas_com/1657958400/NQKnhOH1sIcPAvy-zF-XlA/tincan/31d9c0cca79c54bdceaf3e938fd424e97c98c7e8/assets/12wfvrLI1e79hjMb_f8VZ-ZFC2TOC7k5B.png)
+![](https://assets.skillbuilder.aws/files/a/w/aws_prod1_docebosaas_com/1658142000/NQKnhOH1sIcPAvy-zF-XlA/tincan/31d9c0cca79c54bdceaf3e938fd424e97c98c7e8/assets/12wfvrLI1e79hjMb_f8VZ-ZFC2TOC7k5B.png)
 
 ![](https://assets.skillbuilder.aws/files/a/w/aws_prod1_docebosaas_com/1657958400/C9khKeuFVAcm75zvzkQubw/tincan/31d9c0cca79c54bdceaf3e938fd424e97c98c7e8/assets/3OO8icoc4ZvQE-x1_q_fQ0lM9jrHOGE2v.png)
 
