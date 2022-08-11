@@ -678,3 +678,14 @@ def transaction_to_flat(df, col_name, col_value, join_key):
 #https://docs.databricks.com/libraries/notebooks-python-libraries.html
 %pip install july
 ```
+
+```
+def get_latest_snapshot_from(df, ID_col, time_col, desc_asc=F.desc):
+    """
+    get_latest_snapshot_from(df, "ID", "date", desc_asc=F.desc)
+    """
+  return df.withColumn(
+    "row_number",
+    F.row_number().over(
+      Window.partitionBy(F.col(ID_col)).orderBy(desc_asc(time_col)))).filter(F.col("row_number")==1).drop("row_number")
+``` 
