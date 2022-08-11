@@ -682,7 +682,7 @@ def transaction_to_flat(df, col_name, col_value, join_key):
 ```
 def get_latest_snapshot_from(df, ID_col, time_col, desc_asc=F.desc):
     """
-    get_latest_snapshot_from(df, "ID", "date", desc_asc=F.desc)
+    get_latest_snapshot_from(df, "ID", "date", desc_asc=F.asc)
     """
   return df.withColumn(
     "row_number",
