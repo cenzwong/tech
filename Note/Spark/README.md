@@ -689,3 +689,8 @@ def get_latest_snapshot_from(df, ID_col, time_col, desc_asc=F.desc):
     F.row_number().over(
       Window.partitionBy(F.col(ID_col)).orderBy(desc_asc(time_col)))).filter(F.col("row_number")==1).drop("row_number")
 ``` 
+
+```
+def are_dfs_equal(df1, df2): 
+    return (df1.subtract(df2).count() == 0) and (df2.subtract(df1).count() == 0)
+```
