@@ -672,6 +672,13 @@ def transaction_to_flat(df, col_name, col_value, join_key):
     else:
       result = result.join(temp, join_key, "outer").fillna(0)
   return result
+
+def get_monthrange_step_df(date_from, date_to, step_month):
+  return spark.sql(f"SELECT sequence(to_date({date_from}), to_date({date_to}), interval {step_month} month) as date").withColumn("date", explode(col("date")))
+
+def get_month_range(start_date, end_date):
+  return get_daterange_df(start_date, end_date).select(year("date").alias("year"), month("date").alias("month")).withColumn("date",F.concat_ws("-",col("year"),col("month"),lit("01")).cast("date")).drop(*["year", "month"]).distinct().sort("date")
+  
 ```
 
 ```
@@ -693,4 +700,47 @@ def get_latest_snapshot_from(df, ID_col, time_col, desc_asc=F.desc):
 ```
 def are_dfs_equal(df1, df2): 
     return (df1.subtract(df2).count() == 0) and (df2.subtract(df1).count() == 0)
+```
+
+```
+def databricks_create_folder_in_mnt(filepath, fs):
+  if fs == "driverfs":
+    filepath = filepath.replace("/dbfs/", "dbfs:/")
+  spark.sparkContext.parallelize([],1).saveAsTextFile(f"{filepath}")
+  dbutils.fs.rm(f"{filepath}/part-00000", recurse=True)
+  dbutils.fs.mv(f"{filepath}/_SUCCESS", f"{filepath}/_FOLDER")
+```
+
+```
+def sorted_list_get_index_from_threshold(sorted_list, threshold):
+  # Get the Index of first element greater than K
+  # list(map(lambda i: i> threshold, sorted_list)).index(True)
+  res = next(i for i, val in enumerate(sorted_list) if val > threshold)
+  return res
+```
+
+```
+def df_join_all(join_on, list_of_table_to_join):
+  """
+  df_join_all("guest_id", list(dict_df.values()))
+  """
+  join_key_df = list_of_table_to_join[0].select(col(join_on))
+  for i,table_df in enumerate(list_of_table_to_join):
+    join_key_df = join_key_df.join(table_df, join_on, "outer").fillna(0)
+    
+  return join_key_df
+  
+def df_union_all(list_of_table_to_union):
+  """
+  df_union_all(list(dict_df.values()))
+  """
+  output_df = list_of_table_to_union.pop()
+  for i,table_df in enumerate(list_of_table_to_union):
+    output_df = output_df.union(table_df)
+  return output_df
+```
+
+```
+!zip -r  myFolder.zip /dbfs/mnt/AZURE_ZONE/myParent/myFolder
+!cp  myFolder.zip /dbfs/mnt/AZURE_ZONE/myParent
 ```
