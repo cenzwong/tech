@@ -744,3 +744,15 @@ def df_union_all(list_of_table_to_union):
 !zip -r  myFolder.zip /dbfs/mnt/AZURE_ZONE/myParent/myFolder
 !cp  myFolder.zip /dbfs/mnt/AZURE_ZONE/myParent
 ```
+
+```
+def save_as_csv_in_azure(psdf, path_name):
+  psdf.toPandas().to_csv(f"{path_name}", sep=',', header=True, index=False)
+  
+def save_as_csv_in_azure_from_pandas(pddf, path_name):
+  pddf.to_csv(f"{path_name}", sep=',', header=True, index=False)
+  
+def save_as_csv_in_azure_from_pyList(pyList, path_name):
+  df = pd.DataFrame (pyList, columns = [table_name])
+  df.to_csv(f"{path_name}", sep=',', header=True, index=False)
+```
