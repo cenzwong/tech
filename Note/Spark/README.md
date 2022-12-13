@@ -756,3 +756,19 @@ def save_as_csv_in_azure_from_pyList(pyList, path_name):
   df = pd.DataFrame (pyList, columns = [table_name])
   df.to_csv(f"{path_name}", sep=',', header=True, index=False)
 ```
+
+# Save csv into one file
+```python
+def sdf_to_csv(df: pyspark.sql.DataFrame, path:str):
+    """
+    df = spark.read.table("ekimetrics_databricks_training.kmeans_dataset")
+    sdf_to_csv(df, "wasbs://container-name@storage-account-name.blob.core.windows.net/kmeans_dataset.csv")
+    """
+    df.coalesce(1).write.csv(path, header=True, mode="overwrite")
+    file_list = dbutils.fs.ls(path)
+    for file in file_list:
+        if file.name.startswith("part-00000"):
+            dbutils.fs.mv(file.path, path + "_")
+            dbutils.fs.rm(path, True)
+            dbutils.fs.mv(path + "_", path)
+```
