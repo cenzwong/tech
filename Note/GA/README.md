@@ -43,3 +43,20 @@ Ecommerce
 
 # Dashboard & Shortcuts
 - 20 Private, 50 Share
+
+
+- Audience Reports
+    - must enable the advertising features 
+- Acquisition Reports
+    - Traffic Sources
+        - Mediums
+            - Organic: non-paid search
+            - CPC: Paid Search Campaign
+            - Referrals: Land on the website other than the search engine
+            - Emails: Email marketing Campaign
+            - None: Typing URL
+        - Source
+            - 
+        - Campaign
+- Behavior Reports
+    - PageView
