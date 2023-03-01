@@ -14,4 +14,28 @@ Session
 - ends with 30 min inactive
 - New session would be create after ending the session
 
-![image](https://user-images.githubusercontent.com/44856918/222029241-4cbf0bd2-fd9c-40f1-8c4e-4556a508b30a.png)
+![image](https://user-images.githubusercontent.com/44856918/222029862-231c833b-2719-4dae-b108-82d01db820c8.png)
+![image](https://user-images.githubusercontent.com/44856918/222030122-9a979d6f-53ea-4ee2-bc85-d16e5445e398.png)
+
+Views
+- Will not include the past data
+- Only Admins can recover views
+- Can also set the goals
+
+Permission
+- Manage Users
+- Edit
+- Collaborate
+- Read and Analyse
+
+
+Summary
+- ABC
+
+Site Usage:
+- Users
+- Pages / Sessions
+- Avg Session Duration
+
+Goal
+Ecommerce
