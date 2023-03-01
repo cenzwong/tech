@@ -60,3 +60,21 @@ Ecommerce
         - Campaign
 - Behavior Reports
     - PageView
+
+
+Campagins
+- Campagin Tag
+    - *Medium
+    - *Source
+    - *Campaign
+    - Content: v2-nopromo
+    - Term: manual tag
+- Use URL Builder
+- Case Sensitive
+
+
+
+
+
+> https://ga-dev-tools.google/campaign-url-builder/
+> https://docs.google.com/spreadsheets/d/1tf3_SczMMTTf-ZJ9Bkb70xps_DPGLBTd4wkHPyadKSA/edit?hl=en_US&;usp=sharing&hl=en_US#gid=1
