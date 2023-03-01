@@ -38,4 +38,8 @@ Site Usage:
 - Avg Session Duration
 
 Goal
+
 Ecommerce
+
+# Dashboard & Shortcuts
+- 20 Private, 50 Share
