@@ -170,3 +170,35 @@ Source: Conversation with Bing, 3/12/2023(1) Azure ExpressRoute Overview: Connec
 (7) ExpressRoute documentation | Microsoft Learn. https://learn.microsoft.com/en-us/azure/expressroute/ Accessed 3/12/2023.
 (8) Virtual WAN | Microsoft Azure. https://azure.microsoft.com/en-us/products/virtual-wan/ Accessed 3/12/2023.
 (9) Azure Virtual WAN simplifies networking needs. https://azure.microsoft.com/en-us/blog/networking-needs-simplified-with-azure-virtual-wan/ Accessed 3/12/2023.
+
+
+
+## What is the difference between Helpdesk administrator role and Password administrator role in Azure
+
+
+The Helpdesk Administrator role in Azure AD allows users to change passwords, invalidate refresh tokens, create and manage support requests with Microsoft for Azure and Microsoft 365 services, and monitor service health⁴.
+
+The Password Administrator role in Azure AD allows users to reset passwords, manage service requests, and monitor service health. Password administrators can reset passwords only for users and other password administrators⁷.
+
+Here is a table comparing the two roles:
+
+| Helpdesk Administrator | Password Administrator |
+| --- | --- |
+| Change passwords | Reset passwords |
+| Invalidate refresh tokens | Manage service requests |
+| Create and manage support requests with Microsoft for Azure and Microsoft 365 services | Monitor service health |
+| Monitor service health | Reset passwords only for users and other password administrators |
+
+Is there anything else you would like to know?
+
+Source: Conversation with Bing, 3/12/2023(1) Azure AD built-in roles - Azure Active Directory - Microsoft Entra. https://learn.microsoft.com/en-us/azure/active-directory/roles/permissions-reference Accessed 3/12/2023.
+(2) Assigning administrator roles in Azure Active Directory - GitHub. https://github.com/uglide/azure-content/blob/master/articles/active-directory/active-directory-assign-admin-roles.md Accessed 3/12/2023.
+(3) Azure AD built-in roles - Azure Active Directory - Microsoft Entra. https://learn.microsoft.com/en-us/azure/active-directory/roles/permissions-reference Accessed 3/12/2023.
+(4) About admin roles in the Microsoft 365 admin center. https://learn.microsoft.com/en-us/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide Accessed 3/12/2023.
+(5) What's the difference between Azure roles and Azure AD roles?. https://techcommunity.microsoft.com/t5/itops-talk-blog/what-s-the-difference-between-azure-roles-and-azure-ad-roles/ba-p/2363647 Accessed 3/12/2023.
+(6) About admin roles in the Microsoft 365 admin center. https://learn.microsoft.com/en-us/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide Accessed 3/12/2023.
+(7) Azure roles, Azure AD roles, and classic subscription administrator .... https://learn.microsoft.com/en-us/azure/role-based-access-control/rbac-and-directory-admin-roles Accessed 3/12/2023.
+(8) Assigning administrator roles in Azure Active Directory - GitHub. https://github.com/uglide/azure-content/blob/master/articles/active-directory/active-directory-assign-admin-roles.md Accessed 3/12/2023.
+(9) Azure AD built-in roles - Azure Active Directory - Microsoft Entra. https://learn.microsoft.com/en-us/azure/active-directory/roles/permissions-reference Accessed 3/12/2023.
+(10) Azure roles, Azure AD roles, and classic subscription administrator .... https://learn.microsoft.com/en-us/azure/role-based-access-control/rbac-and-directory-admin-roles Accessed 3/12/2023.
+(11) Reset a user's password - Azure Active Directory - Microsoft Entra. https://learn.microsoft.com/en-us/azure/active-directory/fundamentals/active-directory-users-reset-password-azure-portal Accessed 3/12/2023.
