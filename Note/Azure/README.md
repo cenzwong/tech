@@ -121,3 +121,25 @@ Is there anything else you would like to know about policy-based VPN gateway and
 Source: Conversation with Bing, 3/11/2023(1) Connect VPN gateways to multiple on-premises policy-based VPN devices .... https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-connect-multiple-policybased-rm-ps Accessed 3/11/2023.
 (2) Comparing Policy-Based and Route-Based VPNs | Junos OS - Juniper Networks. https://www.juniper.net/documentation/us/en/software/junos/vpn-ipsec/topics/task/security-comparison-policy-based-vpn-route-based-vpn.html Accessed 3/11/2023.
 (3) Azure VPN Gateway FAQ | Microsoft Learn. https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-vpn-faq Accessed 3/11/2023.
+
+
+
+## What is the difference between 1. NAT rule collection, 2. Network rule collection, 3. Application rule collection? List them in a table.
+
+
+
+In Azure Firewall, there are three types of rule collections: NAT, Network, and Application. Rule Collection Groups contain zero or more Rule Collections. You can define multiple Rule Collection types within a single Rule Group. You can define zero or more Rules in a Rule Collection. Rules in a Rule Collection must be of the same type (NAT, Network, or Application)¹.
+
+Here is a table that summarizes the differences between the three types of rule collections:
+
+| Rule Collection Type | Description |
+| --- | --- |
+| NAT | NAT collection supports having a list of NAT rules². |
+| Network | Network collection supports including a list of network rules². |
+| Application | Application collection supports including a list of application rules². |
+
+Is there anything else you would like to know?
+
+Source: Conversation with Bing, 3/12/2023(1) Azure Firewall rule processing logic | Microsoft Learn. https://learn.microsoft.com/en-us/azure/firewall/rule-processing Accessed 3/12/2023.
+(2) az network firewall policy rule-collection-group collection. https://learn.microsoft.com/en-us/cli/azure/network/firewall/policy/rule-collection-group/collection?view=azure-cli-latest Accessed 3/12/2023.
+(3) azurerm_firewall_application_rule_collection - Terraform Registry. https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/firewall_application_rule_collection Accessed 3/12/2023.
