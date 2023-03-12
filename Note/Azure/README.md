@@ -2,7 +2,7 @@
 
 This table is generated from Bing AI
 
-# I would like to know to difference between this two services. Can you list them in a table?
+## I would like to know to difference between this two services. Can you list them in a table?
 Sure, I can list some of the differences between Virtual Firewall and NSG in Azure in a table. Here is a summary based on the search results:
 
 | Feature | Virtual Firewall | NSG |
@@ -23,7 +23,7 @@ Source: Conversation with Bing, 3/11/2023(1) Compare Azure Firewall vs. NSGs for
 (6) Compare Azure Firewall vs. NSGs for network security. https://www.techtarget.com/searchcloudcomputing/answer/Compare-Azure-Firewall-vs-NSGs-for-network-security Accessed 3/11/2023.
 (7) Azure Firewall vs NSG: Difference Between NSG and Firewall - K21Academy. https://k21academy.com/microsoft-azure/az-500/azure-firewall-vs-nsg/ Accessed 3/11/2023.
 
-# When to use Azure Firewall, When to use NSG. Show me in a table.
+## When to use Azure Firewall, When to use NSG. Show me in a table.
 
 Okay, I can show you some of the scenarios when to use Azure Firewall or NSG in Azure in a table. Here is a summary based on the search results:
 
@@ -46,7 +46,7 @@ Source: Conversation with Bing, 3/11/2023(1) Compare Azure Firewall vs. NSGs for
 (7) Compare Azure Firewall vs. NSGs for network security. https://www.techtarget.com/searchcloudcomputing/answer/Compare-Azure-Firewall-vs-NSGs-for-network-security Accessed 3/11/2023.
 (8) Azure Firewall vs NSG: Difference Between NSG and Firewall - K21Academy. https://k21academy.com/microsoft-azure/az-500/azure-firewall-vs-nsg/ Accessed 3/11/2023.
 
-# Comparision table for ASG, NSG, Azure Firewall.
+## Comparision table for ASG, NSG, Azure Firewall.
 
 Sure, I can show you some of the differences between ASG, NSG, and Azure Firewall in Azure in a table. Here is a summary based on the search results:
 
@@ -64,7 +64,7 @@ Source: Conversation with Bing, 3/11/2023(1) Azure application security groups o
 (2) Compare Azure Firewall vs. NSGs for network security. https://www.techtarget.com/searchcloudcomputing/answer/Compare-Azure-Firewall-vs-NSGs-for-network-security Accessed 3/11/2023.
 (3) Azure Firewall vs NSG: Difference Between NSG and Firewall - K21Academy. https://k21academy.com/microsoft-azure/az-500/azure-firewall-vs-nsg/ Accessed 3/11/2023.
 
-# What is the difference between NAT rules and Network rules in Azure Firewall. List them in table.
+## What is the difference between NAT rules and Network rules in Azure Firewall. List them in table.
 
 Sure, I can show you some of the differences between NAT rules and Network rules in Azure Firewall in a table. Here is a summary based on the search results:
 
@@ -82,7 +82,7 @@ Source: Conversation with Bing, 3/11/2023(1) Azure Firewall rule processing logi
 (2) Filter inbound Internet traffic with Azure Firewall DNAT using the .... https://learn.microsoft.com/en-us/azure/firewall/tutorial-firewall-dnat Accessed 3/11/2023.
 (3) The Three Different Types of Rules that are in the Azure Firewall - Petri. https://petri.com/the-three-different-types-of-rules-that-are-in-the-azure-firewall/ Accessed 3/11/2023.
 
-# What is the difference between Azure VPN Gateway and Virtual network gateway. List them in a table.
+## What is the difference between Azure VPN Gateway and Virtual network gateway. List them in a table.
 
 A VPN gateway is a specific type of virtual network gateway that is used to send traffic between an Azure virtual network and an on-premises location over the public internet. You can also use a VPN gateway to send traffic between Azure virtual networks ². When you create a virtual network gateway resource in Azure, you can select the VPN or ExpressRoute gateway type in Azure ¹.
 
@@ -100,7 +100,7 @@ Source: Conversation with Bing, 3/11/2023(1) Virtual network peering and VPN gat
 (2) Azure - Virtual network Gateway vs VPN gateways - Stack Overflow. https://stackoverflow.com/questions/58259539/azure-virtual-network-gateway-vs-vpn-gateways Accessed 3/11/2023.
 (3) About Azure VPN Gateway | Microsoft Learn. https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpngateways Accessed 3/11/2023.
 
-# What is the difference between, policy-based VPN gateway, route-based VPN gateway and path-based VPN gateway. List them in table.
+## What is the difference between, policy-based VPN gateway, route-based VPN gateway and path-based VPN gateway. List them in table.
 
 A policy-based VPN gateway uses the combinations of prefixes from both networks to define how traffic is encrypted/decrypted through IPsec tunnels. It is typically built on firewall devices that perform packet filtering. IPsec tunnel encryption and decryption are added to the packet filtering and processing engine ¹.
 
