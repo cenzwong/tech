@@ -202,3 +202,36 @@ Source: Conversation with Bing, 3/12/2023(1) Azure AD built-in roles - Azure Act
 (9) Azure AD built-in roles - Azure Active Directory - Microsoft Entra. https://learn.microsoft.com/en-us/azure/active-directory/roles/permissions-reference Accessed 3/12/2023.
 (10) Azure roles, Azure AD roles, and classic subscription administrator .... https://learn.microsoft.com/en-us/azure/role-based-access-control/rbac-and-directory-admin-roles Accessed 3/12/2023.
 (11) Reset a user's password - Azure Active Directory - Microsoft Entra. https://learn.microsoft.com/en-us/azure/active-directory/fundamentals/active-directory-users-reset-password-azure-portal Accessed 3/12/2023.
+
+## Act as a professional Azure consultant. What is the difference between Helpdesk administrator role and Password administrator role in Azure?
+
+As an Azure consultant, I can tell you that the Helpdesk Administrator role and the Password Administrator role in Azure have some similarities and differences. Both roles have the ability to manage service requests and monitor service health. However, the Helpdesk Administrator role has additional capabilities, such as the ability to change passwords and invalidate refresh tokens, while the Password Administrator role is limited to resetting passwords only for users and other password administrators.
+
+Is there anything else you would like to know?
+
+
+
+## Act as a professional Azure consultant. Compare different Azure AD edition. Show the result in a table with different features.
+
+As a professional Azure consultant, I can tell you that Azure Active Directory (Azure AD) comes in four editions: **Free, Office 365 apps, Premium P1, and Premium P2**. The Free edition is included with a subscription of a commercial online service, such as Azure, Dynamics 365, Intune, and Power Platform. Office 365 subscriptions include the Free edition, but Office 365 E1, E3, E5, F1, and F3 subscriptions also include the features listed under the Office 365 apps column².
+
+Here is a table that compares the different Azure AD editions and their features:
+
+| Feature | Free | Office 365 apps | Premium P1 | Premium P2 |
+| --- | --- | --- | --- | --- |
+| Single sign-on access to unlimited cloud apps | Yes | Yes | Yes | Yes |
+| On-premises app integration | No | No | Yes | Yes |
+| Additional Azure AD features | No | Yes | Yes | Yes |
+
+Is there anything else you would like to know?
+
+Source: Conversation with Bing, 3/12/2023(1) Pricing - Azure Active Directory | Microsoft Azure. https://azure.microsoft.com/en-us/pricing/details/active-directory/ Accessed 3/12/2023.
+(2) Azure Active Directory Pricing | Microsoft Security. https://www.microsoft.com/en-us/security/business/identity-access/azure-active-directory-pricing Accessed 3/12/2023.
+(3) Azure Active Directory Pricing | Microsoft Security. https://www.microsoft.com/en-ww/security/business/identity-access/azure-active-directory-pricing Accessed 3/12/2023.
+
+Cenz: https://learn.microsoft.com/en-us/training/modules/configure-azure-active-directory/5-select-editions?ns-enrollment-type=learningpath&ns-enrollment-id=learn.az-104-manage-identities-governance
+
+## What is the difference between vNet and Subnet in Azure? List them in a table.
+
+https://sl.bing.net/kz7opmZ2WE8
+
