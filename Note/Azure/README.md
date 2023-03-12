@@ -143,3 +143,30 @@ Is there anything else you would like to know?
 Source: Conversation with Bing, 3/12/2023(1) Azure Firewall rule processing logic | Microsoft Learn. https://learn.microsoft.com/en-us/azure/firewall/rule-processing Accessed 3/12/2023.
 (2) az network firewall policy rule-collection-group collection. https://learn.microsoft.com/en-us/cli/azure/network/firewall/policy/rule-collection-group/collection?view=azure-cli-latest Accessed 3/12/2023.
 (3) azurerm_firewall_application_rule_collection - Terraform Registry. https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/firewall_application_rule_collection Accessed 3/12/2023.
+
+
+## Compare Azure ExpressRoute and Azure Virtual WAN. List them in a table.
+
+Azure ExpressRoute is a service that lets you extend your on-premises networks into the Microsoft cloud over a private connection with the help of a connectivity provider. With ExpressRoute, you can establish connections to Microsoft cloud services, such as Microsoft Azure and Microsoft 365⁴.
+
+Azure Virtual WAN is a networking service that brings many networking, security, and routing functionalities together to provide a single operational interface. Some of the main features include branch connectivity (via connectivity automation from Virtual WAN Partner devices such as SD-WAN or VPN CPE) and site-to-site VPN connectivity⁷.
+
+Here is a table comparing the two services:
+
+| Azure ExpressRoute | Azure Virtual WAN |
+| --- | --- |
+| Private connection to Microsoft cloud services | Networking service with many functionalities |
+| Extend on-premises networks into the Microsoft cloud | Single operational interface |
+| Establish connections to Microsoft Azure and Microsoft 365 | Branch connectivity and site-to-site VPN connectivity |
+
+Is there anything else you would like to know?
+
+Source: Conversation with Bing, 3/12/2023(1) Azure ExpressRoute Overview: Connect over a private connection. https://learn.microsoft.com/en-us/azure/expressroute/expressroute-introduction Accessed 3/12/2023.
+(2) Azure Virtual WAN Overview | Microsoft Learn. https://learn.microsoft.com/en-us/azure/virtual-wan/virtual-wan-about Accessed 3/12/2023.
+(3) About ExpressRoute Connections in Azure Virtual WAN. https://learn.microsoft.com/en-us/azure/virtual-wan/virtual-wan-expressroute-about Accessed 3/12/2023.
+(4) Azure Virtual WAN Overview | Microsoft Learn. https://learn.microsoft.com/en-us/azure/virtual-wan/virtual-wan-about Accessed 3/12/2023.
+(5) Tutorial: Create an ExpressRoute association to Azure Virtual WAN. https://learn.microsoft.com/en-us/azure/virtual-wan/virtual-wan-expressroute-portal Accessed 3/12/2023.
+(6) ExpressRoute - Virtual Private Cloud Connections | Microsoft Azure. https://azure.microsoft.com/en-gb/products/expressroute/ Accessed 3/12/2023.
+(7) ExpressRoute documentation | Microsoft Learn. https://learn.microsoft.com/en-us/azure/expressroute/ Accessed 3/12/2023.
+(8) Virtual WAN | Microsoft Azure. https://azure.microsoft.com/en-us/products/virtual-wan/ Accessed 3/12/2023.
+(9) Azure Virtual WAN simplifies networking needs. https://azure.microsoft.com/en-us/blog/networking-needs-simplified-with-azure-virtual-wan/ Accessed 3/12/2023.
