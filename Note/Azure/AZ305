@@ -1,0 +1,60 @@
+# AZ-305 Microsoft Azure Architect Design Prerequisites
+
+# AZ-305: Design identity, governance, and monitor solutions
+
+# AZ-305: Design business continuity solutions
+
+# AZ-305: Design data storage solutions
+
+## Design a data storage solution for non-relational data
+
+### Things to consider when choosing data storage
+| Azure Storage Option | Description |
+| --- | --- |
+| Blob Storage | Store vast amounts of unstructured data. Often used for images and multimedia files. |
+| Files | Provide fully managed file shares in the cloud. Accessible via SMB, NFS protocols and Azure Files REST API. |
+| Managed Disks | Support Azure Virtual Machines with block-level storage volumes managed by Azure. Perform like physical disks in an on-premises server but in a virtual environment. |
+| Queue Storage | Store large numbers of messages to create a backlog of work to process asynchronously. |
+
+### Things to know about storage account types
+
+<table aria-label="Things to know about storage account types" class="table">
+<thead>
+<tr>
+<th>Storage&nbsp;account</th>
+<th>Supported&nbsp;services</th>
+<th>Recommended usage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://learn.microsoft.com/en-us/azure/storage/common/storage-account-upgrade" data-linktype="absolute-path" target="az-portal" class="has-external-link-indicator"><strong>Standard</strong> <strong>general-purpose v2</strong></a></td>
+<td>Blob Storage (including Data Lake Storage), Queue Storage, Table Storage, and Azure Files</td>
+<td>Standard storage account for most scenarios, including blobs, file shares, queues, tables, and disks (page blobs).</td>
+</tr>
+<tr>
+<td><a href="https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blob-block-blob-premium/" data-linktype="absolute-path" target="az-portal" class="has-external-link-indicator"><strong>Premium</strong> <strong>block blobs</strong></a></td>
+<td>Blob Storage (including Data Lake Storage)</td>
+<td>Premium storage account for block blobs and append blobs. Recommended for applications with high transaction rates. Use Premium block blobs if you work with smaller objects or require consistently low storage latency. This storage is designed to scale with your applications.</td>
+</tr>
+<tr>
+<td><a href="https://learn.microsoft.com/en-us/azure/storage/files/storage-how-to-create-file-share" data-linktype="absolute-path" target="az-portal" class="has-external-link-indicator"><strong>Premium</strong> <strong>file shares</strong></a></td>
+<td>Azure Files</td>
+<td>Premium storage account for file shares only. Recommended for enterprise or high-performance scale applications. Use Premium file shares if you require support for both Server Message Block (SMB) and NFS file shares.</td>
+</tr>
+<tr>
+<td><a href="https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blob-pageblob-overview" data-linktype="absolute-path" target="az-portal" class="has-external-link-indicator"><strong>Premium</strong> <strong>page blobs</strong></a></td>
+<td>Page blobs only</td>
+<td>Premium high-performance storage account for page blobs only. Page blobs are ideal for storing index-based and sparse data structures, such as operating systems, data disks for virtual machines, and databases.</td>
+</tr>
+</tbody>
+</table>
+
+## Design a data storage solution for relational data
+## Design data integration
+
+# AZ-305: Design infrastructure solutions
+
+# Build great solutions with the Microsoft Azure Well-Architected Framework
+
+# Accelerate cloud adoption with the Microsoft Cloud Adoption Framework for Azure
