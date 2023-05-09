@@ -159,3 +159,14 @@ df = df.withColumn('entity_column', get_entities(col('text_column')))
 ```
 
 Note that some of the examples above may require additional libraries to be installed, such as `textblob` or `nltk`.
+
+
+
+# Set Intersection
+```py
+@udf(returnType=T.ArrayType(T.IntegerType())) 
+def setIntersection(list1, list2):
+    set1 = set(list1)
+    set2 = set(list2)
+    return list(set1.intersection(set2))
+```
