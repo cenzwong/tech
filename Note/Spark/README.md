@@ -772,3 +772,9 @@ def sdf_to_csv(df: pyspark.sql.DataFrame, path:str):
             dbutils.fs.rm(path, True)
             dbutils.fs.mv(path + "_", path)
 ```
+# Download FileStore from Databricks
+```
+https://adb-2590637935934956.16.azuredatabricks.net/files/myfolder/myfile.csv
+-->
+/dbfs/FileStore/myfolder/myfile.csv
+```
