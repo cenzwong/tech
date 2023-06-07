@@ -19,3 +19,13 @@ FROM [source_database].[schema].[old_table_name]
 ```
 
 In this example, replace `[destination_database]`, `[schema]`, `[existing_table_name]`, `[source_database]`, and `[old_table_name]` with the appropriate values for your environment.
+
+
+# Check on the schema
+
+```
+SELECT 
+    *
+FROM
+    [INFORMATION_SCHEMA].COLUMNS;
+```
