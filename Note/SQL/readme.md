@@ -28,4 +28,15 @@ SELECT
     *
 FROM
     [INFORMATION_SCHEMA].COLUMNS;
+    
+SELECT 
+    *
+FROM
+    [INFORMATION_SCHEMA].tables;
+    
+SELECT *
+FROM sys.databases
+
+SELECT *
+FROM sys.tables
 ```
