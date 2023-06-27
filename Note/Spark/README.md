@@ -761,7 +761,7 @@ def save_as_csv_in_azure_from_pyList(pyList, path_name):
 ```python
 def sdf_to_csv(df: pyspark.sql.DataFrame, path:str):
     """
-    df = spark.read.table("ekimetrics_databricks_training.kmeans_dataset")
+    df = spark.read.table("databricks_training.kmeans_dataset")
     sdf_to_csv(df, "wasbs://container-name@storage-account-name.blob.core.windows.net/kmeans_dataset.csv")
     """
     df.coalesce(1).write.csv(path, header=True, mode="overwrite")
