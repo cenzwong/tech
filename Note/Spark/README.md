@@ -557,6 +557,11 @@ data = table_df.select(col).distinct()
 myDict[col] = [row[col] for row in data.collect()]
 ```
 
+```py
+def sdf_to_list(sdf:DataFrame, col_name:str)
+    return [row[col_name] for row in sdf.select(col_name).collect()]
+```
+
 # Print the Schema
 ```
 describe_table = spark.sql(f"describe table `{database_name}`.`{table_name}`")
