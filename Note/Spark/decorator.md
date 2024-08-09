@@ -27,16 +27,22 @@ def pyspark_column_or_name_enabler(*param_names):
         def wrapper(*args, **kwargs):
             # Convert args to a list to modify them
             # args: This is the list of argument of the function.
-            args = list(args) 
             # Get the parameter indices from the function signature
             # func.__code__.co_varnames : Return the function parameter names as a tuple.
             # param_names : the list of parameter from the decorator
-            param_indices = [func.__code__.co_varnames.index(param_name) for param_name in param_names] 
-            # Convert the specified parameters to Columns if they are strings
-            for param_index in param_indices:
-                if isinstance(args[param_index], str):
-                    args[param_index] = F.col(args[param_index])
-            return func(*args, **kwargs)
+
+            # Merging the args into Kwargs
+            args_name_used = func.__code__.co_varnames[:len(args)]
+            kw_from_args = dict(zip(args_name_used, args))
+            kwargs = (kw_from_args | kwargs)
+
+            # print(kwargs)
+            # transform all the input param
+            for param_name in param_names:
+                # if it is string, wrap it as string, else do nth
+                kwargs[param_name] = F.col(kwargs[param_name]) if isinstance(kwargs[param_name], str) else kwargs[param_name]
+
+            return func(**kwargs)
         return wrapper
     return decorator
 
