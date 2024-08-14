@@ -68,3 +68,12 @@ def startswiths(column_or_name: "ColumnOrName", list_of_string: list[str]) -> py
     ).alias(f"startswiths_len{len(list_of_string)}")
 
 ```
+
+
+```python
+def get_columnAndName(ColumnOrName: "ColumnOrName") -> (str, pyspark.sql.Column):
+    col_name = ColumnOrName._expr.name() if isinstance(ColumnOrName, (pyspark.sql.connect.column.Column, pyspark.sql.column.Column)) else ColumnOrName
+    col_obj = F.col(ColumnOrName) if isinstance(ColumnOrName, str) else ColumnOrName
+
+    return col_name, col_obj
+```
