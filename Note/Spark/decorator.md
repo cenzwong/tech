@@ -86,3 +86,11 @@ def get_columnAndName(ColumnOrName: "ColumnOrName") -> (str, pyspark.sql.Column)
 
     return col_name, col_obj
 ```
+
+```python
+def chain(self, func, *args, **kwargs) -> Column:
+    return func(self, *args, **kwargs)
+pyspark.sql.connect.column.Column.chain = chain
+
+F.col("hello").chain(F.trim).chain(F.lower)
+```
