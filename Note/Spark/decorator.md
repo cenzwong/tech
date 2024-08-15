@@ -72,7 +72,16 @@ def startswiths(column_or_name: "ColumnOrName", list_of_string: list[str]) -> py
 
 ```python
 def get_columnAndName(ColumnOrName: "ColumnOrName") -> (str, pyspark.sql.Column):
-    col_name = ColumnOrName._expr.name() if isinstance(ColumnOrName, (pyspark.sql.connect.column.Column, pyspark.sql.column.Column)) else ColumnOrName
+
+    # or re.search(r"Column<'(.*?)'>", ColumnOrName.__repr__()).group(1)
+    if isinstance(ColumnOrName, (pyspark.sql.connect.column.Column)):
+        # https://github.com/apache/spark/blob/b98ac058ab8800dfa1fa66aef67ea7e3e96677cd/python/pyspark/sql/connect/column.py#L443
+        col_name = ColumnOrName._expr.__repr__() 
+    elif isinstance(ColumnOrName, (pyspark.sql.column.Column)):
+        # https://github.com/apache/spark/blob/b98ac058ab8800dfa1fa66aef67ea7e3e96677cd/python/pyspark/sql/classic/column.py#L620
+        col_name = ColumnOrName._jc.toString()
+    else:
+        col_name = ColumnOrName
     col_obj = F.col(ColumnOrName) if isinstance(ColumnOrName, str) else ColumnOrName
 
     return col_name, col_obj
