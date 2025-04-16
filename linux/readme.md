@@ -42,3 +42,8 @@ source /etc/environment
 ```
 nmap -F 172.16.10.50-60
 ```
+
+## Export .env
+```
+export $(grep -v '^#' .env | xargs)
+```
